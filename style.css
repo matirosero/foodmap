@@ -13,7 +13,10 @@ Ultimo cambio por:	Mati
 /*-----------------------------------------------------------------
 >>> INDICE:
 -------------------------------------------------------------------
-0.0 - Colores
+0.0 - Rules
+	0.1 - Colores
+	0.2 - Tipografía
+	0.3 - Media query breakpoints
 1.0 - Tipografía
 	1.1 - Estilos tipográficos generales (class & id)
 	1.2 - Estilos tipográficos de acuerdo a estructura
@@ -38,18 +41,23 @@ Ultimo cambio por:	Mati
 
 
 /*-----------------------------------------------------------------
-0.0 - Colores
+0.0 - Rules
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+	0.1 - Colores
 -----------------------------------------------------------------*/
 /*
 	Texto normal	#404040		gris oscuro
 	Links			#f7370		rojo vermellon			#eb4b3f
 	Linkover		#f99d1c		amarillo naranja		?
 	Plastas oscuras	#243139		gris azulado oscuro
+	Plastas medias	#d2d6d7		gris medio
 */
 
 
 /*-----------------------------------------------------------------
-1.0 - Tipografia
+	0.2 - Tipografia
 -----------------------------------------------------------------*/
 /*
 TIPOGRAFíAS DISPONIBLES
@@ -69,6 +77,24 @@ EJEMPLO:
 	font-style: italic;
 	font-weight: 400;
 */
+
+
+/*-----------------------------------------------------------------
+	0.3 - Media query breakpoints
+-----------------------------------------------------------------*/
+/*
+	Small tablet (landscape)	800
+	Tablet (portrait)			768
+	Small tablet (portrait)		600
+	iPhone (landscape)			568
+	Mobile (landscape)			480
+	iPhone (portrait)			320
+*/
+
+
+/*-----------------------------------------------------------------
+1.0 - Tipografia
+-----------------------------------------------------------------*/
 body,button,input,select,textarea {
 	color:#404040;
 	font-family:'Merriweather',serif;
@@ -256,7 +282,7 @@ img {
 -----------------------------------------------------------------*/
 
 .modal {
-	background: #222;
+	background: #243139;
 	color: #fff;
 	padding: 10px;
 }
@@ -362,7 +388,7 @@ body {
 -----------------------------------------------------------------*/
 
 #page-footer {
-	background:#666;
+	background:#243139;
 	margin:0;
 	padding: 0;
 	width: 100%;
@@ -515,9 +541,30 @@ body {
 --------------------------------------------------------------*/
 
 #foodtrips {
-	background: #666;
-	padding:20px;
+	background: #d2d6d7;
+	margin: 0;
+	padding: 0;
 }
+	#foodtrips-header {
+		background: #eb4b3f;
+		color: #fff;
+		height: 60px;
+		padding: 0px 20px;
+	}
+		#foodtrips-header h2, 
+		#foodtrips-header h3,
+		#foodtrips-header p {
+			display: inline-block;
+			margin: 0 1em 0 0;
+		}
+		#foodtrips-header h2 {
+			line-height: 60px;
+		}
+		
+	#foodtrips-content {
+		padding: 20px;
+	}
+	
 	.foodtrip-link {
 		
 	}

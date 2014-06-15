@@ -57,6 +57,9 @@ map-1.4.2
 	Get rid of space between map and foodtrips ✔︎
 	Resize map back to normal size when sidepanel closes ✔︎
 	
+	TODO: responsive!
+	TODO: can't close showinfo :/
+	
 	TODO: also resize map when click on small map
 	TODO: integrate resize map thingies into one
 	TODO: show country map after opening sidepanel, preferably not small	
