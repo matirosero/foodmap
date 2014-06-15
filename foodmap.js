@@ -152,13 +152,13 @@ AmCharts.ready(function() {
 				var window_width = $(window).width();
 				console.log('window = ' + window_width);
 			
-				//change this to - 800
-				var new_map_width = window_width - 810 + 'px';
+				//change this to - 700
+				var new_map_width = window_width - 710 + 'px';
 				console.log('new map width = ' + new_map_width);
 						
 				$('#mapdiv').css({
 					width : new_map_width,
-					marginLeft: '800px'
+					marginLeft: '700px'
 				
 				}) //WHY NO ;!!!!!!!!
 				
@@ -194,7 +194,7 @@ function close_btn() {
 function prepare_guidebox() {   
 	
 	// OPACITY OF BUTTON SET TO 50%
-	$("#guidebox").css("opacity","0.75");
+	$("#guidebox").css("opacity","0.9");
 
 	//Close window on click on links
 	$(".go-map, .go-search").click(
@@ -410,7 +410,7 @@ function close_side() {
 //Open side panel function
 function openSidepage() {
 	$('#main').animate({
-		right: '800px'
+		right: '700px'
     }, 400, 'easeOutBack'); 
 }
   

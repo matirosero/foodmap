@@ -11,6 +11,7 @@ Ultimo cambio por:	Mati
 /*-----------------------------------------------------------------
 >>> INDICE:
 -------------------------------------------------------------------
+0.0 - Colores
 1.0 - Tipografía
 	1.1 - Estilos tipográficos generales (class & id)
 	1.2 - Estilos tipográficos de acuerdo a estructura
@@ -32,6 +33,17 @@ Ultimo cambio por:	Mati
 	8.2 - Sidepanel
 	8.3 - FoodTrips
 -----------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+0.0 - Colores
+-----------------------------------------------------------------*/
+/*
+	Texto normal	#404040		gris oscuro
+	Links			#f7370		rojo vermellon			#eb4b3f
+	Linkover		#f99d1c		amarillo naranja		?
+	Plastas oscuras	#243139		gris azulado oscuro
+*/
 
 
 /*-----------------------------------------------------------------
@@ -141,11 +153,11 @@ big {
 /* cambiar estos colores a lo que sea decidido, es nada más para tener aquí algo */
 
 a {
-	color: #f73703;
+	color: #eb4b3f;
 	text-decoration: none; 
 }
 a:visited {
-	color: #f73703;
+	color: #eb4b3f;
 }
 a:hover,
 a:focus,
@@ -268,7 +280,8 @@ body {
 	7.1 - Header
 -----------------------------------------------------------------*/
 #page-header {
-	background:#ccc;
+	background:#fff;
+	border-bottom: 1px solid #eb4b3f;
 	height:70px;
 	overflow:hidden;
 	padding: 0 10px;
@@ -301,7 +314,7 @@ body {
 	background:#fff;
 	display:block;
 	height:100%;
-	min-height:1100px;
+	height:670px;
 	overflow:hidden;
 	position:relative;
 	width:100%;
@@ -338,18 +351,25 @@ body {
 
 	#mapdiv {
 		background-color:#eee;
-		height:500px;
+		height:600px;
 		width:100%;
 	}
 
 	#guidebox {
-		height:150px;
-		left:150px;
+		height:580px; /* mapdiv -20px? */
+		left:0px;
 		position:absolute;
-		top:70px;
-		width:250px;
+		top:0px;
+		width:100%;
 		z-index:25; /* no tocar */
 	}
+	
+	#guidebox #info {
+		margin: 150px auto 0;
+		text-align: center;
+		width:450px;
+	}
+		
 
 	#showinfo {
 		height:150px;
@@ -360,6 +380,16 @@ body {
 		z-index:25;
 	}
 
+	#searchbox {
+		height:150px;
+		left:100px;
+		position:absolute;
+		top:30px;
+		width:250px;
+		z-index:50;
+	}
+
+
 /*--------------------------------------------------------------
 	8.2 Sidepanel
 --------------------------------------------------------------*/
@@ -367,14 +397,14 @@ body {
 #sidepanel {
 	background:#222;
 	display:block;
-	height:auto;
+	height:600px;
 	overflow:hidden;
 	padding:0;
 	padding-top:0;
 	position:absolute;
 	right:0;
-	top:70px;
-	width:800px;
+	top:71px; /* 70 +1 border */
+	width:700px;
 }
 
 	#sidepanel-content {
@@ -403,7 +433,7 @@ body {
 --------------------------------------------------------------*/
 
 #foodtrips {
-	background: #222;
+	background: #666;
 	padding:20px;
 }
 	.foodtrip-link {
