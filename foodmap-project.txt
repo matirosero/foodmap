@@ -55,15 +55,17 @@ map-1.4.2
 	Header bar menus css ✔︎
 	Expand searchbox ✔︎
 	Get rid of space between map and foodtrips ✔︎
+	Resize map back to normal size when sidepanel closes ✔︎
 	
-	TODO: INTEGRATE the two close and open side panel functions at the end
-	TODO: resize map back to normal size when sidepanel closes
+	TODO: also resize map when click on small map
+	TODO: integrate resize map thingies into one
 	TODO: show country map after opening sidepanel, preferably not small	
 	TODO: wipe clean results for new country
 	TODO: change links that open side panel so it's no #about but #country&ingredient or whatever
 	TODO: if we use clear_map() in clickMapObject() to clear search results, it turns it ALL grey
 	TODO: prevent default on #done
 	TODO: open search box in other direction
+	TODO: INTEGRATE the two close and open side panel functions at the end
 	
 	
 	TODO: calculate width of sidepanel from window width size || media queries

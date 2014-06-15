@@ -4,6 +4,7 @@ FOODMAP
 
 Version:			1.4.2
 Ultimo cambio:		15/06 	[Expand searchbox]
+							[Map back to original size]
 
 Ultimo cambio por:	Mati
 -------------------------------------------------------------------*/
