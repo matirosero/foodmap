@@ -200,11 +200,9 @@ Functions not specifically associated with AM Map
 function close_btn() {   
 	
 	//Close window on click
-	$(".close-this").click(
-		function(){
-			$(this).parent().hide();
-		}
-	);
+	$(".close-this").click(function(){
+		$(this).parent().hide();
+	});
 }
 
 
@@ -261,6 +259,7 @@ function prepare_showinfo() {
 //TODO: change to more explanatory name?
 function show_showinfo() {
 	$("#showinfo").show();
+	
 }
 
 
@@ -452,10 +451,12 @@ function open_searchbox() {
 	
 	submitIcon.click(function(){
 		if(isOpen == false){
+			$('#searchbox').css('width','300px'); //TODO: inelegant, change
 			searchBox.addClass('searchbox-open');
 			inputBox.focus();
 			isOpen = true;
 		} else {
+			$('#searchbox').css('width','50px'); //TODO: inelegant, change
 			searchBox.removeClass('searchbox-open');
 			inputBox.focusout();
 			isOpen = false;
@@ -494,6 +495,7 @@ $(document).ready(function() {
 	open_side();
 	close_side();
 	open_searchbox();
+	
 
 	//search_map();
 });

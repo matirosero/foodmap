@@ -56,9 +56,10 @@ map-1.4.2
 	Expand searchbox ✔︎
 	Get rid of space between map and foodtrips ✔︎
 	Resize map back to normal size when sidepanel closes ✔︎
+	Searchbox icon ✔︎
 	
 	TODO: responsive!
-	TODO: can't close showinfo :/
+	TODO: fix size change of #searchbox so it's more elegant
 	
 	TODO: also resize map when click on small map
 	TODO: integrate resize map thingies into one

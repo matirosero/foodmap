@@ -443,11 +443,11 @@ body {
 	}
 
 	#searchbox {
-		height:150px;
+		height:50px;
 		left:100px;
 		position:absolute;
 		top:30px;
-		width:300px;
+		width:50px;
 		z-index:50;
 	}
 		.searchbox{
@@ -490,7 +490,7 @@ body {
 				margin:0;
 				border:0;
 				outline:0;
-				line-height:50px;
+				line-height:0px;
 				text-align:center;
 				cursor:pointer;
 				color:#dcddd8;
