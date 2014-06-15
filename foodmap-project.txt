@@ -54,7 +54,8 @@ map-1.4.2
 	Initial message is overlaid over whole map ✔︎
 	Header bar menus css ✔︎
 	Expand searchbox ✔︎
-
+	Get rid of space between map and foodtrips ✔︎
+	
 	TODO: INTEGRATE the two close and open side panel functions at the end
 	TODO: resize map back to normal size when sidepanel closes
 	TODO: show country map after opening sidepanel, preferably not small	
