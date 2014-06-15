@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+
+FoodMapp
+[Home]
+
+Version:			1.4.2
+Ultimo cambio:		14/06 	[Created, renamed to index.html]
+
+Ultimo cambio por:	Mati
+
+-->
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>FoodMap</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="ammap/ammap.css" type="text/css">
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- External scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+
+	<!-- AM Map scripts -->
+	<script src="ammap/ammap.js" type="text/javascript"></script>
+	<!-- map file should be included after ammap.js -->
+	<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+
+	<!-- Custom scripts -->
+	<script src="foodmap.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+	<!-- #page-header: encabezado de TODA la página -->
+	<header id="page-header">
+
+		<!-- #page-title: donde va el logo, titulo principal -->
+		<h1 id="page-title">
+			<a href="">Food<span class="light">Map</span></a>
+		</h1><!-- /#page-title -->
+
+		<!-- #menu-main: menú principal -->
+		<nav id="menu-main">
+			<ul>
+				<li>
+					<a href="">Mapa</a>
+				</li>
+				<li>
+					<a href="">FoodTrips</a>
+				</li>
+				<li>
+					<a href="">Historial</a>
+				</li>
+			</ul>
+		</nav><!-- /#menu-main -->
+
+		<!-- #menu-user: menú del usuari: login, etc -->
+		<nav id="menu-user">
+			<ul>
+				<li>
+					<a href="">Login</a>
+				</li>
+			</ul>
+		</nav><!-- #menu-user -->
+
+	</header><!-- /#page-header -->
+
+
+
+	<!-- #sidepanel: panel que entra por el lado -->
+	<div id="sidepanel">
+
+		<!--
+			#close-sidepanel: cerrar panel
+			.close: usar esta clase para generalidades de TODOS los botones de cerrar
+		-->
+		<a href="#" id="close-sidepanel" class="close">X</a>
+
+		<!-- #sidepanel-content: aquí va el contenido de al lado -->
+		<div id="sidepanel-content">
+
+			<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
+			<h2><span class="light">13 Ingredientes de</span> Jamaica</h2>
+			<p>
+				Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Mauris eleifend vehicula nisi at gravida. Quisque viverra quam nec lorem congue commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim. Donec tincidunt faucibus ultrices.
+			</p>
+
+			<!-- .blocks: clase generica para <ul>, para cada vez que queramos cuadritos -->
+			<ul class="blocks">
+
+				<!-- .foodresult: cuadrito que contendra la info de cada resultado -->
+				<!-- .ingredient || .recipe : clase que se agregara de acuerdo a si es plato o ingrediente, colgarse de ella para los iconos -->
+				<li class="foodresult ingredient">
+					<a class="foodresult-image" href="">
+						<img src="images/ingredient.jpg" alt="" />
+					</a>
+					<a class="foodresult-name">
+						<h4>Nombre del ingrediente</h4>
+					</a>
+				</li>
+				<li class="foodresult recipe">
+					<a class="foodresult-image" href="">
+						<img src="images/ingredient.jpg" alt="" />
+					</a>
+					<a class="foodresult-name">
+						<h4>Nombre del plato</h4>
+					</a>
+				</li>
+			</ul><!-- /.blocks -->
+			<!-- Fin de contenido variable -->
+
+		</div><!-- /#sidepanel-content -->
+
+	</div><!-- /#sidepanel -->
+
+
+
+	<!-- #main: contenido principal (o sea, lo que está abierto inicialmente) -->
+	<div id="main">
+
+		<!-- #map-content -->
+		<div id="map-content" role="map">
+
+			<!-- #mapdiv -->
+			<div id="mapdiv">
+			</div><!-- /#mapdiv -->
+
+
+			<!-- #searchbox -->
+			<div id="searchbox">
+
+				<span>
+					<!-- <p class="red">Buscar Japón, India o Costa Rica</p> -->
+					<form method="post" action="#">
+						<input type="search" name="search" id="search_field" class='search_box' placeholder="ya sabes lo que buscas?" />
+						<input type="submit" value="Search" class="search_button" /><br />
+					</form>
+				</span>
+				<div id="searchresults">Search results :</div>
+				<ul id="results" class="update">
+				</ul>
+				<a href="" id="clear">clear</a>
+			</div>
+
+
+			<!-- #guidebox: div flotante textos de ayuda -->
+			<div id="guidebox" class="modal">
+				<a class="close-this close">x</a>
+				<div id="info">
+
+					<h2>
+						<a class="go-map" href="#donde">Donde quieres<br />
+						comer hoy?</a>
+					</h2>
+					<input type="checkbox" name="" value="">
+					<label for="">No quiero volver a ver este mensaje al entrar</label>
+
+				</div><!-- /#info -->
+			</div><!-- /#guidebox -->
+
+
+			<!-- #showinfo: div flotante donde aparece info básica del país -->
+			<div id="showinfo" class="modal">
+
+				<a class="close-this close">x</a>
+
+				<!-- #content -->
+				<div id="content">
+
+				</div><!-- /#content -->
+
+			</div><!-- /#showinfo -->
+
+		</div><!-- /#map-content -->
+
+
+
+		<!-- #foodtrips -->
+		<section id="foodtrips">
+			<header id="foodtrips-header" class="section-header">
+				<h2>Food<span class="light">Trips</span></h2>
+				<h3>¿Perdiste el norte?</h3>
+				<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
+			</header>
+
+			<!-- .blocks -->
+			<ul class="blocks">
+				<li>
+					<a class="foodtrip-link" href="">
+						<img src="images/foodtrip-1.jpg" alt="" />
+						<h4 class="foodtrip-name">India</h4>
+					</a>
+				</li>
+				<li>
+					<a class="foodtrip-link" href="">
+						<img src="images/foodtrip-1.jpg" alt="" />
+						<h4 class="foodtrip-name">El Caribe</h4>
+					</a>
+				</li>
+				<li>
+					<a class="foodtrip-link" href="">
+						<img src="images/foodtrip-1.jpg" alt="" />
+						<h4 class="foodtrip-name">Italia</h4>
+					</a>
+				</li>
+				<li>
+					<a class="foodtrip-link" href="">
+						<img src="images/foodtrip-1.jpg" alt="" />
+						<h4 class="foodtrip-name">Costa Brava</h4>
+					</a>
+				</li>
+				<li>
+					<a class="foodtrip-link-create" href="">
+						<p>Crea tu propia ruta gastronómica</p>
+						<h4 class="foodtrip-name">Mi Food<span class="light">Trip</span></h4>
+					</a>
+				</li>
+			</ul><!-- /.blocks -->
+
+		</section><!-- /#foodtrips -->
+
+
+
+	</div><!-- /#main -->
+
+
+
+	<!-- #page-footer: info copyright, Bulli, etc -->
+	<footer id="page-footer">
+
+		<!-- #footer-content -->
+		<div id="footer-content">
+			<p>
+				&copy; FoodMapp 2014<br />
+				<strong>elBulli</strong>foundation | <strong>Bulli</strong>Pedia
+			</p>
+		</div><!-- /#footer-content -->
+
+	</footer><!-- /#page-footer -->
+
+</body>
+
+</html>

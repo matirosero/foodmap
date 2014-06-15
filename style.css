@@ -1,0 +1,416 @@
+/*------------------------------------------------------------------
+FOODMAP
+[Master Stylesheet]
+
+Version:			1.4.2
+Ultimo cambio:		14/6 	[Created, changed name to style.css]
+Ultimo cambio por:	Mati
+-------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+>>> INDICE:
+-------------------------------------------------------------------
+1.0 - Tipografía
+	1.1 - Estilos tipográficos generales (class & id)
+	1.2 - Estilos tipográficos de acuerdo a estructura
+2.0 - Navegación
+	2.1 - Links
+	2.3 - Botones
+	2.2 - Menus
+4.0 - Formularios
+5.0 - Imagenes
+6.0 - Estilos genéricos
+	6.1 - Alineación & floats
+	6.2 - Clearings
+7.0 - Estructura
+	7.1 - Header
+	7.2 - Main
+	7.3 - Footer
+8.0 - Bloques de contenido
+	8.1 - Mapa
+	8.2 - Sidepanel
+	8.3 - FoodTrips
+-----------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+1.0 - Tipografia
+-----------------------------------------------------------------*/
+/*
+TIPOGRAFíAS DISPONIBLES
+
+Lato
+	Light 		300
+	Normal		400
+	Bold		700
+	Ultra-Bold	900
+	
+Merriweather
+	Normal		400		Italic
+	Bold		700		Italic
+	
+EJEMPLO:
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: 400;
+*/
+body,button,input,select,textarea {
+	color:#404040;
+	font-family:'Merriweather',serif;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Lato',sans-serif;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+p {
+	margin-bottom:1.5em;
+}
+
+b, strong {
+	font-weight: 700;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+
+
+/*-----------------------------------------------------------------
+1.1 - Estilos tipográficos genéricos
+-----------------------------------------------------------------*/
+
+.light {
+	font-weight: 300;
+}
+
+.red {
+	color:red;
+}
+
+
+/*-----------------------------------------------------------------
+1.1 - Estilos tipográficos de acuerdo a estructura
+-----------------------------------------------------------------*/
+
+#page-header {
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	line-height: 70px;
+	text-transform:uppercase;
+}
+
+#sidepanel,
+#foodtrips,
+#page-footer {
+	color:#fff;
+}
+
+#page-footer {
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-align: center;
+	text-transform:uppercase;
+}
+	#footer-content > p {
+		margin:0;
+		padding: 0;
+	}
+
+
+/*--------------------------------------------------------------
+2.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.1 Links
+--------------------------------------------------------------*/
+/* cambiar estos colores a lo que sea decidido, es nada más para tener aquí algo */
+
+a {
+	color: #f73703;
+	text-decoration: none; 
+}
+a:visited {
+	color: #f73703;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #f99d1c;
+}
+
+#sidepanel a {
+	color: #fff; 
+}
+#sidepanel a:visited {
+	color: #fff;
+}
+#sidepanel a:hover,
+#sidepanel a:focus,
+#sidepanel a:active {
+	color: #f99d1c;
+}
+
+/*--------------------------------------------------------------
+2.2 Botones
+--------------------------------------------------------------*/
+
+.close {
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+
+	background:#404040;
+	color:#fff;
+	display:inline-block;
+	font-family: 'Lato',sans-serif;
+	font-size: 12px;
+	font-weight:700;
+	line-height:18px;
+	text-align: center;
+	text-transform:uppercase;
+	width: 18px;
+}
+
+/*--------------------------------------------------------------
+2.3 Menus
+--------------------------------------------------------------*/
+
+#menu-main > ul,
+#menu-user > ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#menu-main > ul > li,
+#menu-user > ul > li {
+	display: inline-block;
+	float:left;
+}
+
+/*-----------------------------------------------------------------
+5.0 - Imagenes
+-----------------------------------------------------------------*/
+
+img {
+	height:auto; /* no tocar */
+	max-width:100%; /* no tocar */
+}
+
+/*-----------------------------------------------------------------
+6.0 - Estilos genéricos
+-----------------------------------------------------------------*/
+
+.modal {
+	background: #222;
+	color: #fff;
+	padding: 10px;
+}
+
+.blocks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	.blocks li {
+		display: inline-block;
+		float:left;
+		margin: 0 20px 20px 0;
+		width:170px;
+	}
+
+/*--------------------------------------------------------------
+	6.2 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+#foodtrips:before,
+#foodtrips:after,
+#sidepanel-content:before,
+#sidepanel-content:after,
+#page-header:before,
+#page-header:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+#foodtrips:after,
+#sidepanel-content:after,
+#page-header:after {
+	clear: both;
+}
+
+/*-----------------------------------------------------------------
+7.0 - Estructura
+-----------------------------------------------------------------*/
+
+body {
+	background:#222;
+}
+
+/*----------------------------------------------------------------- 
+	7.1 - Header
+-----------------------------------------------------------------*/
+#page-header {
+	background:#ccc;
+	height:70px;
+	overflow:hidden;
+	padding: 0 10px;
+	position:relative;
+	width:100%;
+}
+
+	#page-title {
+		float:left;
+		margin: 0;
+		padding: 0;
+		width: 25%
+	}
+	
+	#menu-main {
+		float:left;
+		width: 50%;
+	}
+	
+	#menu-user {
+		float:left;
+		width:25%;
+	}
+
+/*----------------------------------------------------------------- 
+	7.2 - Main
+-----------------------------------------------------------------*/
+
+#main {
+	background:#fff;
+	display:block;
+	height:100%;
+	min-height:1100px;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	z-index:2;
+}
+
+/*----------------------------------------------------------------- 
+	7.3 - Footer
+-----------------------------------------------------------------*/
+
+#page-footer {
+	background:#666;
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+
+	#footer-content {
+		margin:0;
+		padding: 10px 0;
+	}
+
+/*--------------------------------------------------------------
+8.0 Bloques de contenido
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	8.1 Mapa
+--------------------------------------------------------------*/
+#map-content {
+	background: #fff;
+	display:block;
+	padding:0;
+}
+
+	#mapdiv {
+		background-color:#eee;
+		height:500px;
+		width:100%;
+	}
+
+	#guidebox {
+		height:150px;
+		left:150px;
+		position:absolute;
+		top:70px;
+		width:250px;
+		z-index:25; /* no tocar */
+	}
+
+	#showinfo {
+		height:150px;
+		left:200px;
+		position:absolute;
+		top:150px;
+		width:250px;
+		z-index:25;
+	}
+
+/*--------------------------------------------------------------
+	8.2 Sidepanel
+--------------------------------------------------------------*/
+
+#sidepanel {
+	background:#222;
+	display:block;
+	height:auto;
+	overflow:hidden;
+	padding:0;
+	padding-top:0;
+	position:absolute;
+	right:0;
+	top:70px;
+	width:800px;
+}
+
+	#sidepanel-content {
+		padding:1em;
+	}
+
+	.foodresult {
+		background:#444;
+		height:auto;
+	}
+	.ingredient {
+		
+	}
+	.recipe {
+		
+	}
+		.foodresult-image {
+			
+		}
+		.foodresult-name {
+			
+		}
+
+/*--------------------------------------------------------------
+	8.3 Foodtrips
+--------------------------------------------------------------*/
+
+#foodtrips {
+	background: #222;
+	padding:20px;
+}
+	.foodtrip-link {
+		
+	}
+		.foodtrip-name {
+			
+		}
+		
+		
