@@ -3,8 +3,7 @@ FOODMAP
 [Scripts]
 
 Version:			1.4.2
-Ultimo cambio:		15/06 	[Expand searchbox]
-							[Map back to original size]
+Ultimo cambio:		15/06 	[see foodmap-project.txt]
 
 Ultimo cambio por:	Mati
 -------------------------------------------------------------------*/
@@ -160,29 +159,23 @@ AmCharts.ready(function() {
 		var new_map_width = window_width - 710 + 'px'; //change this to - 700
 		console.log('new map width = ' + new_map_width);
 		
+		function toggle_map_size(map_width,margin_left){
+			
+			$('#mapdiv').css({
+				width : map_width,
+				marginLeft: margin_left
+				
+			});
+				
+			map.validateNow();
+		}
+		
 		$("a.clickme").click(function(e){
-			
-			console.log('RESIZE START!!: smaller');
-						
-			$('#mapdiv').css({
-				width : new_map_width,
-				marginLeft: '700px'
-				
-			});
-				
-			map.validateNow();
+			toggle_map_size(new_map_width,'700px')
 		});
-		$('#close-sidepanel').click(function(e){
-			console.log('RESIZE START!!: bigger');
-			
-			$('#mapdiv').css({
-				width : original_map_width,
-				marginLeft: '0'
-				
-			});
-				
-			map.validateNow();
-			
+		
+		$('#close-sidepanel').click(function(e){			
+			toggle_map_size(original_map_width,0)
 		});
 		
 	}
@@ -439,6 +432,7 @@ function closeSidepage(){
     	right: '0px'
     }, 400, 'easeOutQuint');  
 }
+
 
 //Open search box 
 //http://thecodeblock.com/expanding-search-bar-with-jquery-tutroial/

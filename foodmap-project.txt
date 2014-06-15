@@ -57,12 +57,13 @@ map-1.4.2
 	Get rid of space between map and foodtrips ✔︎
 	Resize map back to normal size when sidepanel closes ✔︎
 	Searchbox icon ✔︎
+	integrate resize map thingies into one ✔︎
 	
 	TODO: responsive!
 	TODO: fix size change of #searchbox so it's more elegant
 	
 	TODO: also resize map when click on small map
-	TODO: integrate resize map thingies into one
+	
 	TODO: show country map after opening sidepanel, preferably not small	
 	TODO: wipe clean results for new country
 	TODO: change links that open side panel so it's no #about but #country&ingredient or whatever
