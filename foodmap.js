@@ -3,7 +3,7 @@ FOODMAP
 [Scripts]
 
 Version:			1.4.2
-Ultimo cambio:		14/06 	[Created, changed name to foodmap.js]
+Ultimo cambio:		15/06 	[Expand searchbox]
 
 Ultimo cambio por:	Mati
 -------------------------------------------------------------------*/
@@ -149,26 +149,40 @@ AmCharts.ready(function() {
 	// Since 1.4.1.2	
 	function resize_map() { 
 		
-		$("a.clickme").click(
-			function(e){
-				e.preventDefault();
-				console.log('RESIZE START!!')
-				var window_width = $(window).width();
-				console.log('window = ' + window_width);
+		var window_width;
+		window_width = $(window).width();
+		console.log('window = ' + window_width);
+		
+		var original_map_width = $('#mapdiv').width();
+		console.log('original window = ' + original_map_width);
+		
+		var new_map_width = window_width - 710 + 'px'; //change this to - 700
+		console.log('new map width = ' + new_map_width);
+		
+		$("a.clickme").click(function(e){
 			
-				//change this to - 700
-				var new_map_width = window_width - 710 + 'px';
-				console.log('new map width = ' + new_map_width);
+			console.log('RESIZE START!!: smaller');
 						
-				$('#mapdiv').css({
-					width : new_map_width,
-					marginLeft: '700px'
+			$('#mapdiv').css({
+				width : new_map_width,
+				marginLeft: '700px'
 				
-				}) //WHY NO ;!!!!!!!!
+			});
 				
-				map.validateNow();
-			}
-		);
+			map.validateNow();
+		});
+		$('#close-sidepanel').click(function(e){
+			console.log('RESIZE START!!: bigger');
+			
+			$('#mapdiv').css({
+				width : original_map_width,
+				marginLeft: '0'
+				
+			});
+				
+			map.validateNow();
+			
+		});
 		
 	}
 							    
