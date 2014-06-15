@@ -22,8 +22,12 @@ AM Map function + what I need added to it
 
 // add all your code to this method, as this will ensure that page is loaded
 AmCharts.ready(function() {
+	
+	//AmCharts.theme = AmCharts.themes.dark;
+	
 	// create AmMap object
 	var map = new AmCharts.AmMap();
+	
 	// set path to images
 	map.pathToImages = "ammap/images/";
 			    

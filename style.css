@@ -5,6 +5,7 @@ FOODMAP
 Version:			1.4.2
 Ultimo cambio:		14/6 	[Created, changed name to style.css]
 					15/6 	[Initial modal overlays all, sidepanel height]
+							[Style for header bar: menus]
 Ultimo cambio por:	Mati
 -------------------------------------------------------------------*/
 
@@ -18,8 +19,8 @@ Ultimo cambio por:	Mati
 	1.2 - Estilos tipográficos de acuerdo a estructura
 2.0 - Navegación
 	2.1 - Links
-	2.3 - Botones
-	2.2 - Menus
+	2.2 - Botones
+	2.3 - Menus
 4.0 - Formularios
 5.0 - Imagenes
 6.0 - Estilos genéricos
@@ -210,11 +211,36 @@ a:active {
 	padding:0;
 }
 
-#menu-main > ul > li,
-#menu-user > ul > li {
-	display: inline-block;
-	float:left;
+#menu-main > ul {
+	margin: 0 auto;
+	width: 300px;
 }
+
+	#menu-main > ul > li {
+		display: inline-block;
+		float:left;
+	}
+	#menu-user > ul > li {
+		display: inline-block;
+		float:right;
+	}
+
+	#menu-main > ul > li > a,
+	#menu-user > ul > li > a {
+		display: block;
+		text-align: center;
+		width: 100px;
+	}
+	
+	#menu-main > ul > li > a:hover,
+	#menu-main > ul > li > a:focus,
+	#menu-main > ul > li > a:active,
+	#menu-user > ul > li > a:hover,
+	#menu-user > ul > li > a:focus,
+	#menu-user > ul > li > a:active {
+		background: #eb4b3f;
+		color: #fff;
+	}
 
 /*-----------------------------------------------------------------
 5.0 - Imagenes
@@ -257,7 +283,11 @@ img {
 #sidepanel-content:before,
 #sidepanel-content:after,
 #page-header:before,
-#page-header:after {
+#page-header:after,
+#menu-main > ul:before,
+#menu-main > ul:after,
+#menu-user > ul:before,
+#menu-user > ul:after {
 	content: '';
 	display: table;
 }
@@ -265,7 +295,9 @@ img {
 .clear:after,
 #foodtrips:after,
 #sidepanel-content:after,
-#page-header:after {
+#page-header:after,
+#menu-main > ul:after,
+#menu-user > ul:after {
 	clear: both;
 }
 
@@ -285,7 +317,7 @@ body {
 	border-bottom: 1px solid #eb4b3f;
 	height:70px;
 	overflow:hidden;
-	padding: 0 10px;
+	padding: 0;
 	position:relative;
 	width:100%;
 }
@@ -296,6 +328,9 @@ body {
 		padding: 0;
 		width: 25%
 	}
+		#page-title > a {
+			margin-left: 20px;
+		}
 	
 	#menu-main {
 		float:left;
@@ -409,7 +444,7 @@ body {
 }
 
 	#sidepanel-content {
-		padding:1em;
+		padding:20px;
 	}
 
 	.foodresult {
