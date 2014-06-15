@@ -421,9 +421,55 @@ body {
 		left:100px;
 		position:absolute;
 		top:30px;
-		width:250px;
+		width:300px;
 		z-index:50;
 	}
+		.searchbox{
+			position:relative;
+			height:50px;
+			min-width:50px;
+			width:0%;
+			float:right;
+			overflow:hidden;
+			-webkit-transition: width 0.3s;
+			-moz-transition: width 0.3s;
+			-ms-transition: width 0.3s;
+			-o-transition: width 0.3s;
+			transition: width 0.3s;
+		}
+		.searchbox-open{
+			width:100%;
+		}
+			.searchbox-input{
+				position:absolute;
+				top:0;
+				right:0;
+				border:0;
+				outline:0;
+				background:#fff;
+				width:80%;
+				height:50px;
+				margin:0;
+				padding: 0 0 0 20px;
+			}
+			.searchbox-icon,
+			.searchbox-submit{
+				width:50px;
+				height:50px;
+				display:block;
+				position:absolute;
+				top:0;
+				right:0;
+				padding:0;
+				margin:0;
+				border:0;
+				outline:0;
+				line-height:50px;
+				text-align:center;
+				cursor:pointer;
+				color:#dcddd8;
+				background:#eb4b3f;
+ 			}
 
 
 /*--------------------------------------------------------------

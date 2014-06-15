@@ -52,6 +52,7 @@ map-1.4.2
 	Put together  1.4.1.1 and 1.4.1.2 ✔︎
 	Change so sidepanel only pushes out mapdiv ✔︎
 	Initial message is overlaid over whole map ✔︎
+	Header bar menus css ✔︎
 
 	TODO: INTEGRATE the two close and open side panel functions at the end
 	TODO: resize map back to normal size when sidepanel closes

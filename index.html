@@ -144,17 +144,18 @@ Ultimo cambio por:	Mati
 			<div id="searchbox">
 
 				<span>
-					<!-- <p class="red">Buscar Japón, India o Costa Rica</p> -->
-					<form method="post" action="#">
-						<input type="submit" value="Search" class="search_button" />
-						<input type="search" name="search" id="search_field" class='search_box' placeholder="ya sabes lo que buscas?" />
-						
+					<form method="post" action="#" class="searchbox">
+						<input type="text" name="search" class='searchbox-input' placeholder="ya sabes lo que buscas?" onkeyup="buttonUp();" required />
+						<input type="submit" value="GO" class="searchbox-submit" />
+						<span class="searchbox-icon">GO</span>
 					</form>
 				</span>
+<!--
 				<div id="searchresults">Search results :</div>
 				<ul id="results" class="update">
 				</ul>
 				<a href="" id="clear">clear</a>
+-->
 			</div>
 
 

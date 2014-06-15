@@ -101,7 +101,7 @@ AmCharts.ready(function() {
 	//Search for ingredient or dish
 	function search_map() {
 	
-		$(".search_button").click(function() {
+		$(".searchbox-submit").click(function() {
 		
 			event.preventDefault();
 		
@@ -109,7 +109,7 @@ AmCharts.ready(function() {
 			clear_map();
 						
 			//Get search string
-			search_string = $("#search_field").val(); //In 1.4.1.2, search string is DECLARED here, why not in 1.4.1.1?
+			search_string = $(".searchbox-input").val(); //In 1.4.1.2, search string is DECLARED here, why not in 1.4.1.1?
 
 			//Convert search string to country code
 			if(search_string) {
@@ -426,6 +426,50 @@ function closeSidepage(){
     }, 400, 'easeOutQuint');  
 }
 
+//Open search box 
+//http://thecodeblock.com/expanding-search-bar-with-jquery-tutroial/
+function open_searchbox() {
+	var submitIcon = $('.searchbox-icon');
+	var inputBox = $('.searchbox-input');
+	var searchBox = $('.searchbox');
+	
+	var isOpen = false;
+	
+	submitIcon.click(function(){
+		if(isOpen == false){
+			searchBox.addClass('searchbox-open');
+			inputBox.focus();
+			isOpen = true;
+		} else {
+			searchBox.removeClass('searchbox-open');
+			inputBox.focusout();
+			isOpen = false;
+		}
+	});
+	submitIcon.mouseup(function(){
+    	return false;
+	});
+	searchBox.mouseup(function(){
+    	return false;
+	});
+	$(document).mouseup(function(){
+		if(isOpen == true){
+			$('.searchbox-icon').css('display','block');
+			submitIcon.click();
+		}
+	});
+}
+function buttonUp(){
+ 	var inputVal = $('.searchbox-input').val();
+ 	inputVal = $.trim(inputVal).length;
+ 	if( inputVal !== 0){
+	 	$('.searchbox-icon').css('display','none');
+	} else {
+		 $('.searchbox-input').val('');
+		 $('.searchbox-icon').css('display','block');
+	}
+}
+
 
 // Kick things off.
 $(document).ready(function() {
@@ -434,6 +478,7 @@ $(document).ready(function() {
 	close_btn();
 	open_side();
 	close_side();
+	open_searchbox();
 
 	//search_map();
 });
