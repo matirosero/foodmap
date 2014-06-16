@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------
+FOODMAP
+[Media Queries Stylesheet]
+
+Version:			1.0
+Ultimo cambio:		16/6 	[]
+Ultimo cambio por:	Mati
+-------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+>>> INDICE:
+-------------------------------------------------------------------
+0.0 - Media query breakpoints
+1.0 - Small tablet (landscape)	800
+
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+0.0 - Media query breakpoints
+-----------------------------------------------------------------*/
+/*
+	Small tablet (landscape)	800
+	Tablet (portrait)			768
+	Small tablet (portrait)		600
+	iPhone (landscape)			568
+	Mobile (landscape)			480
+	iPhone (portrait)			320
+*/
+
+/*-----------------------------------------------------------------
+1.0 - Small tablet (landscape)	800
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	
+	#main,
+	#mapdiv
+	#sidepanel {
+		height: 529px;
+	}
+	#sidepanel {
+		height: 529px;
+	}
+	#foodtrips-header h3 {
+		display: none;
+	}
+	#foodtrips .blocks li {
+		width:175px;
+	}
+	
+}
+
+/*-----------------------------------------------------------------
+1.0 - Tablet (portrait)			768
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+	
+	#foodtrips .blocks li {
+		width:167px; /* For sidepanel 700px at 960*/
+	}
+	
+}
+
+/*-----------------------------------------------------------------
+1.0 - Small tablet (portrait)		600
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+	
+	/* TODO: disapper menu */
+	#foodtrips .blocks li {
+		width:150px; /* For sidepanel 700px at 960*/
+	}
+	
+}

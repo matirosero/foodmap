@@ -291,11 +291,13 @@ img {
 	padding: 0;
 }
 	.blocks li {
+		background: #fff;
 		display: inline-block;
 		float:left;
-		margin: 0 20px 20px 0;
-		width:170px;
+		margin: 10px;
+		width:150px; /* For sidepanel 700px at 960*/
 	}
+	
 
 /*--------------------------------------------------------------
 	6.2 Clearings
@@ -311,7 +313,9 @@ img {
 #menu-main > ul:before,
 #menu-main > ul:after,
 #menu-user > ul:before,
-#menu-user > ul:after {
+#menu-user > ul:after,
+.blocks > ul:before,
+.blocks > ul:after {
 	content: '';
 	display: table;
 }
@@ -321,7 +325,8 @@ img {
 #sidepanel-content:after,
 #page-header:after,
 #menu-main > ul:after,
-#menu-user > ul:after {
+#menu-user > ul:after,
+.blocks > ul:after {
 	clear: both;
 }
 
@@ -514,7 +519,7 @@ body {
 }
 
 	#sidepanel-content {
-		padding:20px;
+		padding:10px;
 	}
 
 	.foodresult {
@@ -560,7 +565,11 @@ body {
 		}
 		
 	#foodtrips-content {
-		padding: 20px;
+		padding: 10px;
+	}
+	
+	#foodtrips .blocks li {
+		width:147px; /* For sidepanel 700px at 960*/
 	}
 	
 	.foodtrip-link {

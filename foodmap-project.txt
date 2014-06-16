@@ -75,9 +75,18 @@ map-1.4.2
 	
 	TODO: calculate width of sidepanel from window width size || media queries
 
+map-1.4.3
+	Media queries:
+		.block li - 150width with 10padding, so that sidepanel with width 700 and 10padding shows exactl 4
+		TODO: fix text in sidepanel and foodtrips, because of padding
+		TODO: fix botom margin of blocks
+		TODO: foodtrips blocks mas grandes en > 980
 
 
-
+COSAS QUE NO VAN A FUNCIONAR EN PROTOTIPO:
+	checkbox “no mostrar este mensaje en próxima visita”
+	agregar a redes sociales
+	login :P
 
 LINKS:
 	
