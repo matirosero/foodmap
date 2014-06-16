@@ -228,40 +228,30 @@ a:active {
 2.3 Menus
 --------------------------------------------------------------*/
 
-#menu-main > ul,
-#menu-user > ul {
+#menu-top ul {
 	list-style: none;
-	margin:0;
 	padding:0;
 }
 
-#menu-main > ul {
-	margin: 0 auto;
-	width: 300px;
-}
 
-	#menu-main > ul > li {
+	#menu-main li {
 		display: inline-block;
 		float:left;
 	}
-	#menu-user > ul > li {
+	#menu-user li {
 		display: inline-block;
 		float:right;
 	}
 
-	#menu-main > ul > li > a,
-	#menu-user > ul > li > a {
+	#menu-top li a {
 		display: block;
 		text-align: center;
 		width: 100px;
 	}
 	
-	#menu-main > ul > li > a:hover,
-	#menu-main > ul > li > a:focus,
-	#menu-main > ul > li > a:active,
-	#menu-user > ul > li > a:hover,
-	#menu-user > ul > li > a:focus,
-	#menu-user > ul > li > a:active {
+	#menu-top li a:hover,
+	#menu-top li a:focus,
+	#menu-top li a:active {
 		background: #eb4b3f;
 		color: #fff;
 	}
@@ -310,10 +300,12 @@ img {
 #sidepanel-content:after,
 #page-header:before,
 #page-header:after,
-#menu-main > ul:before,
-#menu-main > ul:after,
-#menu-user > ul:before,
-#menu-user > ul:after,
+#menu-top > ul:before,
+#menu-top > ul:after,
+#menu-main:before,
+#menu-main:after,
+#menu-user:before,
+#menu-user:after,
 .blocks:before,
 .blocks:after {
 	content: '';
@@ -324,8 +316,9 @@ img {
 #foodtrips:after,
 #sidepanel-content:after,
 #page-header:after,
-#menu-main > ul:after,
-#menu-user > ul:after,
+#menu-top:after,
+#menu-main:after,
+#menu-user:after,
 .blocks:after {
 	clear: both;
 }
@@ -345,7 +338,6 @@ body {
 	background:#fff;
 	border-bottom: 1px solid #eb4b3f;
 	height:70px;
-	overflow:hidden;
 	padding: 0;
 	position:relative;
 	width:100%;
@@ -355,21 +347,76 @@ body {
 		float:left;
 		margin: 0;
 		padding: 0;
-		width: 25%
+		width: 25%;
 	}
 		#page-title > a {
 			margin-left: 20px;
 		}
 	
-	#menu-main {
+	
+	#menu-top {
+		display: block;
+		float: right;
+		width: 75%
+	}
+	#menu-main-container {
 		float:left;
-		width: 50%;
+		width:66.6%;
+	}
+
+
+	#menu-main {
+		margin: 0 auto;
+		width: 300px;
 	}
 	
 	#menu-user {
-		float:left;
-		width:25%;
+		float:right;
+		margin:0;
+		width:33.4%;
 	}
+
+
+	#menu-toggle {
+	display: none;
+	}
+
+@media screen and (max-width: 800px) { 
+	#menu-top {
+		display: none;
+	}
+	#menu-toggle,
+	#menu-top.toggled {
+		display: block;
+	}
+	#menu-toggle {
+		float:right;
+		margin-right: 20px;
+	}
+	#menu-top.toggled  {
+		background: #eb4b3f;
+		position: absolute;
+		top:70px;
+		right:0;
+		width:150px;
+		z-index: 35;
+	}
+	
+	#menu-top.toggled ul {
+		width: 150px;
+	}
+	#menu-top.toggled  li {
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: none;
+		width:150px;
+	}
+	#menu-top.toggled  li a {
+		color:#fff;
+		line-height: 40px;
+		width:150px;
+	}
+}
 
 /*----------------------------------------------------------------- 
 	7.2 - Main
@@ -424,6 +471,7 @@ body {
 	#guidebox {
 		height:580px; /* mapdiv -20px? */
 		left:0px;
+		padding: 0;
 		position:absolute;
 		top:0px;
 		width:100%;

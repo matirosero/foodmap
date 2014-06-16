@@ -59,7 +59,7 @@ AmCharts.ready(function() {
 	};
 			
 	// let's say we want a small map to be displayed, so let's create and add it to the map
-	map.smallMap = new AmCharts.SmallMap();
+	//map.smallMap = new AmCharts.SmallMap();
 			
 	// write the map to container div
 	map.write("mapdiv"); 
@@ -480,6 +480,28 @@ function buttonUp(){
 	}
 }
 
+function toggle_menu() {
+
+	var container,button,menu;
+	
+	button = $('#menu-toggle');
+	menu = $('#menu-top');
+	
+	
+	button.click(function(e){
+		e.preventDefault();
+		menu.addClass('toggled');
+		if (!menu.hasClass()) {
+			menu.addClass('toggled');
+			
+		} else {
+			menu.addClass('toggled');
+		}
+		
+		
+	});
+}
+
 
 // Kick things off.
 $(document).ready(function() {
@@ -489,6 +511,7 @@ $(document).ready(function() {
 	open_side();
 	close_side();
 	open_searchbox();
+	toggle_menu();
 	
 
 	//search_map();
