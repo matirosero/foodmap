@@ -58,6 +58,10 @@ map-1.4.2
 	Resize map back to normal size when sidepanel closes ✔︎
 	Searchbox icon ✔︎
 	integrate resize map thingies into one ✔︎
+	hide menu in mobile ✔︎
+	link to show menu ✔︎
+	
+	TODO: hide link again after click!!
 	
 	TODO: responsive!
 	TODO: fix size change of #searchbox so it's more elegant
