@@ -12,7 +12,10 @@ Ultimo cambio por:	Mati
 >>> INDICE:
 -------------------------------------------------------------------
 0.0 - Media query breakpoints
-1.0 - Small tablet (landscape)	800
+1.0 - Landscape	
+	1.1 - Tablet		1024
+	1.2 - Small tablet	800
+	1.3 - iPhone 5 		568
 
 -----------------------------------------------------------------*/
 
@@ -29,39 +32,188 @@ Ultimo cambio por:	Mati
 */
 
 /*-----------------------------------------------------------------
-1.0 - Small tablet (landscape)	800
+1.0 - Landscape
+-----------------------------------------------------------------*/
+@media all and (orientation:landscape) {
+
+
+
+/*-----------------------------------------------------------------
+	1.1 - Tablet (landscape)	1024
 -----------------------------------------------------------------*/
 
-@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1024px) {
 	
-	#main,
-	#mapdiv
-	#sidepanel {
-		height: 529px;
+		#main,
+		#mapdiv,
+		#sidepanel {
+			height: 637px;
+		}
+		#guidebox {
+			height: 617px;
+		}
+		
+		#foodtrips .blocks li {
+			width:180px;
+		}
+
 	}
-	#sidepanel {
-		height: 529px;
-	}
-	#foodtrips-header h3 {
-		display: none;
-	}
-	#foodtrips .blocks li {
-		width:175px;
-	}
-	
+
+
 }
+
+/*-----------------------------------------------------------------
+	1.2 - Small tablet (landscape)	800
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 800px) {
+	
+		#main,
+		#mapdiv,
+		#sidepanel {
+			height: 470px;
+		}
+		#guidebox {
+			height: 450px;
+		}
+		#foodtrips-header h3 {
+			display: none;
+		}
+		#foodtrips .blocks li {
+			width:175px;
+		}
+	
+	}
+
+/*-----------------------------------------------------------------
+	1.5 - iPhone 5 (landscape)	568
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 568px) {
+
+		#page-header {
+			height:39px;
+			line-height: 39px;
+		}
+
+
+
+	
+		#main,
+		#mapdiv,
+		#sidepanel {
+			height: 280px;
+		}
+		#sidepanel {
+			top:40px; /* 70 +1 border */
+			width:100%; /* o darle valor? */
+		}
+		#guidebox {
+			height: 260px;
+		}
+			#guidebox #info {
+				margin: 50px auto 0;
+				width:450px;
+			}
+			
+		#foodtrips-header {
+			height: 40px;
+		}
+			#foodtrips-header h2, 
+			#foodtrips-header h3,
+			#foodtrips-header p {
+				display: inline-block;
+				margin: 0 1em 0 0;
+				}
+			#foodtrips-header h2 {
+				line-height: 40px;
+			}
+		
+			#foodtrips-header h3 {
+				display: none;
+			}
+			#foodtrips .blocks li {
+				width:162px;
+			}
+	
+	}
+
+/*-----------------------------------------------------------------
+	1.5 - Mobile (landscape)	480
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 480px) {
+
+		#page-header {
+			height:39px;
+			line-height: 39px;
+		}
+
+
+
+	
+		#main,
+		#mapdiv,
+		#sidepanel {
+			height: 280px;
+		}
+		#sidepanel {
+			top:40px; /* 70 +1 border */
+			width:100%; /* o darle valor? */
+		}
+		#guidebox {
+			height: 260px;
+		}
+			#guidebox #info {
+				margin: 40px auto 0;
+				text-align: center;
+				width:430px;
+			}
+			
+		#foodtrips-header {
+			height: 40px;
+		}
+			#foodtrips-header h2, 
+			#foodtrips-header h3,
+			#foodtrips-header p {
+				display: inline-block;
+				margin: 0 1em 0 0;
+				}
+			#foodtrips-header h2 {
+				line-height: 40px;
+			}
+		
+			#foodtrips-header h3 {
+				display: none;
+			}
+			#foodtrips .blocks li {
+				width:133px; /* 210 para que sean 2 */
+			}
+	
+	}
+
+
+}
+
+@media all and (orientation:portrait) {
 
 /*-----------------------------------------------------------------
 1.0 - Tablet (portrait)			768
 -----------------------------------------------------------------*/
 
-@media screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 	
-	#foodtrips .blocks li {
-		width:167px; /* For sidepanel 700px at 960*/
+		#main,
+		#mapdiv
+		#sidepanel {
+			height: 635px;
+		}
+		#foodtrips .blocks li {
+			width:167px; /* For sidepanel 700px at 960*/
+		}
+	
 	}
-	
-}
+
 
 /*-----------------------------------------------------------------
 1.0 - Small tablet (portrait)		600
@@ -74,4 +226,6 @@ Ultimo cambio por:	Mati
 		width:150px; /* For sidepanel 700px at 960*/
 	}
 	
+}
+
 }

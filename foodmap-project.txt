@@ -78,6 +78,9 @@ map-1.4.2
 map-1.4.3
 	Media queries:
 		.block li - 150width with 10padding, so that sidepanel with width 700 and 10padding shows exactl 4
+	Media queries for landscape devices: map size, header size, foodtrips header size and blocks	
+		
+		
 		TODO: fix text in sidepanel and foodtrips, because of padding
 		TODO: fix botom margin of blocks
 		TODO: foodtrips blocks mas grandes en > 980

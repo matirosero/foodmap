@@ -314,8 +314,8 @@ img {
 #menu-main > ul:after,
 #menu-user > ul:before,
 #menu-user > ul:after,
-.blocks > ul:before,
-.blocks > ul:after {
+.blocks:before,
+.blocks:after {
 	content: '';
 	display: table;
 }
@@ -326,7 +326,7 @@ img {
 #page-header:after,
 #menu-main > ul:after,
 #menu-user > ul:after,
-.blocks > ul:after {
+.blocks:after {
 	clear: both;
 }
 
@@ -392,6 +392,7 @@ body {
 
 #page-footer {
 	background:#243139;
+	clear: both;
 	margin:0;
 	padding: 0;
 	width: 100%;
