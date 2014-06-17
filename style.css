@@ -381,42 +381,6 @@ body {
 	display: none;
 	}
 
-@media screen and (max-width: 800px) { 
-	#menu-top {
-		display: none;
-	}
-	#menu-toggle,
-	#menu-top.toggled {
-		display: block;
-	}
-	#menu-toggle {
-		float:right;
-		margin-right: 20px;
-	}
-	#menu-top.toggled  {
-		background: #eb4b3f;
-		position: absolute;
-		top:70px;
-		right:0;
-		width:120px;
-		z-index: 35;
-	}
-	
-	#menu-top.toggled ul {
-		width: 120px;
-	}
-	#menu-top.toggled  li {
-		border-bottom: 1px solid #fff;
-		display: block;
-		float: none;
-		width:120px;
-	}
-	#menu-top.toggled  li a {
-		color:#fff;
-		line-height: 40px;
-		width:120px;
-	}
-}
 
 /*----------------------------------------------------------------- 
 	7.2 - Main
@@ -469,7 +433,7 @@ body {
 	}
 
 	#guidebox {
-		height:580px; /* mapdiv -20px? */
+		height:600px; /* mapdiv -20px? */
 		left:0px;
 		padding: 0;
 		position:absolute;

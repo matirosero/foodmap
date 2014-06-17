@@ -13,7 +13,62 @@ Ultimo cambio por:	Mati
 Declare global variables
 -------------------------------------------------------------------*/
 
+var window_width = $(window).width();
+var window_height = $(window).height();
+console.log('window = ' + window_width +'x'+ window_height);
+
 var search_string=""; //1.4.1.1
+
+var device_orientation;
+
+var sidepanel_width = '700px';
+
+function detect_orientation() {
+	if (window_height > window_width) {
+		device_orientation = 'portrait';
+	} else {
+		device_orientation = 'landscape';
+	}
+	console.log('initial orientation: '+device_orientation);
+	$(window).on("orientationchange",function(event){
+		device_orientation = event.orientation;
+		console.log('orientation is now: '+device_orientation);
+	});
+}
+
+function prepare_mapcontainer() {
+	//console.log('test '+window_width+' '+device_orientation);
+	//if (window_width <= 768 && device_orientation == 'portrait') {
+		var element_height;
+		if (window_width <= 568) {
+			element_height = window_height-80+'px';
+		} else {
+			element_height = window_height-131+'px';
+		}
+		
+		$('#main').css('height',element_height);
+		$('#mapdiv').css('height',element_height);
+		$('#guidebox').css('height',element_height);
+		$('#sidepanel').css('height',element_height);
+	//} 
+}
+
+function prepare_side() {
+	if (window_width <= 600) {
+		console.log('window width = '+window_width)
+		$('#sidepanel').css({
+			width : window_width,
+		});
+		sidepanel_width = window_width;
+	} else if (window_width <= 800) {
+		console.log('window width = '+window_width)
+		$('#sidepanel').css({
+			width : '530px',
+		});
+		sidepanel_width = '530px';
+	}  
+	console.log('sidepanel should be: '+sidepanel_width);
+}
 
 
 /*------------------------------------------------------------------
@@ -149,9 +204,8 @@ AmCharts.ready(function() {
 	// Since 1.4.1.2	
 	function resize_map() { 
 		
-		var window_width;
+		//console.log('sidepanel will change to '+sidepanel_width);
 		window_width = $(window).width();
-		console.log('window = ' + window_width);
 		
 		var original_map_width = $('#mapdiv').width();
 		console.log('original window = ' + original_map_width);
@@ -505,6 +559,9 @@ function toggle_menu() {
 
 // Kick things off.
 $(document).ready(function() {
+	detect_orientation();
+	prepare_mapcontainer();
+	prepare_side();
 	prepare_guidebox();
 	prepare_showinfo();
 	close_btn();

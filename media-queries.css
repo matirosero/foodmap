@@ -57,7 +57,7 @@ Ultimo cambio por:	Mati
 			height: 637px; /*should be only if landscape*/
 		}
 		#guidebox {
-			height: 617px; /*should be only if landscape*/
+			height: 637px; /*should be only if landscape*/
 		}
 		
 		#foodtrips .blocks li {
@@ -88,6 +88,43 @@ Ultimo cambio por:	Mati
 		#foodtrips .blocks li {
 			width:175px;
 		}
+
+	#menu-top {
+		display: none;
+	}
+	#menu-toggle,
+	#menu-top.toggled {
+		display: block;
+	}
+	#menu-toggle {
+		float:right;
+		height: 20px;
+		margin: 4px 20px 0 0;
+	}
+	#menu-top.toggled  {
+		background: #eb4b3f;
+		position: absolute;
+		top:70px;
+		right:0;
+		width:120px;
+		z-index: 35;
+	}
+	
+	#menu-top.toggled ul {
+		width: 120px;
+	}
+	#menu-top.toggled  li {
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: none;
+		width:120px;
+	}
+	#menu-top.toggled  li a {
+		color:#fff;
+		line-height: 40px;
+		width:120px;
+	}
+
 	
 	}
 
@@ -188,6 +225,11 @@ Ultimo cambio por:	Mati
 			#foodtrips .blocks li {
 				width:162px;
 			}
+
+	#menu-top.toggled  {
+		top:40px;
+	}
+
 	
 	}
 
@@ -241,6 +283,42 @@ Ultimo cambio por:	Mati
 			#foodtrips .blocks li {
 				width:133px; /* 210 para que sean 2 */
 			}
+
+	#menu-top {
+		display: none;
+	}
+	#menu-toggle,
+	#menu-top.toggled {
+		display: block;
+	}
+	#menu-toggle {
+		float:right;
+		margin-right: 20px;
+	}
+	#menu-top.toggled  {
+		background: #eb4b3f;
+		position: absolute;
+		top:70px;
+		right:0;
+		width:120px;
+		z-index: 35;
+	}
+	
+	#menu-top.toggled ul {
+		width: 120px;
+	}
+	#menu-top.toggled  li {
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: none;
+		width:120px;
+	}
+	#menu-top.toggled  li a {
+		color:#fff;
+		line-height: 40px;
+		width:120px;
+	}
+
 	
 	}
 
