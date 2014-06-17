@@ -398,23 +398,23 @@ body {
 		position: absolute;
 		top:70px;
 		right:0;
-		width:150px;
+		width:120px;
 		z-index: 35;
 	}
 	
 	#menu-top.toggled ul {
-		width: 150px;
+		width: 120px;
 	}
 	#menu-top.toggled  li {
 		border-bottom: 1px solid #fff;
 		display: block;
 		float: none;
-		width:150px;
+		width:120px;
 	}
 	#menu-top.toggled  li a {
 		color:#fff;
 		line-height: 40px;
-		width:150px;
+		width:120px;
 	}
 }
 
