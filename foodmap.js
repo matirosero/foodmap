@@ -490,12 +490,12 @@ function toggle_menu() {
 	
 	button.click(function(e){
 		e.preventDefault();
-		menu.addClass('toggled');
-		if (!menu.hasClass()) {
+		//menu.addClass('toggled');
+		if (!menu.hasClass('toggled')) {
 			menu.addClass('toggled');
 			
 		} else {
-			menu.addClass('toggled');
+			menu.removeClass('toggled');
 		}
 		
 		
