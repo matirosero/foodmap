@@ -224,22 +224,7 @@ a:active {
 2.2 Botones
 --------------------------------------------------------------*/
 
-.close {
-	-webkit-border-radius: 9px;
-	-moz-border-radius: 9px;
-	border-radius: 9px;
 
-	background:#404040;
-	color:#fff;
-	display:inline-block;
-	font-family: 'Lato',sans-serif;
-	font-size: 12px;
-	font-weight:700;
-	line-height:18px;
-	text-align: center;
-	text-transform:uppercase;
-	width: 18px;
-}
 
 /*--------------------------------------------------------------
 2.3 Menus
@@ -310,16 +295,31 @@ a:focus .icon,
 	margin-top:21px;
 }
 
+.modal-content .icon {
+	display:block;
+	margin: 0 auto 1em;
+}
+
 
 /*-----------------------------------------------------------------
 6.0 - Estilos genéricos
 -----------------------------------------------------------------*/
 
 .modal {
-	background: #2d3035;
-	color: #fff;
-	padding: 10px;
+	padding: 0px;
 }
+	.modal-header {
+		background: #2d3035;
+		color: #fff;
+		padding: 10px;
+	}
+		.modal-header h4 {
+			margin: 0;
+			padding: 0;
+		}
+	.modal-content {
+		padding: 10px;
+	}
 .shadow {
 -webkit-box-shadow: 0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 -moz-box-shadow:    0px 0px 7px 0px rgba(25, 25, 25, 0.25);
@@ -502,6 +502,8 @@ body {
 	}
 
 	#guidebox {
+		background: #2d3035;
+		color:#fff;
 		display: table;
 		height:600px; /* mapdiv -20px? */
 		left:0px;
@@ -542,12 +544,29 @@ body {
 	#showinfo {
 		background: #fff;
 		height:150px;
-		left:200px;
+		left:0;
 		position:absolute;
-		top:155px;
+		top:0;
 		width:300px;
 		z-index:25;
 	}
+		#showinfo .close {
+			position: absolute;
+			right:10px;
+			top:10px;
+		}
+
+		#showinfo span {
+			display: block;
+			text-align: center;
+			width:50%;
+		}
+		#showinfo .ingredients {
+			float: left;
+		}
+		#showinfo .recipe {
+			float: right;
+		}
 
 	#searchbox {
 		height:50px;

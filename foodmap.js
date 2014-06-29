@@ -298,7 +298,7 @@ function show_guidebox() {
 //Prepare showinfo tooltip
 //TODO: change to more explanatory name?
 function prepare_showinfo() {
-	$("#showinfo").hide();
+	//$("#showinfo").hide();
 }
 
 
@@ -316,7 +316,8 @@ function populate_showinfo(country_name,country_code) {
 
 	var new_content;
 	var filter_results;
-	new_content = '<h4>' + country_name + '</h4>';
+	new_place_name = '<h4>' + country_name + '</h4>';
+	new_content = '';
 
 	if(search_string !=="") {
 
@@ -337,7 +338,8 @@ function populate_showinfo(country_name,country_code) {
 
 	$("#showinfo").css("opacity","0.75");
 
-	$("#content").html(new_content);
+	$(".modal-header").html(new_place_name);
+	$(".modal-content").html(new_content);
 
 	open_side();
 	populate_side(country_name,country_code);

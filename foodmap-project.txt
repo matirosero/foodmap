@@ -93,6 +93,7 @@ map-1.4.3
 
 
 29 junio: took out jquery mobile for now
+	TODO: rework modal window so it works with pretty stuff
 
 
 COSAS QUE NO VAN A FUNCIONAR EN PROTOTIPO:
