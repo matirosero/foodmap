@@ -267,11 +267,42 @@ Ultimo cambio por:	Mati
 				</div><!-- /#info -->
 			</div><!-- /#guidebox -->
 
+<div id="showinfo" class="modal" style="display: block; opacity: 0.75;">
+
+				<a class="close-this close">x</a>
+
+				<!-- #content -->
+				<div id="content"><h4>Russia</h4><a class="clickme" href="#about">80 Ingredientes</a> | 			 <a class="clickme" href="#about">24 Platos</a></div><!-- /#content -->
+
+			</div>
+
+
 
 			<!-- #showinfo: div flotante donde aparece info básica del país -->
 			<div id="showinfo" class="modal">
 
 				<a class="close-this close">x</a>
+
+				<!-- #content -->
+				<div id="content">
+					<h4>Japón</h4>
+<!--
+*******************************************
+	Add span to js
+*******************************************
+-->
+					<span class="ingredients">
+						<a class="clickme" href="#about">80 Ingredientes</a>
+					</span>
+<!--
+*******************************************
+	Add span to js, change all recipe to dish
+*******************************************
+-->
+					<span class="recipe">
+						<a class="clickme" href="#about">24 Platos</a>
+					</span>
+				</div><!-- /#content -->
 
 				<!-- #content -->
 				<div id="content">
@@ -292,7 +323,7 @@ Ultimo cambio por:	Mati
 		<!-- #foodtrips -->
 		<section id="foodtrips">
 			<header id="foodtrips-header" class="section-header">
-				<div class="foodtrips-container">
+				<div class="global-container">
 					<h2>Food<span class="light">Trips</span></h2>
 					<h3>¿Perdiste el norte?</h3>
 					<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
@@ -300,38 +331,56 @@ Ultimo cambio por:	Mati
 			</header>
 
 			<!-- #foodtrips-content -->
-			<div id="foodtrips-content" class="foodtrips-container">
+			<div id="foodtrips-content" class="global-container">
 
 				<!-- .blocks -->
 				<ul class="blocks">
-					<li>
+					<li class="shadow">
 						<a class="foodtrip-link" href="">
-							<img src="images/foodtrip-1.jpg" alt="" />
-							<h4 class="foodtrip-name">India</h4>
+							<div class="block-thumbnail">
+								<img src="images/foodtrip-1.jpg" alt="" />
+							</div>
+							<div class="foodtrip-link-name">
+								<h4 class="foodtrip-name">India</h4>
+							</div>
 						</a>
 						</li>
-					<li>
+					<li class="shadow">
 						<a class="foodtrip-link" href="">
-							<img src="images/foodtrip-1.jpg" alt="" />
+							<div class="block-thumbnail">
+								<img src="images/foodtrip-1.jpg" alt="" />
+							</div>
+
 							<h4 class="foodtrip-name">El Caribe</h4>
 						</a>
 					</li>
-					<li>
+					<li class="shadow">
 						<a class="foodtrip-link" href="">
-							<img src="images/foodtrip-1.jpg" alt="" />
+							<div class="block-thumbnail">
+								<img src="images/foodtrip-1.jpg" alt="" />
+							</div>
+
 							<h4 class="foodtrip-name">Italia</h4>
 						</a>
 					</li>
-					<li>
+					<li class="shadow">
 						<a class="foodtrip-link" href="">
-							<img src="images/foodtrip-1.jpg" alt="" />
+							<div class="block-thumbnail">
+								<img src="images/foodtrip-1.jpg" alt="" />
+							</div>
+
 							<h4 class="foodtrip-name">Costa Brava</h4>
 						</a>
 					</li>
-					<li>
+					<li class="shadow">
 						<a class="foodtrip-link-create" href="">
-							<p>Crea tu propia ruta gastronómica</p>
-							<h4 class="foodtrip-name">Mi Food<span class="light">Trip</span></h4>
+							<div class="block-thumbnail">
+								<span>Crea tu propia ruta gastronómica</span>
+							</div>
+
+							<h4 class="foodtrip-name">Mi Food<span class="light">Trip</span>
+								<svg class="icon icon-foodtrip-add" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><path d="M17.072 2.929c-3.905-3.905-10.237-3.905-14.143 0C-0.976 6.833-0.976 13.2 2.9 17.1 c3.904 3.9 10.2 3.9 14.142-0.001S20.977 6.8 17.1 2.929z M16.412 10.5c0 0.553-0.447 0.729-1 0.729h-1h-3v3v1 c0 0.552-0.447 1-1 1h-1c-0.552 0-1-0.448-1-1v-1v-3h-3h-1c-0.552 0-1-0.176-1-0.729v-1c0-0.552 0.448-1.271 1-1.271h1h3v-3v-1 c0-0.553 0.448-1 1-1h1c0.553 0 1 0.4 1 1v1v3h3h1c0.553 0 1 0.7 1 1.271V10.5z" class="style0"/></svg>
+							</h4>
 						</a>
 					</li>
 				</ul><!-- /.blocks -->

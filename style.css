@@ -50,7 +50,7 @@ Ultimo cambio por:	Mati
 	Texto normal	#404040		gris oscuro
 	Links			#f7370		rojo vermellon			#eb4b3f
 	Linkover		#f99d1c		amarillo naranja		?
-	Plastas oscuras	#243139		gris azulado oscuro
+	Plastas oscuras	# 243139		gris azulado oscuro 	#2d3035
 	Plastas medias	#d2d6d7		gris medio
 */
 
@@ -192,6 +192,19 @@ a:active {
 	color: #f99d1c;
 }
 
+.blocks li a {
+	display: block;
+}
+.blocks li a:hover,
+.blocks li a:focus,
+.blocks li a:active {
+	color: #fff;
+}
+.blocks li a:hover h4,
+.blocks li a:focus h4,
+.blocks li a:active h4 {
+	background: #eb4b3f;
+}
 
 
 #sidepanel a {
@@ -269,6 +282,10 @@ img {
 	max-width:100%; /* no tocar */
 }
 
+.blocks li a img {
+	display: block;
+}
+
 
 /*-----------------------------------------------------------------
 5.1 - Iconos
@@ -299,23 +316,44 @@ a:focus .icon,
 -----------------------------------------------------------------*/
 
 .modal {
-	background: #243139;
+	background: #2d3035;
 	color: #fff;
 	padding: 10px;
 }
-
+.shadow {
+-webkit-box-shadow: 0px 0px 7px 0px rgba(25, 25, 25, 0.25);
+-moz-box-shadow:    0px 0px 7px 0px rgba(25, 25, 25, 0.25);
+box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
+}
+.global-container {
+	margin:0 auto;
+	width:960px;
+}
 .blocks {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 	.blocks li {
-		background: #fff;
+		background: #ddd;
 		display: inline-block;
 		float:left;
 		margin: 10px;
-		width:150px; /* For sidepanel 700px at 960*/
+		width:172px; /* For sidepanel 700px at 960*/
 	}
+		.blocks .block-thumbnail {
+			display: block;
+			height: 172px;
+			width: 172px;
+		}
+		.blocks li h4 {
+			background: #fff;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			margin:0px;
+			padding: 5px 10px;
+		}
 
 
 /*--------------------------------------------------------------
@@ -432,7 +470,7 @@ body {
 -----------------------------------------------------------------*/
 
 #page-footer {
-	background:#243139;
+	background:#2d3035;
 	clear: both;
 	margin:0;
 	padding: 0;
@@ -502,11 +540,12 @@ body {
 
 
 	#showinfo {
+		background: #fff;
 		height:150px;
 		left:200px;
 		position:absolute;
-		top:150px;
-		width:250px;
+		top:155px;
+		width:300px;
 		z-index:25;
 	}
 
@@ -609,19 +648,21 @@ body {
 --------------------------------------------------------------*/
 
 #foodtrips {
-	background: #d2d6d7;
+	background: #fff;
 	margin: 0;
 	padding: 0;
 }
-	.foodtrips-container {
-		margin:0 auto;
-		width:960px;
-	}
+
 	#foodtrips-header {
 		background: #eb4b3f;
 		color: #fff;
 		height: 60px;
 		padding: 0px 20px;
+	}
+	#foodtrips-header .global-container {
+		margin:0 auto;
+		padding: 0 10px;
+		width:940px;
 	}
 		#foodtrips-header h2,
 		#foodtrips-header h3,
@@ -634,16 +675,36 @@ body {
 		}
 
 	#foodtrips-content {
-		padding: 10px;
+		padding: 10px 0;
 	}
 
 	#foodtrips .blocks li {
-		width:147px; /* For sidepanel 700px at 960*/
+		width:172px; /* For sidepanel 700px at 960*/
 	}
 
 	.foodtrip-link {
 
 	}
+		.foodtrip-link-create .block-thumbnail {
+			background: url('images/bg-foodtrip-add.svg') 0 0 no-repeat;
+			color: #fff;
+			position: relative;
+		}
+			.foodtrip-link-create .block-thumbnail span {
+				position: absolute;
+				bottom:15px;
+				left:15px;
+				width:90px;
+			}
+		.foodtrip-link-create h4 {
+			position: relative;
+		}
+		.foodtrip-link-create h4 .icon {
+			position: absolute;
+			right: 10px;
+			top: 15px;
+		}
+
 		.foodtrip-name {
 
 		}

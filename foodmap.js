@@ -45,12 +45,12 @@ function prepare_mapcontainer() {
 		} else {
 			element_height = window_height-131+'px';
 		}
-		
+
 		$('#main').css('height',element_height);
 		$('#mapdiv').css('height',element_height);
 		$('#guidebox').css('height',element_height);
 		$('#sidepanel').css('height',element_height);
-	//} 
+	//}
 }
 
 function prepare_side() {
@@ -66,7 +66,7 @@ function prepare_side() {
 			width : '530px',
 		});
 		sidepanel_width = '530px';
-	}  
+	}
 	console.log('sidepanel should be: '+sidepanel_width);
 }
 
@@ -77,20 +77,20 @@ AM Map function + what I need added to it
 
 // add all your code to this method, as this will ensure that page is loaded
 AmCharts.ready(function() {
-	
+
 	//AmCharts.theme = AmCharts.themes.dark;
-	
+
 	// create AmMap object
 	var map = new AmCharts.AmMap();
-	
+
 	// set path to images
 	map.pathToImages = "ammap/images/";
-			    
+
 	/* create data provider object
 	 mapVar tells the map name of the variable of the map data. You have to
 	 view source of the map file you included in order to find the name of the
 	 variable - it's the very first line after commented lines.
-		
+
 	 getAreasFromMap indicates that amMap should read all the areas available
 	 in the map data and treat them as they are included in your data provider.
 	 in case you don't set it to true, all the areas except listed in data
@@ -102,7 +102,7 @@ AmCharts.ready(function() {
 	};
 	// pass data provider to the map object
 	map.dataProvider = dataProvider;
-			
+
 	/* create areas settings
 	* autoZoom set to true means that the map will zoom-in when clicked on the area
 	* selectedColor indicates color of the clicked area.
@@ -112,22 +112,22 @@ AmCharts.ready(function() {
 		selectedColor: "#CC0000",
 		color: "#aaaaaa"
 	};
-			
+
 	// let's say we want a small map to be displayed, so let's create and add it to the map
 	//map.smallMap = new AmCharts.SmallMap();
-			
+
 	// write the map to container div
-	map.write("mapdiv"); 
-	
-				    
+	map.write("mapdiv");
+
+
 	//http://jsfiddle.net/amcharts/k67gB/light/
 	map.addListener("clickMapObject", function (event) {
-					
+
 		var country_name;
 		var country_code;
 		country_name = event.mapObject.title;
 		country_code = event.mapObject.id;
-		
+
 		//call other functions when click on country
 		close_guidebox();
 		show_showinfo();
@@ -135,12 +135,12 @@ AmCharts.ready(function() {
 		resize_map(); //1.4.1.2
 
 	});
-	
-	
-	
+
+
+
 	/* FoodMap specific functions
 	-------------------------------------------------------------------*/
-				
+
 	//Clear map of all selections
 	function clear_map() {
 		event.preventDefault();
@@ -148,27 +148,27 @@ AmCharts.ready(function() {
 		map.validateNow();
 		$("#results").html('');
 	}
-	
+
 	//Call clear function on click "Clear"
 	$("#clear").click(clear_map());
-				
-				
+
+
 	//Search for ingredient or dish
 	function search_map() {
-	
+
 		$(".searchbox-submit").click(function() {
-		
+
 			event.preventDefault();
-		
+
 			//Clear map of all selected regions
 			clear_map();
-						
+
 			//Get search string
 			search_string = $(".searchbox-input").val(); //In 1.4.1.2, search string is DECLARED here, why not in 1.4.1.1?
 
 			//Convert search string to country code
 			if(search_string) {
-			
+
 				if(search_string == 'rice' || search_string == 'arroz') {
 					search_string = 'arroz';
 					country_code = ['JP','IN','CR'];
@@ -178,65 +178,65 @@ AmCharts.ready(function() {
 				} else if(search_string == 'sushi') {
 					country_code = ['JP'];
 				}
-			
+
 				//Add countries to array for display
-				for (var id in country_code) { 
+				for (var id in country_code) {
 					$("#results").append(' ' + search_string + ' (ID: ' + country_code[id] + ')');
 				}
-			
+
 			}
-												
+
 			//Push countries to selected array
-			for (var id in country_code) { 
+			for (var id in country_code) {
 				map.dataProvider.areas.push({ id: country_code[id], showAsSelected: true});
-			}						
-						
+			}
+
 			//Esto hace que el mapa haga su gracia
 			//Reflect changes in map
 			map.validateNow();
-		
+
 		});
-	}				
+	}
 	search_map();
 
 
 	// Resize map
-	// Since 1.4.1.2	
-	function resize_map() { 
-		
+	// Since 1.4.1.2
+	function resize_map() {
+
 		//console.log('sidepanel will change to '+sidepanel_width);
 		window_width = $(window).width();
-		
+
 		var original_map_width = $('#mapdiv').width();
 		console.log('original window = ' + original_map_width);
-		
+
 		var new_map_width = window_width - 710 + 'px'; //change this to - 700
 		console.log('new map width = ' + new_map_width);
-		
+
 		function toggle_map_size(map_width,margin_left){
-			
+
 			$('#mapdiv').css({
 				width : map_width,
 				marginLeft: margin_left
-				
+
 			});
-				
+
 			map.validateNow();
 		}
-		
+
 		$("a.clickme").click(function(e){
 			toggle_map_size(new_map_width,'700px')
 		});
-		
-		$('#close-sidepanel').click(function(e){			
+
+		$('#close-sidepanel').click(function(e){
 			toggle_map_size(original_map_width,0)
 		});
-		
+
 	}
-							    
+
 });
 
-	
+
 /*------------------------------------------------------------------
 Functions not specifically associated with AM Map
 -------------------------------------------------------------------*/
@@ -244,8 +244,8 @@ Functions not specifically associated with AM Map
 
 
 //Generic close btn
-function close_btn() {   
-	
+function close_btn() {
+
 	//Close window on click
 	$(".close-this").click(function(){
 		$(this).parent().hide();
@@ -255,8 +255,8 @@ function close_btn() {
 
 //Initialize first modal window
 //TODO: change name from guidebox to something more explanatory
-function prepare_guidebox() {   
-	
+function prepare_guidebox() {
+
 	// OPACITY OF BUTTON SET TO 50%
 	$("#guidebox").css("opacity","0.9");
 
@@ -267,8 +267,8 @@ function prepare_guidebox() {
 			$("#guidebox").hide();
 		}
 	);
-	
-	//Close window when click outside of it	
+
+	//Close window when click outside of it
 	$(document).click(function() {
 		close_guidebox();
 	})
@@ -306,18 +306,18 @@ function prepare_showinfo() {
 //TODO: change to more explanatory name?
 function show_showinfo() {
 	$("#showinfo").show();
-	
+
 }
 
 
 //Load country info into showinfo tooltip
 //Add variable for search (?)
 function populate_showinfo(country_name,country_code) {
-	 	
+
 	var new_content;
 	var filter_results;
 	new_content = '<h4>' + country_name + '</h4>';
-	
+
 	if(search_string !=="") {
 
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
@@ -334,14 +334,14 @@ function populate_showinfo(country_name,country_code) {
 		new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
 			 <a class="clickme" href="#about">24 Platos</a>';
 	}
-		
+
 	$("#showinfo").css("opacity","0.75");
 
 	$("#content").html(new_content);
-	
+
 	open_side();
 	populate_side(country_name,country_code);
-	
+
 	$(".filter a").click(
 		function(event){
 
@@ -351,7 +351,7 @@ function populate_showinfo(country_name,country_code) {
 
 			$(this).closest("#info").find('li:not(.'+filter_selector+')').hide();
 			$(this).closest("#info").find("li."+filter_selector).show();
-			
+
 		}
 	);
 }
@@ -359,50 +359,50 @@ function populate_showinfo(country_name,country_code) {
 
 //Populate sidepanel with appropriate info
 function populate_side(country_name,country_code,search_terms) {
-	
+
 	//TODO: no esta poniendo en cero si se hace click luego de haber buscado
-	
+
 	var new_side_content;
-	
+
 	//When click links in showinfo
 	$("a.clickme").on("click", function(){
-		
+
 		var result_text = $(this).text();
 		var result_number = result_text.match(/\d+/);
 		var result_text = result_text.replace(/[0-9]+\s/g, "");
 		var result_kind;
 		var result_class;
-		
+
 		//If the user clicks on the INGREDIENTS or PLATOS link
-		if (result_text == "Ingredientes" || result_text == "Platos") { 
+		if (result_text == "Ingredientes" || result_text == "Platos") {
 
 			//TODO: doesn't take into account if it's just ingredients for a dish
 			result_kind = result_text;
-			
+
 		} else {
-			
+
 			//If user clicks on a specific dish or ingredient, get the different variables from the string
-			
+
 			//KIND of result: Ingrediente or Plato
 			result_kind = result_text.match(/^[a-zA-Z]+/g); //FIXED WHITESPACE PROBLEM
-			
+
 			//Name of the specific thing being searched (i.e. arroz or sushi)
-			//Get rid of whitespace and parenthesis	
+			//Get rid of whitespace and parenthesis
 			var result_name = result_text.replace(result_kind, "").replace(" (", "").replace(")", "");
 
 		}
-		
-		
+
+
 		//Set result_class from result_kind
 		if (result_kind == 'Ingredientes' || result_kind == 'Ingrediente') {
 			result_class = 'ingredient';
 		} else if (result_kind == 'Platos' || result_kind == 'Plato') {
 			result_class = 'recipe';
 		}
-		
-		
+
+
 		//Generate side content START
-		
+
 		//Generate <h2>
 		if (!result_name) {
 			//If there's no specific result going in
@@ -413,15 +413,15 @@ function populate_side(country_name,country_code,search_terms) {
 			console.log('Si hay');
 			new_side_content = '<h2>' + result_name + ' <span class="light">de ' + country_name + '</span></h2>';
 		}
-		
+
 		//Add paragraph and open <ul>
 		new_side_content += '<p>Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Mauris eleifend vehicula nisi at gravida. Quisque viverra quam nec lorem congue commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim. Donec tincidunt faucibus ultrices.</p>\
 		<ul class="blocks">';
-			
-		
-		//Loop through results and create their content	
+
+
+		//Loop through results and create their content
 		var c = 0;
-		for (var c=0; c<result_number; c++) { 
+		for (var c=0; c<result_number; c++) {
 			new_side_content += '<li class="foodresult ' + result_class + '">\
 				<a class="foodresult-image" href="">\
 					<img src="images/' + result_class + '.jpg" alt="" />\
@@ -429,29 +429,29 @@ function populate_side(country_name,country_code,search_terms) {
 					<h4>Nombre del ingrediente</h4>\
 				</a></li>';
 		}
-		
+
 		//Close </ul>
 		new_side_content += '</ul>';
-			
+
 		//Insert content in sidepanel
-		$("#sidepanel-content").html(new_side_content);		
-		
+		$("#sidepanel-content").html(new_side_content);
+
 	});
 }
 
 
 //Open side panel function
 function open_side() {
-	
+
 	$("a.clickme").on("click", function(e){ //$("[class^=main]")
     	e.preventDefault();
-    
+
 		//alert('open sesame');
 		var hrefval = $(this).attr("href");
-    
-		if(hrefval == "#about") { 
+
+		if(hrefval == "#about") {
     		var distance = $('#main').css('right');
-      
+
 			if(distance == "auto" || distance == "0px") {
         		$(this).addClass("open");
 				openSidepage();
@@ -476,27 +476,27 @@ function close_side() {
 function openSidepage() {
 	$('#main').animate({
 		right: '700px'
-    }, 400, 'easeOutBack'); 
+    }, 400, 'easeOutBack');
 }
-  
+
 
 function closeSidepage(){
     $("#navigation li a").removeClass("open");
     $('#main').animate({
     	right: '0px'
-    }, 400, 'easeOutQuint');  
+    }, 400, 'easeOutQuint');
 }
 
 
-//Open search box 
+//Open search box
 //http://thecodeblock.com/expanding-search-bar-with-jquery-tutroial/
 function open_searchbox() {
 	var submitIcon = $('.searchbox-icon');
 	var inputBox = $('.searchbox-input');
 	var searchBox = $('.searchbox');
-	
+
 	var isOpen = false;
-	
+
 	submitIcon.click(function(){
 		if(isOpen == false){
 			$('#searchbox').css('width','300px'); //TODO: inelegant, change
@@ -537,22 +537,22 @@ function buttonUp(){
 function toggle_menu() {
 
 	var container,button,menu;
-	
+
 	button = $('#menu-toggle');
 	menu = $('#menu-top');
-	
-	
+
+
 	button.click(function(e){
 		e.preventDefault();
 		//menu.addClass('toggled');
 		if (!menu.hasClass('toggled')) {
 			menu.addClass('toggled');
-			
+
 		} else {
 			menu.removeClass('toggled');
 		}
-		
-		
+
+
 	});
 }
 
@@ -569,7 +569,7 @@ $(document).ready(function() {
 	close_side();
 	open_searchbox();
 	toggle_menu();
-	
+
 
 	//search_map();
 });
