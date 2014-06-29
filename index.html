@@ -19,21 +19,23 @@ Ultimo cambio por:	Mati
 	<title>FoodMap</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	
-	
+
+
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link href="media-queries.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/foodmap/ammap/ammap.css" type="text/css">
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" /> -->
+
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
 	<!-- External scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 
 	<!-- AM Map scripts -->
@@ -44,8 +46,8 @@ Ultimo cambio por:	Mati
 
 	<!-- Custom scripts -->
 	<script src="foodmap.js" type="text/javascript"></script>
-	
-	
+
+
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -91,7 +93,7 @@ Ultimo cambio por:	Mati
 		</h1><!-- /#page-title -->
 
 		<!-- #menu-top: menús arriba -->
-		
+
 		<a id="menu-toggle" href="#menu-main">
 				<svg x="0px" y="0px" width="24px" height="20px">
 <g>
@@ -108,7 +110,7 @@ Ultimo cambio por:	Mati
 </svg>
 			</a>
 		<nav id="menu-top">
-			
+
 			<div id="menu-main-container"><!-- #menu-main: menú principal -->
 				<ul id="menu-main">
 				<li>
@@ -124,13 +126,19 @@ Ultimo cambio por:	Mati
 			</div><!-- /#menu-main -->
 
 			<ul id="menu-user"><!-- #menu-user: menú del usuari: login, etc -->
+				<li class="icon-container">
+					<a href="">
+						<svg class="icon icon-share" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve"><g><g><path d="M17.973 16.936c-0.705 0-1.354 0.241-1.874 0.64l-5.362-3.217c0.027-0.165 0.043-0.333 0.043-0.505 c0-0.173-0.017-0.34-0.043-0.505l5.362-3.217c0.52 0.4 1.2 0.6 1.9 0.64c1.701 0 3.083-1.38 3.083-3.082 c0-1.703-1.382-3.083-3.083-3.083c-1.702 0-3.082 1.38-3.082 3.083c0 0.2 0 0.3 0 0.504l-5.362 3.2 c-0.52-0.399-1.168-0.64-1.875-0.64c-1.701 0-3.083 1.38-3.083 3.083s1.381 3.1 3.1 3.082c0.707 0 1.355-0.239 1.875-0.641 l5.362 3.219c-0.027 0.164-0.044 0.331-0.044 0.505c0 1.7 1.4 3.1 3.1 3.082c1.701 0 3.083-1.38 3.083-3.082 S19.674 16.9 18 16.936z" class="style0"/></g></g><g><path d="M13.854 27.854c-7.719 0-14-6.28-14-14c0-7.719 6.281-14 14-14c7.72 0 14 6.3 14 14 C27.854 21.6 21.6 27.9 13.9 27.854z M13.854 0.363c-7.439 0-13.491 6.052-13.491 13.5 c0 7.4 6.1 13.5 13.5 13.491c7.438 0 13.491-6.053 13.491-13.491C27.345 6.4 21.3 0.4 13.9 0.363z" class="style0"/></g></svg>
+
+					</a>
+				</li>
 				<li>
 					<a href="">Login</a>
 				</li>
 			</ul><!-- #menu-user -->
 		</nav><!-- /#menu-top -->
-		
-		
+
+
 
 	</header><!-- /#page-header -->
 
@@ -200,7 +208,7 @@ Ultimo cambio por:	Mati
 
 				<span>
 					<form method="post" action="#" class="searchbox">
-						<input type="text" name="search" class='searchbox-input' placeholder="ya sabes lo que buscas?" onkeyup="buttonUp();" required />
+						<input type="text" name="search" class='searchbox-input' placeholder="¿Ya sabes lo que buscas?" onkeyup="buttonUp();" required />
 						<button type="submit" class="searchbox-submit">
 							<svg class="icon-search" x="0px" y="0px" width="50px" height="50px">
 	 							<g>
@@ -244,20 +252,17 @@ Ultimo cambio por:	Mati
 
 			<!-- #guidebox: div flotante textos de ayuda -->
 			<div id="guidebox" class="modal">
-				<a class="close-this close">x</a>
 				<div id="info">
+					<img src="images/icon-intro.svg" />
 
 					<h2>
-						<a class="go-map" href="#donde">¿Dónde quieres<br />
-						comer hoy?</a>
+						¿Dónde quieres comer hoy?
 					</h2>
 					<p>
-						¿Te apetece conocer qué platos o productos se consumen en cualquier parte del mundo que se te ocurra?
-						<br />
-						¡Vamos! ¡Explora y viaja por el mapa!
+						Conoce qué platos o productos se consumen en cualquier parte del mundo. ¡Explora y viaja por el mapa!
 					</p>
-					<input type="checkbox" name="" value="">
-					<label for="">No quiero volver a ver este mensaje al entrar</label>
+					<input type="checkbox" name="intro-message-checkbox" value="">
+					<label for="intro-message-checkbox">No quiero volver a ver este mensaje al entrar</label>
 
 				</div><!-- /#info -->
 			</div><!-- /#guidebox -->
@@ -287,14 +292,16 @@ Ultimo cambio por:	Mati
 		<!-- #foodtrips -->
 		<section id="foodtrips">
 			<header id="foodtrips-header" class="section-header">
-				<h2>Food<span class="light">Trips</span></h2>
-				<h3>¿Perdiste el norte?</h3>
-				<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
+				<div class="foodtrips-container">
+					<h2>Food<span class="light">Trips</span></h2>
+					<h3>¿Perdiste el norte?</h3>
+					<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
+				</div>
 			</header>
 
 			<!-- #foodtrips-content -->
-			<div id="foodtrips-content">
-			
+			<div id="foodtrips-content" class="foodtrips-container">
+
 				<!-- .blocks -->
 				<ul class="blocks">
 					<li>
@@ -322,19 +329,13 @@ Ultimo cambio por:	Mati
 						</a>
 					</li>
 					<li>
-						<a class="foodtrip-link" href="">
-							<img src="images/foodtrip-1.jpg" alt="" />
-							<h4 class="foodtrip-name">Costa Brava</h4>
-						</a>
-					</li>
-					<li>
 						<a class="foodtrip-link-create" href="">
 							<p>Crea tu propia ruta gastronómica</p>
 							<h4 class="foodtrip-name">Mi Food<span class="light">Trip</span></h4>
 						</a>
 					</li>
 				</ul><!-- /.blocks -->
-			
+
 			</div>
 			<!-- /#foodtrips-content -->
 
