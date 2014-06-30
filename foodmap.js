@@ -298,7 +298,7 @@ function show_guidebox() {
 //Prepare showinfo tooltip
 //TODO: change to more explanatory name?
 function prepare_showinfo() {
-	//$("#showinfo").hide();
+	$("#showinfo").hide();
 }
 
 
@@ -316,30 +316,39 @@ function populate_showinfo(country_name,country_code) {
 
 	var new_content;
 	var filter_results;
-	new_place_name = '<h4>' + country_name + '</h4>';
-	new_content = '';
+	var new_place_name = '<h4>' + country_name + '</h4>';
+	//new_content = '';
+	var new_ingredients;
+	var new_recipe;
 
 	if(search_string !=="") {
 
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
 			result_kind = 'Ingrediente';
-			new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
-			 <a class="clickme" href="#about">24 Platos</a>';
+			new_ingredients = '1 '+ result_kind +' (' + search_string + ')';
+			new_recipe = '24 Platos';
+			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
+			 //<a class="clickme" href="#about">24 Platos</a>';
 		} else if(search_string == 'sushi') {
 			result_kind = 'Plato';
-			new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
-			 <a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
+			new_ingredients = '4 Ingredientes';
+			new_recipe = '1 '+ result_kind +' (' + search_string + ')';
+			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
+			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
 		}
 
 	} else {
-		new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
-			 <a class="clickme" href="#about">24 Platos</a>';
+		new_ingredients = '80 Ingredientes';
+		new_recipe = '24 Platos';
+		//new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
+			 //<a class="clickme" href="#about">24 Platos</a>';
 	}
 
-	$("#showinfo").css("opacity","0.75");
+	$("#showinfo").css("opacity","1.0");
 
 	$(".modal-header").html(new_place_name);
-	$(".modal-content").html(new_content);
+	$(".modal-content .ingredients").html(new_ingredients);
+	$(".modal-content .recipe").html(new_recipe);
 
 	open_side();
 	populate_side(country_name,country_code);

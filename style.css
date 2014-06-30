@@ -320,6 +320,14 @@ a:active .icon {
 	.modal-content {
 		padding: 10px;
 	}
+
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+
 .shadow {
 -webkit-box-shadow: 0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 -moz-box-shadow:    0px 0px 7px 0px rgba(25, 25, 25, 0.25);
@@ -557,16 +565,15 @@ body {
 			top:10px;
 		}
 
-		#showinfo span {
+		#showinfo .left,
+		#showinfo .right {
 			display: block;
 			text-align: center;
 			width:50%;
 		}
 		#showinfo .ingredients {
-			float: left;
 		}
 		#showinfo .recipe {
-			float: right;
 		}
 
 	#searchbox {
