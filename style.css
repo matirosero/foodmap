@@ -732,7 +732,7 @@ body {
 	color:#222;
 	display:block;
 	height:600px;
-	overflow:hidden;
+	overflow:auto;
 	padding:0;
 	padding-top:0;
 	position:absolute;
