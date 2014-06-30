@@ -47,10 +47,10 @@ Ultimo cambio por:	Mati
 	0.1 - Colores
 -----------------------------------------------------------------*/
 /*
-	Texto normal	#404040		gris oscuro
+	Texto normal	#222		gris oscuro
 	Links			#f7370		rojo vermellon			#eb4b3f
 	Linkover		#f99d1c		amarillo naranja		?
-	Plastas oscuras	# 243139		gris azulado oscuro 	#2d3035
+	Plastas oscuras	#243139		gris azulado oscuro 	#2d3035
 	Plastas medias	#d2d6d7		gris medio
 */
 
@@ -95,7 +95,7 @@ EJEMPLO:
 1.0 - Tipografia
 -----------------------------------------------------------------*/
 body,button,input,select,textarea {
-	color:#404040;
+	color:#222;
 	font-family:'Merriweather',serif;
 	font-size:14px;
 	font-weight:400;
@@ -305,6 +305,10 @@ a:active .icon {
 6.0 - Estilos genéricos
 -----------------------------------------------------------------*/
 
+.disable {
+	display: none;
+}
+
 .modal {
 	padding: 0px;
 }
@@ -321,12 +325,7 @@ a:active .icon {
 		padding: 10px;
 	}
 
-		.left {
-			float: left;
-		}
-		.right {
-			float: right;
-		}
+
 
 .shadow {
 -webkit-box-shadow: 0px 0px 7px 0px rgba(25, 25, 25, 0.25);
@@ -363,6 +362,17 @@ box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 			margin:0px;
 			padding: 5px 10px;
 		}
+
+
+/*--------------------------------------------------------------
+	6.1 Alignment and Floats
+--------------------------------------------------------------*/
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 
 
 /*--------------------------------------------------------------
@@ -637,7 +647,8 @@ body {
 --------------------------------------------------------------*/
 
 #sidepanel {
-	background:#222;
+	background:#fdfbee url('images/bg-sidepanel.svg') top left repeat-y;
+	color:#222;
 	display:block;
 	height:600px;
 	overflow:hidden;
@@ -649,8 +660,16 @@ body {
 	width:700px;
 }
 
+	#sidepanel-navigation {
+
+		float:left;
+		width:52px;
+	}
+	#sidepanel-main {
+		margin-left:56px;
+	}
 	#sidepanel-content {
-		padding:10px;
+		padding: 10px;
 	}
 
 	.foodresult {

@@ -567,6 +567,11 @@ function toggle_menu() {
 	});
 }
 
+function dev_disable() {
+	$('.disable').hide();
+	$('body').css('background','#fff');
+}
+
 
 // Kick things off.
 $(document).ready(function() {
@@ -580,7 +585,7 @@ $(document).ready(function() {
 	close_side();
 	open_searchbox();
 	toggle_menu();
-
+	dev_disable();
 
 	//search_map();
 });

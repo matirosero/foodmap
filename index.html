@@ -151,8 +151,25 @@ Ultimo cambio por:	Mati
 			#close-sidepanel: cerrar panel
 			.close: usar esta clase para generalidades de TODOS los botones de cerrar
 		-->
-		<a href="#" id="close-sidepanel" class="close">X</a>
+		<!-- <a href="#" id="close-sidepanel" class="close">X</a> -->
 
+
+		<nav id="sidepanel-navigation">
+			<ul id="sidepanel-menu">
+				<li class=""><a href="#" id="close-sidepanel" class="close">x</a></li>
+				<li class=""><a href="" class="">h</a></li>
+				<li class=""><a href="" class="">h</a></li>
+				<li class=""><a href="" class="">h</a></li>
+			</ul>
+			<ul id="sidepanel-submenu">
+				<li class=""><a href="" class="">h</a></li>
+				<li class=""><a href="" class="">h</a></li>
+				<li class=""><a href="" class="">h</a></li>
+				<li class=""><a href="" class="">h</a></li>
+			</ul>
+		</nav>
+
+		<div id="sidepanel-main">
 		<!-- #sidepanel-content: aquí va el contenido de al lado -->
 		<div id="sidepanel-content">
 
@@ -187,13 +204,14 @@ Ultimo cambio por:	Mati
 			<!-- Fin de contenido variable -->
 
 		</div><!-- /#sidepanel-content -->
+		</div>
 
 	</div><!-- /#sidepanel -->
 
 
 
 	<!-- #main: contenido principal (o sea, lo que está abierto inicialmente) -->
-	<div id="main">
+	<div id="main" class="disable">
 
 		<!-- #map-content -->
 		<div id="map-content" role="map">
@@ -325,7 +343,7 @@ Ultimo cambio por:	Mati
 
 
 		<!-- #foodtrips -->
-		<section id="foodtrips">
+		<section id="foodtrips" class="disable">
 			<header id="foodtrips-header" class="section-header">
 				<div class="global-container">
 					<h2>Food<span class="light">Trips</span></h2>
