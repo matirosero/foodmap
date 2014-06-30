@@ -258,6 +258,31 @@ a:active {
 		color: #fff;
 	}
 
+
+#sidepanel-navigation > ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#sidepanel-navigation > #sidepanel-menu {
+	background: #2d3035;
+}
+	#sidepanel-navigation > ul > li > a {
+		display: block;
+		line-height:50px;
+		text-align: center;
+		width: 100%;
+	}
+	#sidepanel-navigation > ul > li > a:hover,
+	#sidepanel-navigation > ul > li > a:focus,
+	#sidepanel-navigation > ul > li > a:active {
+		background: #b03e33;
+	}
+	#sidepanel-navigation > ul > li > a.current {
+		background: #eb4b3f;
+	}
+
+
 /*-----------------------------------------------------------------
 5.0 - Imagenes
 -----------------------------------------------------------------*/
