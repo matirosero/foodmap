@@ -493,9 +493,9 @@ function closeSidepage(){
 //Open search box
 //http://thecodeblock.com/expanding-search-bar-with-jquery-tutroial/
 function open_searchbox() {
-	var submitIcon = $('.searchbox-icon');
-	var inputBox = $('.searchbox-input');
-	var searchBox = $('.searchbox');
+	var submitIcon = $('#searchbox .searchbox-icon');
+	var inputBox = $('#searchbox .searchbox-input');
+	var searchBox = $('#searchbox .searchbox');
 
 	var isOpen = false;
 

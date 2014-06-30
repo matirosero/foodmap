@@ -281,7 +281,7 @@ img {
 }
 a:hover .icon,
 a:focus .icon,
-:active .icon {
+a:active .icon {
 	fill: #fff;
 }
 
@@ -346,6 +346,7 @@ box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 			height: 172px;
 			width: 172px;
 		}
+
 		.blocks li h4 {
 			background: #fff;
 			display: block;
@@ -708,6 +709,10 @@ body {
 			background: url('images/bg-foodtrip-add.svg') 0 0 no-repeat;
 			color: #fff;
 			position: relative;
+		}
+		.foodtrip-link-create:hover .block-thumbnail {
+			background: url('images/bg-foodtrip-add-over.svg') 0 0 no-repeat;
+			color: #eb4b3f;
 		}
 			.foodtrip-link-create .block-thumbnail span {
 				position: absolute;
