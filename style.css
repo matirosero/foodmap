@@ -141,6 +141,19 @@ big {
 	color:red;
 }
 
+.small {
+	font-size: 75%;
+}
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small {
+	font-weight: 300;
+	margin-left: 1em;
+}
+
 
 /*-----------------------------------------------------------------
 1.1 - Estilos tipográficos de acuerdo a estructura
@@ -157,6 +170,10 @@ big {
 #foodtrips,
 #page-footer {
 	color:#fff;
+}
+
+#sidepanel h2:first-child {
+	border-bottom:1px solid #4d5054;
 }
 
 #page-footer {
@@ -197,14 +214,21 @@ a:active {
 }
 .blocks li a:hover,
 .blocks li a:focus,
-.blocks li a:active {
+.blocks li a:active,
+#sidepanel .blocks li a:hover,
+#sidepanel .blocks li a:focus,
+#sidepanel .blocks li a:active {
 	color: #fff;
 }
 .blocks li a:hover h4,
 .blocks li a:focus h4,
-.blocks li a:active h4 {
+.blocks li a:active h4,
+#sidepanel .blocks li a:hover h4,
+#sidepanel .blocks li a:focus h4,
+#sidepanel .blocks li a:active h4 {
 	background: #eb4b3f;
 }
+
 
 
 #sidepanel a {
@@ -267,8 +291,13 @@ a:active {
 #sidepanel-navigation > #sidepanel-menu {
 	background: #2d3035;
 }
+
+#sidepanel-navigation > #sidepanel-submenu {
+
+}
 	#sidepanel-navigation > ul > li > a {
 		display: block;
+		font-size: 50px;
 		line-height:50px;
 		text-align: center;
 		width: 100%;
@@ -280,6 +309,9 @@ a:active {
 	}
 	#sidepanel-navigation > ul > li > a.current {
 		background: #eb4b3f;
+	}
+	#sidepanel-navigation > #sidepanel-menu a {
+		padding: 10px 0;
 	}
 
 
@@ -304,9 +336,25 @@ img {
 .icon {
 	fill: #EB4A3F;
 }
+
+#sidepanel-menu .icon-sidepanel {
+	fill:#4d5054;
+}
+#sidepanel-submenu .icon-sidepanel {
+	fill:#2d3035;
+}
+
 a:hover .icon,
 a:focus .icon,
-a:active .icon {
+a:active .icon,
+#sidepanel-menu a:hover .icon-sidepanel,
+#sidepanel-menu a:focus .icon-sidepanel,
+#sidepanel-menu a:active .icon-sidepanel,
+#sidepanel-submenu a:hover .icon-sidepanel,
+#sidepanel-submenu a:focus .icon-sidepanel,
+#sidepanel-submenu a:active .icon-sidepanel,
+#sidepanel-menu .current .icon-sidepanel,
+#sidepanel-submenu .current .icon-sidepanel {
 	fill: #fff;
 }
 
@@ -324,6 +372,14 @@ a:active .icon {
 	display:block;
 	margin: 0 auto 1em;
 }
+
+.icon-sidepanel {
+	display: block;
+	margin: 0 auto;
+	width:35px;
+}
+
+
 
 
 /*-----------------------------------------------------------------
@@ -693,9 +749,26 @@ body {
 	#sidepanel-main {
 		margin-left:56px;
 	}
-	#sidepanel-content {
-		padding: 10px;
-	}
+		#sidepanel-content,
+		#sidepanel-filter {
+			padding: 0px 10px;
+		}
+			#sidepanel-header {
+				padding: 0 10px;
+			}
+
+				#sidepanel .blocks li {
+					width:136px; /* 4 cuadros en 700, 188 si queremos 3*/
+				}
+					#sidepanel .blocks .block-thumbnail {
+						height: 136px;
+						width: 136px;
+					}
+					#sidepanel .blocks li h4 {
+						background: #2d3035;
+						color: #fff;
+					}
+
 
 	.foodresult {
 		background:#444;
@@ -780,7 +853,7 @@ body {
 			top: 15px;
 		}
 
-		.foodtrip-name {
+		.block-name {
 
 		}
 

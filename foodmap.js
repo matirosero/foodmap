@@ -585,7 +585,7 @@ $(document).ready(function() {
 	close_side();
 	open_searchbox();
 	toggle_menu();
-	dev_disable();
+	//dev_disable();
 
 	//search_map();
 });
