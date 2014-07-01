@@ -93,7 +93,9 @@ map-1.4.3
 
 
 29 junio: took out jquery mobile for now
-	TODO: rework modal window so it works with pretty stuff
+	TODO: rework modal window so it works with pretty stuff YA
+	TODO: load new content into priti sidepanel
+	TODO: usar $("#content").load('/about_me.php'); para textos
 
 
 COSAS QUE NO VAN A FUNCIONAR EN PROTOTIPO:
