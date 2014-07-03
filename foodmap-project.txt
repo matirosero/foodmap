@@ -97,6 +97,9 @@ map-1.4.3
 	TODO: load new content into priti sidepanel
 	TODO: usar $("#content").load('/about_me.php'); para textos
 
+	TODO: foodmap conuna p
+	TODO: tooltip para todos los iconos
+
 
 COSAS QUE NO VAN A FUNCIONAR EN PROTOTIPO:
 	checkbox “no mostrar este mensaje en próxima visita”

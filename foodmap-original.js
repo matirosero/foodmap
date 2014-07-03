@@ -320,29 +320,19 @@ function populate_showinfo(country_name,country_code) {
 	//new_content = '';
 	var new_ingredients;
 	var new_recipe;
-	var new_href_recipe;
-	var new_href_ingredient;
 
 	if(search_string !=="") {
-
 
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
 			result_kind = 'Ingrediente';
 			new_ingredients = '1 '+ result_kind +' (' + search_string + ')';
 			new_recipe = '24 Platos';
-
-			new_href_ingredient = '#arroz';
-			new_href_recipe = '#india-recipes';
-
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
 		} else if(search_string == 'sushi') {
 			result_kind = 'Plato';
 			new_ingredients = '4 Ingredientes';
 			new_recipe = '1 '+ result_kind +' (' + search_string + ')';
-
-			new_href_recipe = '#sushi';
-			new_href_ingredient = '#japan-ingredients';
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
 		}
@@ -350,9 +340,6 @@ function populate_showinfo(country_name,country_code) {
 	} else {
 		new_ingredients = '80 Ingredientes';
 		new_recipe = '24 Platos';
-
-		new_href_recipe = '#india-recipes';
-		new_href_ingredient = '#india-ingredients';
 		//new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
 	}
@@ -362,10 +349,6 @@ function populate_showinfo(country_name,country_code) {
 	$(".modal-header").html(new_place_name);
 	$(".modal-content .ingredients").html(new_ingredients);
 	$(".modal-content .recipe").html(new_recipe);
-
-	$(".modal-content .link-recipes").attr("href", new_href_recipe);
-	$(".modal-content .link-ingredients").attr("href", new_href_ingredient);
-
 
 	open_side();
 	populate_side(country_name,country_code);
@@ -395,23 +378,74 @@ function populate_side(country_name,country_code,search_terms) {
 	//When click links in showinfo
 	$("a.clickme").on("click", function(){
 
-		var a_href = $(this).attr('href');
-		var panel_content;
+		var result_text = $(this).text();
+		var result_number = result_text.match(/\d+/);
+		var result_text = result_text.replace(/[0-9]+\s/g, "");
+		var result_kind;
+		var result_class;
 
-		if (a_href=='#sushi') {
-			panel_content = 'sushi';
-		} else if (a_href=='#arroz') {
-			panel_content = 'arroz';
-		} else if (a_href=='#india-recipes') {
-			panel_content = 'india-recipes';
-		} else if (a_href=='#india-ingredients') {
-			panel_content = 'india-ingredients';
-		} else if (a_href=='#japan-ingredients') {
-			panel_content = 'japan-ingredients';
+		//If the user clicks on the INGREDIENTS or PLATOS link
+		if (result_text == "Ingredientes" || result_text == "Platos") {
+
+			//TODO: doesn't take into account if it's just ingredients for a dish
+			result_kind = result_text;
+
+		} else {
+
+			//If user clicks on a specific dish or ingredient, get the different variables from the string
+
+			//KIND of result: Ingrediente or Plato
+			result_kind = result_text.match(/^[a-zA-Z]+/g); //FIXED WHITESPACE PROBLEM
+
+			//Name of the specific thing being searched (i.e. arroz or sushi)
+			//Get rid of whitespace and parenthesis
+			var result_name = result_text.replace(result_kind, "").replace(" (", "").replace(")", "");
+
 		}
-		//alert(panel_content+'.html');
+
+
+		//Set result_class from result_kind
+		if (result_kind == 'Ingredientes' || result_kind == 'Ingrediente') {
+			result_class = 'ingredient';
+		} else if (result_kind == 'Platos' || result_kind == 'Plato') {
+			result_class = 'recipe';
+		}
+
+
+		//Generate side content START
+
+		//Generate <h2>
+		if (!result_name) {
+			//If there's no specific result going in
+			console.log('No hay nombre');
+			new_side_content = '<h2><span class="light">' + result_number + ' ' + result_kind + ' de</span> ' + country_name + '</h2>';
+		} else {
+			//If there is a specific result going in (arros || sushi)
+			console.log('Si hay');
+			new_side_content = '<h2>' + result_name + ' <span class="light">de ' + country_name + '</span></h2>';
+		}
+
+		//Add paragraph and open <ul>
+		new_side_content += '<p>Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Mauris eleifend vehicula nisi at gravida. Quisque viverra quam nec lorem congue commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim. Donec tincidunt faucibus ultrices.</p>\
+		<ul class="blocks">';
+
+
+		//Loop through results and create their content
+		var c = 0;
+		for (var c=0; c<result_number; c++) {
+			new_side_content += '<li class="foodresult ' + result_class + '">\
+				<a class="foodresult-image" href="">\
+					<img src="images/' + result_class + '.jpg" alt="" />\
+				</a><a class="foodresult-name" href="">\
+					<h4>Nombre del ingrediente</h4>\
+				</a></li>';
+		}
+
+		//Close </ul>
+		new_side_content += '</ul>';
+
 		//Insert content in sidepanel
-		$("#sidepanel-content").load(panel_content+'.html');
+		$("#sidepanel-content").html(new_side_content);
 
 	});
 }
@@ -426,7 +460,7 @@ function open_side() {
 		//alert('open sesame');
 		var hrefval = $(this).attr("href");
 
-		if(hrefval != "") {
+		if(hrefval == "#about") {
     		var distance = $('#main').css('right');
 
 			if(distance == "auto" || distance == "0px") {

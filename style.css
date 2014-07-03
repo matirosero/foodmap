@@ -209,15 +209,22 @@ a:active {
 	color: #f99d1c;
 }
 
-.blocks li a {
+.blocks li a,
+.modal-content a {
 	display: block;
+}
+.modal-content a {
+	padding: 1em 0;
 }
 .blocks li a:hover,
 .blocks li a:focus,
 .blocks li a:active,
 #sidepanel .blocks li a:hover,
 #sidepanel .blocks li a:focus,
-#sidepanel .blocks li a:active {
+#sidepanel .blocks li a:active,
+.modal-content a:hover,
+.modal-content a:focus,
+.modal-content a:active {
 	color: #fff;
 }
 .blocks li a:hover h4,
@@ -225,7 +232,10 @@ a:active {
 .blocks li a:active h4,
 #sidepanel .blocks li a:hover h4,
 #sidepanel .blocks li a:focus h4,
-#sidepanel .blocks li a:active h4 {
+#sidepanel .blocks li a:active h4,
+.modal-content a:hover,
+.modal-content a:focus,
+.modal-content a:active {
 	background: #eb4b3f;
 }
 
@@ -354,9 +364,14 @@ a:active .icon,
 #sidepanel-submenu a:focus .icon-sidepanel,
 #sidepanel-submenu a:active .icon-sidepanel,
 #sidepanel-menu .current .icon-sidepanel,
-#sidepanel-submenu .current .icon-sidepanel {
+#sidepanel-submenu .current .icon-sidepanel,
+.modal-content a:hover .icon,
+.modal-content a:focus .icon,
+.modal-content a:active .icon {
 	fill: #fff;
 }
+
+
 
 /* para que no se descuadre header */
 #menu-user .icon-container,
@@ -403,7 +418,7 @@ a:active .icon,
 			padding: 0;
 		}
 	.modal-content {
-		padding: 10px;
+		padding: 0px;
 	}
 
 
@@ -643,7 +658,7 @@ body {
 
 	#showinfo {
 		background: #fff;
-		height:150px;
+		height:auto;
 		left:0;
 		position:absolute;
 		top:0;
