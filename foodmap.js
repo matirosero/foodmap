@@ -332,7 +332,7 @@ function populate_showinfo(country_name,country_code) {
 			new_recipe = '24 Platos';
 
 			new_href_ingredient = 'arroz';
-			new_href_recipe = 'india-recipes';
+			new_href_recipe = 'recipes';
 
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
@@ -342,7 +342,7 @@ function populate_showinfo(country_name,country_code) {
 			new_recipe = '1 '+ result_kind +' (' + search_string + ')';
 
 			new_href_recipe = 'sushi';
-			new_href_ingredient = 'japan-ingredients';
+			new_href_ingredient = 'ingredients';
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
 		}
@@ -406,8 +406,19 @@ function populate_side(country_name,country_code,search_terms) {
 	$("a.clickme").on("click", function(){
 
 		var a_href = $(this).attr('href');
-		var panel_content;
 
+		country_code = $(this).attr('data-country-code');
+		country_name = $(this).attr('data-country-name');
+
+		if (country_code != 'IN' || country_code != 'JP') {
+			country_code = 'IN';
+		}
+
+		var sidepanel_content = country_code+'-'+$(this).attr('data-sidepanel-content');
+
+		//var panel_content;
+
+		/*
 		if (a_href=='#sushi') {
 			panel_content = 'sushi';
 		} else if (a_href=='#arroz') {
@@ -419,9 +430,11 @@ function populate_side(country_name,country_code,search_terms) {
 		} else if (a_href=='#japan-ingredients') {
 			panel_content = 'japan-ingredients';
 		}
+		*/
+
 		//alert(panel_content+'.html');
 		//Insert content in sidepanel
-		$("#sidepanel-content").load(panel_content+'.html');
+		$("#sidepanel-content").load(sidepanel_content+'.html');
 
 	});
 }
