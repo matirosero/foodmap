@@ -403,12 +403,14 @@ function populate_side(country_name,country_code,search_terms) {
 
 
 	//When click links in showinfo
-	$("a.clickme").on("click", function(){
+	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a', function(e){
+console.log('link HI: '+$(this).attr('data-sidepanel-content'));
+		e.preventDefault();
 
 		var a_href = $(this).attr('href');
 
 		country_code = $(this).attr('data-country-code');
-		country_name = $(this).attr('data-country-name');
+		//country_name = $(this).attr('data-country-name');
 
 		if (country_code != 'IN' && country_code != 'JP') {
 			country_code = 'IN';
@@ -419,7 +421,7 @@ function populate_side(country_name,country_code,search_terms) {
 
 		//Insert content in sidepanel
 		$("#sidepanel-content").load('/content/'+sidepanel_content+'.html');
-		$("#sidepanel-submenu").hide();
+		//$("#sidepanel-submenu").hide();
 		$('#sidepanel-menu').find('li a').each(function () {
 			$(this).attr({
 				'data-country-code': country_code,
@@ -427,49 +429,20 @@ function populate_side(country_name,country_code,search_terms) {
 			});
 		});
 
-	});
-
-	navigate_side();
-}
-
-function navigate_side() {
-
-	var new_side_content;
-
-	$('#sidepanel-navigation a').on('click', function(e){
-
-		e.preventDefault();
-
-		country_code = $(this).attr('data-country-code');
-		country_name = $(this).attr('data-country-name');
-
-		if (country_code != 'IN' && country_code != 'JP') {
-			country_code = 'IN';
-		}
-
-		sidepanel_content = country_code+'-'+$(this).attr('data-sidepanel-content');
-		console.log('what will load: '+sidepanel_content);
-
-		//Insert content in sidepanel
-		$("#sidepanel-content").load('/content/'+sidepanel_content+'.html');
-		$("#sidepanel-submenu").hide();
-		$('#sidepanel-menu').find('li a').each(function () {
-			$(this).attr({
-				'data-country-code': country_code,
-				'data-country-name': country_name
-			});
-		});
 
 	});
 
+
+
 }
+
 
 
 //Open side panel function
 function open_side() {
 
 	$("a.clickme").on("click", function(e){ //$("[class^=main]")
-    	e.preventDefault();
+
 
 		//alert('open sesame');
 		var hrefval = $(this).attr("href");
