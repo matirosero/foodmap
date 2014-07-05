@@ -331,8 +331,8 @@ function populate_showinfo(country_name,country_code) {
 			new_ingredients = '1 '+ result_kind +' (' + search_string + ')';
 			new_recipe = '24 Platos';
 
-			new_href_ingredient = '#arroz';
-			new_href_recipe = '#india-recipes';
+			new_href_ingredient = 'arroz';
+			new_href_recipe = 'india-recipes';
 
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
@@ -341,8 +341,8 @@ function populate_showinfo(country_name,country_code) {
 			new_ingredients = '4 Ingredientes';
 			new_recipe = '1 '+ result_kind +' (' + search_string + ')';
 
-			new_href_recipe = '#sushi';
-			new_href_ingredient = '#japan-ingredients';
+			new_href_recipe = 'sushi';
+			new_href_ingredient = 'japan-ingredients';
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
 		}
@@ -351,8 +351,8 @@ function populate_showinfo(country_name,country_code) {
 		new_ingredients = '80 Ingredientes';
 		new_recipe = '24 Platos';
 
-		new_href_recipe = '#india-recipes';
-		new_href_ingredient = '#india-ingredients';
+		new_href_recipe = 'recipes';
+		new_href_ingredient = 'ingredients';
 		//new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
 	}
@@ -363,8 +363,18 @@ function populate_showinfo(country_name,country_code) {
 	$(".modal-content .ingredients").html(new_ingredients);
 	$(".modal-content .recipe").html(new_recipe);
 
-	$(".modal-content .link-recipes").attr("href", new_href_recipe);
-	$(".modal-content .link-ingredients").attr("href", new_href_ingredient);
+	$(".modal-content .link-recipes").attr({
+		'href': '#'+new_href_recipe,
+		'data-sidepanel-content': new_href_recipe,
+		'data-country-code': country_code,
+		'data-country-name': country_name
+	});
+	$(".modal-content .link-ingredients").attr({
+		'href': '#'+new_href_ingredient,
+		'data-sidepanel-content': new_href_ingredient,
+		'data-country-code': country_code,
+		'data-country-name': country_name
+	});
 
 
 	open_side();

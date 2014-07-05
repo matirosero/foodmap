@@ -395,6 +395,25 @@ a:active .icon,
 }
 
 
+.logo-foodmap {
+	fill:#2d3035;
+}
+
+a:hover .logo-foodmap,
+a:focus .logo-foodmap,
+a:active .logo-foodmap {
+	fill: #EB4A3F;
+}
+
+.icon-menu-toggle {
+	fill:#EB4A3F;
+}
+
+a:hover .icon-menu-toggle,
+a:focus .icon-menu-toggle,
+a:active .icon-menu-toggle {
+	fill: #2d3035;
+}
 
 
 /*-----------------------------------------------------------------
