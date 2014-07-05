@@ -410,31 +410,22 @@ function populate_side(country_name,country_code,search_terms) {
 		country_code = $(this).attr('data-country-code');
 		country_name = $(this).attr('data-country-name');
 
-		if (country_code != 'IN' || country_code != 'JP') {
+		if (country_code != 'IN' && country_code != 'JP') {
 			country_code = 'IN';
 		}
 
 		var sidepanel_content = country_code+'-'+$(this).attr('data-sidepanel-content');
+		console.log('what will load: '+sidepanel_content);
 
-		//var panel_content;
-
-		/*
-		if (a_href=='#sushi') {
-			panel_content = 'sushi';
-		} else if (a_href=='#arroz') {
-			panel_content = 'arroz';
-		} else if (a_href=='#india-recipes') {
-			panel_content = 'india-recipes';
-		} else if (a_href=='#india-ingredients') {
-			panel_content = 'india-ingredients';
-		} else if (a_href=='#japan-ingredients') {
-			panel_content = 'japan-ingredients';
-		}
-		*/
-
-		//alert(panel_content+'.html');
 		//Insert content in sidepanel
-		$("#sidepanel-content").load(sidepanel_content+'.html');
+		$("#sidepanel-content").load('/content/'+sidepanel_content+'.html');
+		$("#sidepanel-submenu").hide();
+		$('#sidepanel-menu').find('li a').each(function () {
+			$(this).attr({
+				'data-country-code': country_code,
+				'data-country-name': country_name
+			});
+		});
 
 	});
 }
