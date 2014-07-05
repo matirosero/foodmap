@@ -400,7 +400,7 @@ function populate_side(country_name,country_code,search_terms) {
 
 	//TODO: no esta poniendo en cero si se hace click luego de haber buscado
 
-	var new_side_content;
+
 
 	//When click links in showinfo
 	$("a.clickme").on("click", function(){
@@ -428,6 +428,40 @@ function populate_side(country_name,country_code,search_terms) {
 		});
 
 	});
+
+	navigate_side();
+}
+
+function navigate_side() {
+
+	var new_side_content;
+
+	$('#sidepanel-navigation a').on('click', function(e){
+
+		e.preventDefault();
+
+		country_code = $(this).attr('data-country-code');
+		country_name = $(this).attr('data-country-name');
+
+		if (country_code != 'IN' && country_code != 'JP') {
+			country_code = 'IN';
+		}
+
+		sidepanel_content = country_code+'-'+$(this).attr('data-sidepanel-content');
+		console.log('what will load: '+sidepanel_content);
+
+		//Insert content in sidepanel
+		$("#sidepanel-content").load('/content/'+sidepanel_content+'.html');
+		$("#sidepanel-submenu").hide();
+		$('#sidepanel-menu').find('li a').each(function () {
+			$(this).attr({
+				'data-country-code': country_code,
+				'data-country-name': country_name
+			});
+		});
+
+	});
+
 }
 
 
