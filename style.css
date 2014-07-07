@@ -315,10 +315,10 @@ a:active {
 	#sidepanel-navigation > ul > li > a:hover,
 	#sidepanel-navigation > ul > li > a:focus,
 	#sidepanel-navigation > ul > li > a:active {
-		background: #b03e33;
+		background: #EB4A3F;
 	}
 	#sidepanel-navigation > ul > li > a.current {
-		background: #eb4b3f;
+		background: #fdfbee;
 	}
 	#sidepanel-navigation > #sidepanel-menu a {
 		padding: 10px 0;
@@ -363,8 +363,6 @@ a:active .icon,
 #sidepanel-submenu a:hover .icon-sidepanel,
 #sidepanel-submenu a:focus .icon-sidepanel,
 #sidepanel-submenu a:active .icon-sidepanel,
-#sidepanel-menu .current .icon-sidepanel,
-#sidepanel-submenu .current .icon-sidepanel,
 .modal-content a:hover .icon,
 .modal-content a:focus .icon,
 .modal-content a:active .icon {
@@ -394,6 +392,10 @@ a:active .icon,
 	width:35px;
 }
 
+#sidepanel-menu .current .icon-sidepanel,
+#sidepanel-submenu .current .icon-sidepanel {
+	fill: #EB4A3F;
+}
 
 .logo-foodmap {
 	fill:#2d3035;
@@ -450,6 +452,10 @@ box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 .global-container {
 	margin:0 auto;
 	width:960px;
+}
+.form-container {
+	margin:0 auto;
+	width:320px;
 }
 .blocks {
 	list-style: none;
@@ -529,7 +535,7 @@ box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 -----------------------------------------------------------------*/
 
 body {
-	background:#222;
+	background:#F4F3F0;
 }
 
 /*-----------------------------------------------------------------
@@ -588,13 +594,16 @@ body {
 	7.2 - Main
 -----------------------------------------------------------------*/
 
-#main {
-	background:#fff;
+.maincontent {
+	background:#F4F3F0;
 	display:block;
+	position: relative;
+}
+
+#main {
 	height:100%;
 	height:600px;
 	overflow:hidden;
-	position:relative;
 	width:100%;
 	z-index:2;
 }
