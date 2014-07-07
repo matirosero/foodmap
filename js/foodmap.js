@@ -416,19 +416,22 @@ console.log('link HI: '+$(this).attr('data-sidepanel-content'));
 			country_code = 'IN';
 		}
 
-		var sidepanel_content = country_code+'-'+$(this).attr('data-sidepanel-content');
-		console.log('what will load: '+sidepanel_content);
+		var sidepanel_content = $(this).attr('data-sidepanel-content');
+		var sidepanel_content_filename = country_code+'-'+$(this).attr('data-sidepanel-content');
+		console.log('what will load: '+sidepanel_content_filename);
 
 		//Insert content in sidepanel
-		$("#sidepanel-content").load('/content/'+sidepanel_content+'.html');
+		$("#sidepanel-content").load('/content/'+sidepanel_content_filename+'.html');
 		//$("#sidepanel-submenu").hide();
 		$('#sidepanel-menu').find('li a').each(function () {
 			$(this).attr({
 				'data-country-code': country_code,
 				'data-country-name': country_name
 			});
-		});
 
+		});
+		$('#sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
+		$('#sidepanel-menu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 
 	});
 

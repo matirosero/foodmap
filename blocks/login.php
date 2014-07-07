@@ -14,7 +14,7 @@
 
 			<form>
 				<fieldset>
-					<legend>Personalia:</legend>
+					<legend>o si lo prefieres</legend>
 					<p>
 						<label for="email">Correo electrónico o usuario</label>
 						<input type="email" name="user" />
@@ -36,7 +36,7 @@
 			</form>
 
 			<p>
-				Si quieres puedes <a href="register.php">registrate</a> sin usar Facebook o Google+.
+				Si quieres puedes <a href="register.php">registrarte</a> sin usar Facebook o Google+.
 			</p>
 
 			</div>

@@ -353,52 +353,11 @@ img {
 
 
 /*-----------------------------------------------------------------
-5.1 - Iconos
+5.1 - Iconos, logos, SVGs
 -----------------------------------------------------------------*/
 
 .icon {
 	fill: #EB4A3F;
-}
-
-#sidepanel-menu .icon-sidepanel {
-	fill:#4d5054;
-}
-#sidepanel-submenu .icon-sidepanel {
-	fill:#2d3035;
-}
-
-.icon-footer {
-	fill:#96989A;
-}
-
-a:hover .icon,
-a:focus .icon,
-a:active .icon,
-#sidepanel-menu a:hover .icon-sidepanel,
-#sidepanel-menu a:focus .icon-sidepanel,
-#sidepanel-menu a:active .icon-sidepanel,
-#sidepanel-submenu a:hover .icon-sidepanel,
-#sidepanel-submenu a:focus .icon-sidepanel,
-#sidepanel-submenu a:active .icon-sidepanel,
-.modal-content a:hover .icon,
-.modal-content a:focus .icon,
-.modal-content a:active .icon,
-.icon-footer:hover,
-.icon-footer:focus,
-.icon-footer:active {
-	fill: #fff;
-}
-
-
-
-/* para que no se descuadre header */
-#menu-user .icon-container,
-#menu-user .icon-container:hover  {
-	height:49px;
-}
-#menu-user .icon {
-	height:28px;line-height:28px;
-	margin-top:21px;
 }
 
 .modal-content .icon {
@@ -406,26 +365,25 @@ a:active .icon,
 	margin: 0 auto 1em;
 }
 
-.icon-sidepanel {
-	display: block;
-	margin: 0 auto;
-	width:35px;
+a:hover .icon,
+a:focus .icon,
+a:active .icon,
+.modal-content a:hover .icon,
+.modal-content a:focus .icon,
+.modal-content a:active .icon {
+	fill: #fff;
 }
 
-#sidepanel-menu .current .icon-sidepanel,
-#sidepanel-submenu .current .icon-sidepanel {
-	fill: #EB4A3F;
+.icon-footer {
+	fill:#96989A;
 }
 
-.logo-foodmap {
-	fill:#2d3035;
+.icon-footer:hover,
+.icon-footer:focus,
+.icon-footer:active {
+	fill: #fff;
 }
 
-a:hover .logo-foodmap,
-a:focus .logo-foodmap,
-a:active .logo-foodmap {
-	fill: #EB4A3F;
-}
 
 .icon-menu-toggle {
 	fill:#EB4A3F;
@@ -435,6 +393,50 @@ a:hover .icon-menu-toggle,
 a:focus .icon-menu-toggle,
 a:active .icon-menu-toggle {
 	fill: #2d3035;
+}
+
+
+
+
+.icon-sidepanel {
+	display: block;
+	margin: 0 auto;
+	width:35px;
+}
+
+#sidepanel-menu .icon-sidepanel {
+	fill:#4d5054;
+}
+#sidepanel-submenu .icon-sidepanel {
+	fill:#2d3035;
+}
+
+
+
+#sidepanel-menu a:hover .icon-sidepanel,
+#sidepanel-menu a:focus .icon-sidepanel,
+#sidepanel-menu a:active .icon-sidepanel,
+#sidepanel-submenu a:hover .icon-sidepanel,
+#sidepanel-submenu a:focus .icon-sidepanel,
+#sidepanel-submenu a:active .icon-sidepanel {
+	fill: #fff;
+}
+
+#sidepanel-menu a.current .icon-sidepanel,
+#sidepanel-submenu a.current .icon-sidepanel {
+	fill: #EB4A3F;
+}
+
+
+
+.logo-foodmap {
+	fill:#2d3035;
+}
+
+a:hover .logo-foodmap,
+a:focus .logo-foodmap,
+a:active .logo-foodmap {
+	fill: #EB4A3F;
 }
 
 

@@ -16,24 +16,24 @@
 					</a>
 				</li>
 				<li class="">
-					<a href="#" class="sidepanel-menu" data-sidepanel-content="info">
+					<a href="#" data-sidepanel-content="info">
 						<?php include('includes/icon-side-menu-info.inc');?>
 					</a>
 				</li>
 				<li class="">
-					<a href="" class="sidepanel-menu" data-sidepanel-content="recipes">
+					<a href="" data-sidepanel-content="recipes">
 						<?php include('includes/icon-side-menu-dish.inc');?>
 					</a>
 				</li>
 				<li class="">
-					<a href="" class="sidepanel-menu current" data-sidepanel-content="ingredients">
+					<a href="" data-sidepanel-content="ingredients">
 						<?php include('includes/icon-side-menu-ingredient.inc');?>
 					</a>
 				</li>
 			</ul>
 			<ul id="sidepanel-submenu">
 				<li class="">
-					<a href="" class="sidepanel-menu" data-sidepanel-content="sub-generalinfo">
+					<a href="" data-sidepanel-content="sub-generalinfo">
 						<?php include('includes/icon-side-submenu-generalinfo.inc');?>
 					</a>
 				</li>
