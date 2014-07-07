@@ -253,6 +253,19 @@ a:active {
 	color: #f99d1c;
 }
 
+#footer-content a {
+	color: #96989A;
+	margin: 0 .25em;
+}
+#footer-content a.footer-menu-home {
+	margin: 0 1em 0 .25em;
+}
+#footer-content a:hover,
+#footer-content a:focus,
+#footer-content a:active {
+	color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 2.2 Botones
@@ -354,6 +367,10 @@ img {
 	fill:#2d3035;
 }
 
+.icon-footer {
+	fill:#96989A;
+}
+
 a:hover .icon,
 a:focus .icon,
 a:active .icon,
@@ -365,7 +382,10 @@ a:active .icon,
 #sidepanel-submenu a:active .icon-sidepanel,
 .modal-content a:hover .icon,
 .modal-content a:focus .icon,
-.modal-content a:active .icon {
+.modal-content a:active .icon,
+.icon-footer:hover,
+.icon-footer:focus,
+.icon-footer:active {
 	fill: #fff;
 }
 
@@ -619,8 +639,11 @@ body {
 
 	#footer-content {
 		margin:0;
-		padding: 10px 0;
+		padding: 30px 0;
 	}
+		.footer-menu-small {
+			margin-top: 1em;
+		}
 
 /*--------------------------------------------------------------
 8.0 Bloques de contenido
