@@ -25,15 +25,15 @@
 					</span>
 <!--
 *******************************************
-	Add span to js, change all recipe to dish
+	Add span to js, change all dish to dish
 *******************************************
 -->
 					<span class="right">
 
-						<a class="clickme link-recipes" href="#about">
+						<a class="clickme link-dishes" href="#about">
 							<?php include('includes/icon-dish.inc');?>
 
-							<span class="recipe">24 Platos</span>
+							<span class="dish">24 Platos</span>
 						</a>
 					</span>
 				</div><!-- /#content -->

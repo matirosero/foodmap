@@ -311,11 +311,11 @@ a:active {
 	margin:0;
 	padding: 0;
 }
-#sidepanel-navigation > #sidepanel-menu {
+#sidepanel-navigation > .sidepanel-menu {
 	background: #2d3035;
 }
 
-#sidepanel-navigation > #sidepanel-submenu {
+#sidepanel-navigation > .sidepanel-submenu {
 
 }
 	#sidepanel-navigation > ul > li > a {
@@ -333,7 +333,7 @@ a:active {
 	#sidepanel-navigation > ul > li > a.current {
 		background: #fdfbee;
 	}
-	#sidepanel-navigation > #sidepanel-menu a {
+	#sidepanel-navigation > .sidepanel-menu a {
 		padding: 10px 0;
 	}
 
@@ -352,12 +352,13 @@ img {
 }
 
 
+
 /*-----------------------------------------------------------------
 5.1 - Iconos, logos, SVGs
 -----------------------------------------------------------------*/
 
 .icon {
-	fill: #EB4A3F;
+	fill: #eb4a3f;
 }
 
 .modal-content .icon {
@@ -384,7 +385,6 @@ a:active .icon,
 	fill: #fff;
 }
 
-
 .icon-menu-toggle {
 	fill:#EB4A3F;
 }
@@ -404,26 +404,26 @@ a:active .icon-menu-toggle {
 	width:35px;
 }
 
-#sidepanel-menu .icon-sidepanel {
+.sidepanel-menu .icon-sidepanel {
 	fill:#4d5054;
 }
-#sidepanel-submenu .icon-sidepanel {
+.sidepanel-submenu .icon-sidepanel {
 	fill:#2d3035;
 }
 
 
 
-#sidepanel-menu a:hover .icon-sidepanel,
-#sidepanel-menu a:focus .icon-sidepanel,
-#sidepanel-menu a:active .icon-sidepanel,
-#sidepanel-submenu a:hover .icon-sidepanel,
-#sidepanel-submenu a:focus .icon-sidepanel,
-#sidepanel-submenu a:active .icon-sidepanel {
+.sidepanel-menu a:hover .icon-sidepanel,
+.sidepanel-menu a:focus .icon-sidepanel,
+.sidepanel-menu a:active .icon-sidepanel,
+.sidepanel-submenu a:hover .icon-sidepanel,
+.sidepanel-submenu a:focus .icon-sidepanel,
+.sidepanel-submenu a:active .icon-sidepanel {
 	fill: #fff;
 }
 
-#sidepanel-menu a.current .icon-sidepanel,
-#sidepanel-submenu a.current .icon-sidepanel {
+.sidepanel-menu a.current .icon-sidepanel,
+.sidepanel-submenu a.current .icon-sidepanel {
 	fill: #EB4A3F;
 }
 
@@ -729,7 +729,7 @@ body {
 		}
 		#showinfo .ingredients {
 		}
-		#showinfo .recipe {
+		#showinfo .dish {
 		}
 
 	#searchbox {
@@ -839,7 +839,7 @@ body {
 	.ingredient {
 
 	}
-	.recipe {
+	.dish {
 
 	}
 		.foodresult-image {
