@@ -443,12 +443,6 @@ a:active .icon-menu-toggle {
 	}
 
 
-
-.shadow {
--webkit-box-shadow: 0px 0px 7px 0px rgba(25, 25, 25, 0.25);
--moz-box-shadow:    0px 0px 7px 0px rgba(25, 25, 25, 0.25);
-box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
-}
 .global-container {
 	margin:0 auto;
 	width:960px;
@@ -483,7 +477,10 @@ box-shadow:         0px 0px 7px 0px rgba(25, 25, 25, 0.25);
 			margin:0px;
 			padding: 5px 10px;
 		}
-
+					#sidepanel .blocks li h4 {
+						background: #2d3035;
+						color: #fff;
+					}
 
 /*--------------------------------------------------------------
 	6.1 Alignment and Floats
@@ -807,10 +804,7 @@ body {
 						height: 136px;
 						width: 136px;
 					}
-					#sidepanel .blocks li h4 {
-						background: #2d3035;
-						color: #fff;
-					}
+
 
 
 	.foodresult {
@@ -835,7 +829,7 @@ body {
 --------------------------------------------------------------*/
 
 #foodtrips {
-	background: #fff;
+
 	margin: 0;
 	padding: 0;
 }
