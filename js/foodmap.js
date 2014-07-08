@@ -471,7 +471,7 @@ function populate_side(country_name,country_code,search_terms) {
 
 		//Insert content in sidepanel
 		console.log('what will load: '+sidepanel_content_filename);
-		$("#sidepanel-content").load('/content/'+sidepanel_content_filename+'.html');
+		$("#sidepanel-content").load('content/'+sidepanel_content_filename+'.html');
 
 
 

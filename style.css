@@ -172,7 +172,7 @@ h6 .small {
 	color:#fff;
 }
 
-#sidepanel h2:first-child {
+#sidepanel h2 {
 	border-bottom:1px solid #4d5054;
 }
 
@@ -437,6 +437,11 @@ a:hover .logo-foodmap,
 a:focus .logo-foodmap,
 a:active .logo-foodmap {
 	fill: #EB4A3F;
+}
+
+
+.user-actions {
+	display: none;
 }
 
 

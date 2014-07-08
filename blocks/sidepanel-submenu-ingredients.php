@@ -3,6 +3,7 @@
 	//TODO: make data-sidepanel-item variable
 
 ?>
+
 			<ul class="sidepanel-submenu ingredients">
 				<li class="">
 					<a href="" data-sidepanel-content="generalinfo" data-menu-target="sub" data-sidepanel-item="arroz" class="current">
