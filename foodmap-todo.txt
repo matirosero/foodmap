@@ -13,7 +13,7 @@ TO DO
 		Página planes pago
 		CSS para todo
 		Botones acciones usuario
-
+		**Todos los html de contenido
 
 	Nice to have
 		Login falso
