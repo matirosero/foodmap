@@ -408,19 +408,16 @@ function populate_side(country_name,country_code,search_terms) {
 		e.preventDefault();
 
 
+
+		var sidepanel_content = $(this).attr('data-sidepanel-content');
+		var sidepanel_content_filename;
+
 		country_code = $(this).attr('data-country-code');
 		//country_name = $(this).attr('data-country-name');
 
 		if (country_code != 'IN' && country_code != 'JP') {
 			country_code = 'IN';
 		}
-
-		var sidepanel_content = $(this).attr('data-sidepanel-content');
-		var sidepanel_content_filename = country_code+'-'+$(this).attr('data-sidepanel-content');
-		console.log('what will load: '+sidepanel_content_filename);
-
-		//Insert content in sidepanel
-		$("#sidepanel-content").load('/content/'+sidepanel_content_filename+'.html');
 
 		$('.sidepanel-menu').find('li a').each(function () {
 				//console.log('add country '+country_code);
@@ -434,6 +431,8 @@ function populate_side(country_name,country_code,search_terms) {
 
 		if ($(this).attr('data-menu-target') == 'main') {
 
+			sidepanel_content_filename = country_code+'-'+sidepanel_content;
+
 			$('.sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 			$('.sidepanel-menu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 
@@ -445,9 +444,13 @@ function populate_side(country_name,country_code,search_terms) {
 			console.log('goes to dish or ingredient');
 			var parent_menu_li = $('.sidepanel-menu .current').closest('li');
 			var child_menu_type = $('.sidepanel-menu .current').attr('data-sidepanel-content');
+			var sidepanel_item = $(this).attr('data-sidepanel-item');
 			//console.log('this is in: '+parent_menu_li);
 
-			parent_menu_li.find('.submenu-container').load('/blocks/sidepanel-submenu-'+child_menu_type+'.php');
+			parent_menu_li.find('.submenu-container').load('/blocks/sidepanel-submenu-'+child_menu_type+'.php',
+    {
+        'sidepanel_item': '<?php echo '+sidepanel_item+'; ?>'
+    });
 			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 
 		}
@@ -455,12 +458,20 @@ function populate_side(country_name,country_code,search_terms) {
 		if ($(this).attr('data-menu-target') == 'sub') {
 			//console.log('goes to dish or ingredient');
 
+			var sidepanel_item = $(this).attr('data-sidepanel-item');
+			sidepanel_content_filename = sidepanel_item+'-'+sidepanel_content;
+
+
+
 			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 			$('.sidepanel-submenu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 
 
 		}
 
+		//Insert content in sidepanel
+		console.log('what will load: '+sidepanel_content_filename);
+		$("#sidepanel-content").load('/content/'+sidepanel_content_filename+'.html');
 
 
 
