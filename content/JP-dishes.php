@@ -36,7 +36,7 @@
 						<!-- .ingredient || .recipe : clase que se agregara de acuerdo a si es plato o ingrediente, colgarse de ella para los iconos -->
 
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -45,7 +45,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -54,7 +54,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -63,7 +63,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -73,7 +73,7 @@
 						</li>
 
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -82,7 +82,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -91,7 +91,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -100,7 +100,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -111,7 +111,7 @@
 
 
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -120,7 +120,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -129,7 +129,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>
@@ -138,7 +138,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#JP-sushi" data-sidepanel-content="sushi" data-country-code="JP">
+							<a class="foodresult-link" href="#JP-bisi-bele-bath" data-sidepanel-content="bisi-bele-bath" data-country-code="JP">
 								<div class="block-thumbnail">
 									<img src="images/recipe.jpg" alt="" />
 									</div>

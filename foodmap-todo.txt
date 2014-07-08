@@ -1,7 +1,7 @@
 TO DO
 
 	Necesario
-		Cambiar sushi a plato indio en busqueda (bhakri?) -M
+		Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath
 		Filtrar resultados en panel -M
 		Ir a region en map -M
 		Quitar bordes blanco del mapa al abrir panel -M

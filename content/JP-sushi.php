@@ -1,8 +1,8 @@
 				<header id="sidepanel-header">
 					<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
-					<h2>Japón <span class="small">sushi</span></h2>
+					<h2>Japón <span class="small">bisi-bele-bath</span></h2>
 					<p>
-						I AM SUSHI Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim.
+						I AM bisi-bele-bath Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim.
 					</p>
 				</header>
 

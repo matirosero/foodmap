@@ -200,8 +200,8 @@ AmCharts.ready(function() {
 				} else if(search_string == 'beans' || search_string == 'frijoles') {
 					search_string = 'frijoles';
 					country_code = ['BR','CR','MX'];
-				} else if(search_string == 'sushi') {
-					country_code = ['JP'];
+				} else if(search_string == 'bisi bele bath') {
+					country_code = ['IN'];
 				}
 
 				//Add countries to array for display
@@ -353,7 +353,7 @@ function populate_showinfo(country_name,country_code) {
 
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
 			result_kind = 'Ingrediente';
-			new_ingredients = '1 '+ result_kind +' (' + search_string + ')';
+			new_ingredients = search_string;
 			new_dish = '24 Platos';
 
 			new_href_ingredient = 'arroz';
@@ -361,12 +361,12 @@ function populate_showinfo(country_name,country_code) {
 
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
-		} else if(search_string == 'sushi') {
+		} else if(search_string == 'bisi bele bath') {
 			result_kind = 'Plato';
 			new_ingredients = '4 Ingredientes';
-			new_dish = '1 '+ result_kind +' (' + search_string + ')';
+			new_dish = search_string;
 
-			new_href_dish = 'sushi';
+			new_href_dish = 'bisi-bele-bath';
 			new_href_ingredient = 'ingredients';
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
