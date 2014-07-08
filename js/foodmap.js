@@ -407,7 +407,6 @@ function populate_side(country_name,country_code,search_terms) {
 		//console.log('link HI: '+$(this).attr('data-sidepanel-content'));
 		e.preventDefault();
 
-		var a_href = $(this).attr('href');
 
 		country_code = $(this).attr('data-country-code');
 		//country_name = $(this).attr('data-country-name');
@@ -423,16 +422,17 @@ function populate_side(country_name,country_code,search_terms) {
 		//Insert content in sidepanel
 		$("#sidepanel-content").load('/content/'+sidepanel_content_filename+'.html');
 
-		if ($(this).closest('.modal-content, .sidepanel-menu').length) {
-
-			$('.sidepanel-menu').find('li a').each(function () {
-				console.log('add country '+country_code);
+		$('.sidepanel-menu').find('li a').each(function () {
+				//console.log('add country '+country_code);
 				$(this).attr({
 					'data-country-code': country_code,
 					'data-country-name': country_name
 				});
 
-			});
+		});
+
+
+		if ($(this).attr('data-menu-target') == 'main') {
 
 			$('.sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 			$('.sidepanel-menu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
@@ -445,10 +445,18 @@ function populate_side(country_name,country_code,search_terms) {
 			console.log('goes to dish or ingredient');
 			var parent_menu_li = $('.sidepanel-menu .current').closest('li');
 			var child_menu_type = $('.sidepanel-menu .current').attr('data-sidepanel-content');
-			console.log('this is in: '+parent_menu_li);
+			//console.log('this is in: '+parent_menu_li);
 
 			parent_menu_li.find('.submenu-container').load('/blocks/sidepanel-submenu-'+child_menu_type+'.php');
+			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 
+		}
+
+		if ($(this).attr('data-menu-target') == 'sub') {
+			//console.log('goes to dish or ingredient');
+
+			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
+			$('.sidepanel-submenu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 
 
 		}

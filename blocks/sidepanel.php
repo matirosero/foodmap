@@ -16,19 +16,19 @@
 					</a>
 				</li>
 				<li class="">
-					<a href="#" data-sidepanel-content="info">
+					<a href="#" data-sidepanel-content="info" data-menu-target="main">
 						<?php include('includes/icon-side-menu-info.inc');?>
 					</a>
 					<span></span>
 				</li>
 				<li class="">
-					<a href="" data-sidepanel-content="dishes">
+					<a href="" data-sidepanel-content="dishes" data-menu-target="main">
 						<?php include('includes/icon-side-menu-dish.inc');?>
 					</a>
 					<span class="submenu-container"></span>
 				</li>
 				<li class="">
-					<a href="" data-sidepanel-content="ingredients">
+					<a href="" data-sidepanel-content="ingredients" data-menu-target="main">
 						<?php include('includes/icon-side-menu-ingredient.inc');?>
 					</a>
 					<span class="submenu-container"></span>

@@ -306,34 +306,34 @@ a:active {
 	}
 
 
-#sidepanel-navigation > ul {
+#sidepanel-navigation ul {
 	list-style: none;
 	margin:0;
 	padding: 0;
 }
-#sidepanel-navigation > .sidepanel-menu {
+#sidepanel-navigation .sidepanel-menu {
 	background: #2d3035;
 }
 
-#sidepanel-navigation > .sidepanel-submenu {
-
+#sidepanel-navigation .sidepanel-submenu {
+	background: #4d4f54;
 }
-	#sidepanel-navigation > ul > li > a {
+	#sidepanel-navigation ul > li > a {
 		display: block;
 		font-size: 50px;
 		line-height:50px;
 		text-align: center;
 		width: 100%;
 	}
-	#sidepanel-navigation > ul > li > a:hover,
-	#sidepanel-navigation > ul > li > a:focus,
-	#sidepanel-navigation > ul > li > a:active {
+	#sidepanel-navigation ul > li > a:hover,
+	#sidepanel-navigation ul > li > a:focus,
+	#sidepanel-navigation ul > li > a:active {
 		background: #EB4A3F;
 	}
-	#sidepanel-navigation > ul > li > a.current {
+	#sidepanel-navigation ul > li > a.current {
 		background: #fdfbee;
 	}
-	#sidepanel-navigation > .sidepanel-menu a {
+	#sidepanel-navigation .sidepanel-menu > li > a {
 		padding: 10px 0;
 	}
 
