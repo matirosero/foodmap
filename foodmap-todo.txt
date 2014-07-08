@@ -1,0 +1,27 @@
+TO DO
+
+	Necesario
+		Cambiar sushi a plato indio en busqueda (bhakri?)
+		Filtrar resultados en panel
+		Ir a region en map
+		Quitar bordes blanco del mapa al abrir panel
+		Tamaño del mapa al abrir panel
+		Showinfo debe aparecer donde está el mouse
+		Estilo map
+		Arreglar RESPONSIVE
+		FoodTrips mockup
+		Página planes pago
+		CSS para todo
+		Botones acciones usuario
+
+
+	Nice to have
+		Login falso
+		Que más o menos funcione FoodTrips
+		Que algo pase con acciones usuario
+
+	Qué hacemos con
+		Historial
+
+
+
