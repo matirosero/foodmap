@@ -338,6 +338,25 @@ a:active {
 	}
 
 
+.user-actions ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+	.user-actions ul li {
+		display: inline-block;
+		float:right;
+		margin-right: 5px;
+		text-align: right;
+	}
+		.user-actions ul li a {
+			display: block;
+			height: 25px;
+			width: 25px;
+		}
+
+
 /*-----------------------------------------------------------------
 5.0 - Imagenes
 -----------------------------------------------------------------*/
@@ -428,6 +447,15 @@ a:active .icon-menu-toggle {
 }
 
 
+.icon-user-action {
+	fill:#9D978F;
+}
+a:hover .icon-user-action,
+a:focus .icon-user-action,
+a:active .icon-user-action {
+	fill: #eb4a3f;
+}
+
 
 .logo-foodmap {
 	fill:#2d3035;
@@ -441,7 +469,7 @@ a:active .logo-foodmap {
 
 
 .user-actions {
-	display: none;
+
 }
 
 
@@ -820,7 +848,8 @@ body {
 		margin-left:56px;
 	}
 		#sidepanel-content,
-		#sidepanel-filter {
+		#sidepanel-filter,
+		.sidepanel-txt {
 			padding: 0px 10px;
 		}
 			#sidepanel-header {

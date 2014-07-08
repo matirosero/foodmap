@@ -3,21 +3,18 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#">
-									<?php include('includes/icon-action-totrip.inc'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
 							<li>like</li>
 						</ul>
 					</nav>
 
-					<h2>Arroz</h2>
+					<h2>Bhakri</h2>
 					<h6><span class="country">India</span> <span class="region">Maharashtra</span></h6>
 
 					<div class="item-pic">
 						<img src="arroz-full.jpg" alt="Arroz" />
 					</div>
+
 				</header>
 
 				<div class="sidepanel-txt">
@@ -33,9 +30,7 @@
 
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
-					<h4>Información científica</h4>
-					<h4>Información local</h4>
+
 
 				</div>
-				<!-- Fin de contenido variable -->
 

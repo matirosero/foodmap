@@ -4,7 +4,7 @@
 					<?php include('includes/icon-intro.svg');?>
 
 					<h2>
-						¿Quieres saber qué comen en <span class="light">India</span>?
+						¿Quieres saber qué comen en <a class="light go-country" id="" data-country-ID="IN">India</a>?
 					</h2>
 					<p>
 						Conoce qué platos o productos se consumen en cualquier parte del mundo. ¡Explora y viaja por el mapa!

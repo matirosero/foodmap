@@ -4,11 +4,25 @@
 					<nav class="user-actions">
 						<ul>
 							<li>
-								<a href="#">
-									<?php include('includes/icon-action-totrip.inc'); ?>
+								<a href="#" data-user-action="add-foodtrip">
+									<?php include('../includes/icon-action-totrip.svg'); ?>
 								</a>
 							</li>
-							<li>like</li>
+							<li>
+								<a href="#" data-user-action="like">
+									<?php include('../includes/icon-action-like.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-user-action="dl-pdf">
+									<?php include('../includes/icon-action-pdf.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-user-action="share">
+									<?php include('../includes/icon-action-share.svg'); ?>
+								</a>
+							</li>
 						</ul>
 					</nav>
 

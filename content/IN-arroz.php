@@ -3,11 +3,7 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#">
-									<?php include('includes/icon-action-totrip.inc'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
 							<li>like</li>
 						</ul>
 					</nav>

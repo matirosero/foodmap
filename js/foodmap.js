@@ -138,6 +138,31 @@ AmCharts.ready(function() {
 
 
 
+	$('.go-country').on("click", function(e){ //$("[class^=main]")
+		e.preventDefault();
+		//alert('india!');
+
+		var country_name = "India";
+		var country_code = "IN";
+
+
+
+		//call other functions when click on country
+		//close_guidebox();
+		show_showinfo();
+		populate_showinfo(country_name, country_code);
+
+
+
+		map.dataProvider.areas.push({ id: country_code, showAsSelected: true});
+
+		map.validateNow();
+		//resize_map(); //1.4.1.2
+
+
+	});
+
+
 	/* FoodMap specific functions
 	-------------------------------------------------------------------*/
 
@@ -471,7 +496,7 @@ function populate_side(country_name,country_code,search_terms) {
 
 		//Insert content in sidepanel
 		console.log('what will load: '+sidepanel_content_filename);
-		$("#sidepanel-content").load('content/'+sidepanel_content_filename+'.html');
+		$("#sidepanel-content").load('content/'+sidepanel_content_filename+'.php');
 
 
 
