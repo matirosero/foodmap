@@ -3,26 +3,8 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#" data-user-action="add-foodtrip">
-									<?php include('../includes/icon-action-totrip.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="like">
-									<?php include('../includes/icon-action-like.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="dl-pdf">
-									<?php include('../includes/icon-action-pdf.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="share">
-									<?php include('../includes/icon-action-share.svg'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
+							<li>like</li>
 						</ul>
 					</nav>
 
@@ -36,48 +18,30 @@
 
 				<div class="sidepanel-txt">
 
-					<h3>Platos en que se usa</h3>
+					<h3>VARIEDADES</h3>
 
 
-
-
-					<h4>PLATOS  EN INDIA (22)</h4>
+					<h4>VARIEDADES EN INDIA (3)</h4>
 
 						<ul>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-azafran" data-country-code="IN" data-menu-target="sub">
-									Arroz al azafrán
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-aghoni-bora" data-country-code="IN" data-menu-target="sub">
+									Aghoni Bora
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-curry" data-country-code="IN" data-menu-target="sub">
-									Arroz al curry
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-basmati" data-country-code="IN" data-menu-target="sub">
+									Basmati
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-chana" data-country-code="IN" data-menu-target="sub">
-									Arroz chana
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-glutinoso" data-country-code="IN" data-menu-target="sub">
+									Arroz glutinoso
 								</a>
 							</li>
-							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-congee" data-country-code="IN" data-menu-target="sub">
-									Arroz congee
-								</a>
-							</li>
-							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-platano" data-country-code="IN" data-menu-target="sub">
-									Arroz en hoja de plátano
-								</a>
-							</li>
-							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
-									Biryani
-								</a>
-							</li>
-
 						</ul>
 
-					<h4>PLATOS CON ARROZ EN OTROS PAÍSES</h4>
+					<h4>VARIEDADES EN OTROS PAÍSES (50) </h4>
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
 				</div>

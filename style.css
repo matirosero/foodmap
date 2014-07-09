@@ -356,6 +356,18 @@ a:active {
 			width: 25px;
 		}
 
+/*-----------------------------------------------------------------
+4.0 - Forms
+-----------------------------------------------------------------*/
+
+fieldset {
+	border: 0;
+	border-top: 1px solid;
+}
+#sidepanel-filter-order fieldset {
+	border:0;
+	padding: 0;
+}
 
 /*-----------------------------------------------------------------
 5.0 - Imagenes
@@ -848,7 +860,7 @@ body {
 		margin-left:56px;
 	}
 		#sidepanel-content,
-		#sidepanel-filter,
+		#sidepanel-filter-order,
 		.sidepanel-txt {
 			padding: 0px 10px;
 		}

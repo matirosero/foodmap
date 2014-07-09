@@ -3,26 +3,8 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#" data-user-action="add-foodtrip">
-									<?php include('../includes/icon-action-totrip.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="like">
-									<?php include('../includes/icon-action-like.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="dl-pdf">
-									<?php include('../includes/icon-action-pdf.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="share">
-									<?php include('../includes/icon-action-share.svg'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
+							<li>like</li>
 						</ul>
 					</nav>
 
@@ -48,7 +30,33 @@
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
 					<h4>Información científica</h4>
+
+					<p>
+						Clasificación científica
+					</p>
+					<p>
+						<strong>Reino:</strong> Plantae <br />
+						<strong>Subreino:</strong> Tracheobionta <br />
+						<strong>División:</strong> Magnoliophyta <br />
+						<strong>Clase:</strong> Liliopsida <br />
+						<strong>Subclase:</strong> Commelinidae <br />
+						<strong>Orden:</strong> Poales <br />
+						<strong>Familia:</strong> Poaceae <br />
+						<strong>Subfamilia:</strong> Bambusoideae <br />
+						<strong>Tribu:</strong> Oryzeae <br />
+						<strong>Género:</strong> Oryza <br />
+						<strong>Especie:</strong> O. sativa
+					</p>
+
+					<p>
+						Oryza sativa, comúnmente llamado arroz, es una especie perteneciente a la familia de las gramíneas (Poáceas), cuyo fruto es comestible y constituye la base de la dieta de casi la mitad de la población mundial. Su nutriente principal son los hidratos de carbono, aunque también aporta proteínas (7%), minerales y, en estado natural, bastantes vitaminas.
+					</p>	
+
 					<h4>Información local</h4>
+					
+					<p>
+						El dios Shiva llamaba al arroz Vrihi, en sánscrito. La India es uno de los centros originarios del cultivo de arroz. La zona de los cultivos de arroz en la India es la mayor del mundo. Los cultivos de arroz se extienden por todos los estados de la India, pero Bengala Occidental, Uttar Pradesh, Madhya Pradesh, Orissa y Bihar son los principales estados productores. La cosecha temprana del Kharif dura de marzo-mayo a junio-octubre; la cosecha media del Kharif comprende desde junio-octubre hasta noviembre-febrero, y la temporada del Rabi es de noviembre-febrero a marzo-junio.
+					</p>
 
 				</div>
 				<!-- Fin de contenido variable -->

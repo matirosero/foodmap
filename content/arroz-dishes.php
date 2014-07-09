@@ -3,26 +3,8 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#" data-user-action="add-foodtrip">
-									<?php include('../includes/icon-action-totrip.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="like">
-									<?php include('../includes/icon-action-like.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="dl-pdf">
-									<?php include('../includes/icon-action-pdf.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="share">
-									<?php include('../includes/icon-action-share.svg'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
+							<li>like</li>
 						</ul>
 					</nav>
 
@@ -36,17 +18,15 @@
 
 				<div class="sidepanel-txt">
 
-					<h3>Platos en que se usa</h3>
+					<h3>PLATOS EN LOS QUE SE USA</h3>
 
 
-
-
-					<h4>PLATOS  EN INDIA (22)</h4>
+					<h4>PLATOS EN INDIA (22)</h4>
 
 						<ul>
 							<li>
 								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-azafran" data-country-code="IN" data-menu-target="sub">
-									Arroz al azafrán
+									Arroz al azafrán 
 								</a>
 							</li>
 							<li>
@@ -74,10 +54,95 @@
 									Biryani
 								</a>
 							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Cuajada de arroz
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Hyderabadi Biryani
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Idli 
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Khichdi 
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Kuzhakkattai  
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Kanji  
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Modak
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Pakhal 
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Payasam
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Pilaf  
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Poha
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Pohe
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Pulihora 
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Puliyogare
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Rajma
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Sambhar
+								</a>
+							</li>
+							<li>
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+									Shahi Paneer
+								</a>
+							</li>
 
 						</ul>
 
-					<h4>PLATOS CON ARROZ EN OTROS PAÍSES</h4>
+					<h4>PLATOS CON ARROZ EN OTROS PAÍSES (116)</h4>
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
 				</div>

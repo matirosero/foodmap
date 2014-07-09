@@ -3,26 +3,8 @@
 
 					<nav class="user-actions">
 						<ul>
-							<li>
-								<a href="#" data-user-action="add-foodtrip">
-									<?php include('../includes/icon-action-totrip.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="like">
-									<?php include('../includes/icon-action-like.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="dl-pdf">
-									<?php include('../includes/icon-action-pdf.svg'); ?>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-user-action="share">
-									<?php include('../includes/icon-action-share.svg'); ?>
-								</a>
-							</li>
+							<li>agregar a ruta</li>
+							<li>like</li>
 						</ul>
 					</nav>
 
@@ -36,13 +18,9 @@
 
 				<div class="sidepanel-txt">
 
-					<h3>Técnicas</h3>
+					<h3>TÉCNICAS</h3>
 
-
-
-
-					<h4>Productos derivados</h4>
-
+						<h4>PRODUCTOS DERIVADOS</h4>
 						<ul>
 							<li>
 								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-harina" data-country-code="IN" data-menu-target="sub">
@@ -60,18 +38,16 @@
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-leche" data-country-code="IN" data-menu-target="sub">
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-vinos" data-country-code="IN" data-menu-target="sub">
 									Leche de arroz
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-vinagre" data-country-code="IN" data-menu-target="sub">
-									Vinagre de arroz
+								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-vinos" data-country-code="IN" data-menu-target="sub">
+								Vinagre de arroz
 								</a>
 							</li>
 						</ul>
-
-					<h4>tecnología</h4>
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
 				</div>

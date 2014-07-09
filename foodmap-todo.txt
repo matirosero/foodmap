@@ -1,10 +1,10 @@
 TO DO
 
 	Necesario
-		Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath
+	✔︎	Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath
 		Filtrar resultados en panel -M
 		Ir a region en map -M
-		Quitar bordes blanco del mapa al abrir panel -M
+	✔︎	Quitar bordes blanco del mapa al abrir panel -M
 		Tamaño del mapa al abrir panel -M
 		Showinfo debe aparecer donde está el mouse -M
 		Estilo map -M
@@ -15,6 +15,12 @@ TO DO
 		CSS para todo -
 	✔︎	Botones acciones usuario - M
 		**Todos los html de contenido - L & F
+
+		MOVIL:
+			Cuando este portrait arriba
+			Landscape abajo
+
+
 
 	Nice to have
 		Login falso

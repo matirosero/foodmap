@@ -2,7 +2,7 @@
 					<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
 					<h2>India <span class="small">80 ingredientes</span></h2>
 					<p>
-						Consectetur adipiscing elit. Etiam viverra dolor id enim venenatis hendrerit. Donec faucibus urna vitae lorem viverra rutrum. Fusce vehicula est at velit scelerisque commodo. Pellentesque lorem ligula, aliquam ut placerat ut, placerat at enim.
+						La gastronomía de la India se caracteriza por una <strong>gran variedad de estilos regionales y el uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con arroz (especialmente en el sur y el este) y trigo (predominantemente en el norte). Las especias como la pimienta negra, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. El pimiento, que fue introducido por los portugueses, también es muy utilizado en la cocina India. 
 					</p>
 				</header>
 
@@ -38,112 +38,112 @@
 						<li>
 							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/arroz-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Arroz</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-cordero" data-sidepanel-content="generalinfo" data-sidepanel-item="cordero" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/cordero-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Cordero</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="soja" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/soja-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Soja</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-jengibre" data-sidepanel-content="generalinfo" data-sidepanel-item="jengibre" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/jengibre-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Jengibre</h4>
 							</a>
 						</li>
 
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-masoor" data-sidepanel-content="generalinfo" data-sidepanel-item="masoor" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/masoor-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Masoor</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-pepino" data-sidepanel-content="generalinfo" data-sidepanel-item="pepino" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/pepino-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Pepino</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-berenjena" data-sidepanel-content="generalinfo" data-sidepanel-item="berenjena" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/berenjena-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Berenjena</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-ghee" data-sidepanel-content="generalinfo" data-sidepanel-item="ghee" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/ghee-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Ghee</h4>
 							</a>
 						</li>
 
 
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-aceite-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="aceite-soja" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/aceite-soja-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Aceite de soja</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-atta" data-sidepanel-content="generalinfo" data-sidepanel-item="atta" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/atta-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Atta</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-bajra" data-sidepanel-content="generalinfo" data-sidepanel-item="bajra" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/bajra-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Bajra</h4>
 							</a>
 						</li>
 						<li>
-							<a class="foodresult-link" href="#IN-arroz" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+							<a class="foodresult-link" href="#IN-jeera" data-sidepanel-content="generalinfo" data-sidepanel-item="jeera" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/ingredient.jpg" alt="" />
+									<img src="images/jeera-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Nombre</h4>
+								<h4 class="block-name">Jeera</h4>
 							</a>
 						</li>
 					</ul><!-- /.blocks -->

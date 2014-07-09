@@ -235,7 +235,7 @@ AmCharts.ready(function() {
 		var original_map_width = $('#mapdiv').width();
 		console.log('original window = ' + original_map_width);
 
-		var new_map_width = window_width - 710 + 'px'; //change this to - 700
+		var new_map_width = window_width - 700 + 'px'; //change this to - 700
 		console.log('new map width = ' + new_map_width);
 
 		function toggle_map_size(map_width,margin_left){
