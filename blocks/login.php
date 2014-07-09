@@ -6,10 +6,10 @@
 			<h3>Entra y empieza tu viaje</h3>
 
 			<p>
-				<button type="submit" name="login">Entrar con <strong>Facebook</strong></button>
+				<button type="submit" name="login" class="btn-fb">Entrar con <strong>Facebook</strong></button>
 			</p>
 			<p>
-				<button type="submit" name="login">Entrar con <strong>Google+</strong></button>
+				<button type="submit" name="login" class="btn-google">Entrar con <strong>Google+</strong></button>
 			</p>
 
 			<form>
@@ -22,9 +22,8 @@
 					<p>
 						<label for="password">Contraseña</label>
 						<input type="password" name="password" />
-					</p>
-					<p>
-						¿Haz olvidado tu contraseña?
+
+						<span class="form-help">¿Haz olvidado tu contraseña?</span>
 					</p>
 					<p>
 						<button type="submit" name="login">Entrar</button>

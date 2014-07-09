@@ -20,9 +20,9 @@ Ultimo cambio por:	Mati
 	1.2 - Estilos tipográficos de acuerdo a estructura
 2.0 - Navegación
 	2.1 - Links
-	2.2 - Botones
-	2.3 - Menus
-4.0 - Formularios
+	2.2 - Menus
+	2.3 - Botones
+3.0 - Formularios
 5.0 - Imagenes
 	5.1 - Iconos SVG
 6.0 - Estilos genéricos
@@ -267,14 +267,9 @@ a:active {
 }
 
 
-/*--------------------------------------------------------------
-2.2 Botones
---------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
-2.3 Menus
+2.2 Menus
 --------------------------------------------------------------*/
 
 #menu-top ul {
@@ -356,6 +351,52 @@ a:active {
 			width: 25px;
 		}
 
+/*--------------------------------------------------------------
+2.3 Botones
+--------------------------------------------------------------*/
+button {
+
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #f0f0f0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f0f0f0;
+	box-shadow:inset 0px 1px 0px 0px #f0f0f0;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+
+	background:#96979a;
+	border:1px solid #e6e6e6;
+	display:inline-block;
+	color:#ffffff;
+	height:50px;
+	min-width:auto;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 1px #424242;
+
+}
+
+.btn-fb {
+	background: #395797;
+}
+.btn-google {
+	background: #CD3D2A;
+}
+
+button:active,
+button:hover {
+	background:#eb4a3f;
+}
+
+.form-container button {
+	width:300px;
+}
+
+
 /*-----------------------------------------------------------------
 4.0 - Forms
 -----------------------------------------------------------------*/
@@ -363,11 +404,59 @@ a:active {
 fieldset {
 	border: 0;
 	border-top: 1px solid;
+	padding: 1em 0;
+}
+legend {
+	text-align: center;
 }
 #sidepanel-filter-order fieldset {
 	border:0;
-	padding: 0;
+	float:left;
+	padding: 0 1em 0 0;
 }
+
+
+.sidepanel-filter-order .order {
+
+}
+
+
+label {
+	display:block;
+}
+
+input + label {
+	display:inline-block;
+}
+
+input {
+	background: #fff;
+	border: 0;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	background: #fff;
+	border: 0;
+	height:40px;
+	padding: 0 10px;
+}
+
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=password] {
+	width:280px;
+}
+
+.form-help {
+	font-size: .8em;
+	margin-top: 5px;
+}
+
+
+
 
 /*-----------------------------------------------------------------
 5.0 - Imagenes
@@ -516,7 +605,7 @@ a:active .logo-foodmap {
 }
 .form-container {
 	margin:0 auto;
-	width:320px;
+	width:300px;
 }
 .blocks {
 	list-style: none;
@@ -578,7 +667,9 @@ a:active .logo-foodmap {
 #menu-user:before,
 #menu-user:after,
 .blocks:before,
-.blocks:after {
+.blocks:after,
+#sidepanel-filter-order:before,
+#sidepanel-filter-order:after {
 	content: '';
 	display: table;
 }
@@ -590,7 +681,8 @@ a:active .logo-foodmap {
 #menu-top:after,
 #menu-main:after,
 #menu-user:after,
-.blocks:after {
+.blocks:after,
+#sidepanel-filter-order:after {
 	clear: both;
 }
 

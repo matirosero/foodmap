@@ -15,26 +15,32 @@
 				</header>
 
 				<div id="sidepanel-results">
-					<form id="sidepanel-filter">
-						<label>Filtrar por </label>
-						<select name="region">
-							<option value="">Región</option>
-							<option value="">Andhra Pradesh</option>
-							<option value="">Arunachal Pradesh</option>
-							<option value="">Assam</option>
-							<option value="">Bihar</option>
-							<option value="">Chhattisgarh</option>
-							<option value="">Goa</option>
-							<option value="">Guyarat</option>
-							<option value="">Hariana</option>
-						</select>
-						<select name="world">
-							<option value="">?</option>
-							<option value="">Animal</option>
-							<option value="">Vegetal</option>
-							<option value="">Mineral</option>
-							<option value="">Micro-organismos</option>
-						</select>
+					<form id="sidepanel-filter-order">
+						<fieldset class="order">
+							<label for"orderby">Ordenar por</label>
+
+							<select name="region">
+								<option value="" class="popularity">Popularidad</option>
+								<option value="" class="alphabetical">Orden alfabético</option>
+							</select>
+						</fieldset>
+						<fieldset class="filter">
+							<label for="filterby">Filtrar por </label>
+							<select name="region">
+								<option value="">Región</option>
+								<option value="">Andhra Pradesh</option>
+								<option value="">Arunachal Pradesh</option>
+								<option value="">Assam</option>
+								<option value="">Bihar</option>
+								<option value="">Chhattisgarh</option>
+								<option value="">Goa</option>
+								<option value="">Guyarat</option>
+								<option value="">Hariana</option>
+							</select>
+						</fieldset>
+						<fieldset class="go">
+							<button type="submit" class="go-filter" name="go-filter">Reordenar</button>
+						</fieldset>
 					</form>
 
 					<ul class="blocks">

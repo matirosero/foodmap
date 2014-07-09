@@ -2,31 +2,44 @@
 					<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
 					<h2>India <span class="small">80 ingredientes</span></h2>
 					<p>
-						La gastronomía de la India se caracteriza por una <strong>gran variedad de estilos regionales y el uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con arroz (especialmente en el sur y el este) y trigo (predominantemente en el norte). Las especias como la pimienta negra, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. El pimiento, que fue introducido por los portugueses, también es muy utilizado en la cocina India. 
+						La gastronomía de la India se caracteriza por una <strong>gran variedad de estilos regionales y el uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con arroz (especialmente en el sur y el este) y trigo (predominantemente en el norte). Las especias como la pimienta negra, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. El pimiento, que fue introducido por los portugueses, también es muy utilizado en la cocina India.
 					</p>
 				</header>
 
 				<div id="sidepanel-results">
-					<form id="sidepanel-filter">
-						<label>Filtrar por </label>
-						<select name="region">
-							<option value="">Región</option>
-							<option value="">Andhra Pradesh</option>
-							<option value="">Arunachal Pradesh</option>
-							<option value="">Assam</option>
-							<option value="">Bihar</option>
-							<option value="">Chhattisgarh</option>
-							<option value="">Goa</option>
-							<option value="">Guyarat</option>
-							<option value="">Hariana</option>
-						</select>
-						<select name="world">
-							<option value="">Mundo</option>
-							<option value="">Animal</option>
-							<option value="">Vegetal</option>
-							<option value="">Mineral</option>
-							<option value="">Micro-organismos</option>
-						</select>
+					<form id="sidepanel-filter-order">
+						<fieldset class="order">
+							<label for"orderby">Ordenar por</label>
+
+							<select name="region">
+								<option value="" class="popularity">Popularidad</option>
+								<option value="" class="alphabetical">Orden alfabético</option>
+							</select>
+						</fieldset>
+						<fieldset class="filter">
+							<label for="filterby">Filtrar por </label>
+							<select name="region">
+								<option value="">Región</option>
+								<option value="">Andhra Pradesh</option>
+								<option value="">Arunachal Pradesh</option>
+								<option value="">Assam</option>
+								<option value="">Bihar</option>
+								<option value="">Chhattisgarh</option>
+								<option value="">Goa</option>
+								<option value="">Guyarat</option>
+								<option value="">Hariana</option>
+							</select>
+							<select name="world">
+								<option value="">Mundo</option>
+								<option value="">Animal</option>
+								<option value="">Vegetal</option>
+								<option value="">Mineral</option>
+								<option value="">Micro-organismos</option>
+							</select>
+						</fieldset>
+						<fieldset class="go">
+							<button type="submit" class="go-filter" name="go-filter">Reordenar</button>
+						</fieldset>
 					</form>
 
 					<!-- .blocks: clase generica para <ul>, para cada vez que queramos cuadritos -->
