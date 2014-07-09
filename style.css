@@ -401,6 +401,11 @@ button:hover {
 4.0 - Forms
 -----------------------------------------------------------------*/
 
+#sidepanel-filter-order {
+	padding-bottom: 0;
+}
+
+
 fieldset {
 	border: 0;
 	border-top: 1px solid;

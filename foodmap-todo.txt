@@ -36,3 +36,5 @@ TO DO
 
 	CSS:
 	✔︎	Forms
+		Lista blocks clearea el menu lateral :(
+		Menu lateral position: absolute para poder poner texto

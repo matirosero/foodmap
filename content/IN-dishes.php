@@ -7,7 +7,7 @@
 				<header id="sidepanel-header">
 
 					<!-- Nombre Pais -->
-					<h2>India <span class="small"><!-- Cantidad de platos/ingredientes -->15 platos</span></h2>
+					<h2>India <span class="small">15 platos</span></h2>
 					<p>
 						<!-- Parrafo info -->
 						<strong>La gastronomía de la India es muy variada y surge como resultado de su diversidad de poblaciones y culturas</strong>. A causa de las colonizaciones realizadas durante varios siglos se fueron incorporando diferentes prácticas culinarias. Aquí se mostrarán algunos de los platos más variados clasificados por región de la India.
@@ -37,6 +37,7 @@
 								<option value="">Guyarat</option>
 								<option value="">Hariana</option>
 							</select>
+
 						</fieldset>
 						<fieldset class="go">
 							<button type="submit" class="go-filter" name="go-filter">Reordenar</button>
