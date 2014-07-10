@@ -39,9 +39,7 @@
 							</select>
 
 						</fieldset>
-						<fieldset class="go">
-							<button type="submit" class="go-filter" name="go-filter">Reordenar</button>
-						</fieldset>
+
 					</form>
 
 					<ul class="blocks">

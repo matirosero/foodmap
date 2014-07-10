@@ -176,30 +176,29 @@ h6 .small {
 	border-bottom:1px solid #4d5054;
 }
 
-#sidepanel-filter-order, #sidepanel-filter-order select {
+#sidepanel-navigation,
+#sidepanel-filter-order,
+#sidepanel-filter-order select {
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+#sidepanel-filter-order,
+#sidepanel-filter-order select {
 	color: #9D978F;
-	font-family:'Lato',sans-serif;
-	font-weight:700;
-	text-transform:uppercase;
-
 }
-#sidepanel-navigation, #sidepanel-filter-order {
-	font-family:'Lato',sans-serif;
-	font-weight:700;
-	text-transform:uppercase;
-	font-size: 11px;
 
-}
 #sidepanel-filter-order {
-	color: #9D978F;
-
+	font-size: 10px;
 }
 #sidepanel-filter-order select {
-   width: auto;
-   height: 34px;
-   overflow: hidden;
    background: #fff;
    border: 1px solid #9D978F;
+   font-size: 12px;
+   height: 34px;
+   overflow: hidden;
+   width: 150px;
 }
 
 
@@ -360,15 +359,14 @@ a:active {
 		padding: 10px 0;
 	}
 		#sidepanel-navigation ul > li > a .menu-txt {
-			font-size: 14px;
-position: absolute;
-top: 0;
-background: #EB4A3F;
-color: #fff;
-left: 52px;
-line-height: 50px;
-
+			background: #EB4A3F;
+			color: #fff;
 			display: none;
+			font-size: 12px;
+			left: 52px;
+			line-height: 50px;
+			position: absolute;
+			top: 0;
 			white-space:nowrap;
 		}
 		#sidepanel-navigation ul > li > a.current .menu-txt {
@@ -467,7 +465,8 @@ legend {
 #sidepanel-filter-order fieldset {
 	border:0;
 	float:left;
-	padding: 0 1em 0 0;
+	margin: 0;
+	padding: 0 .5em 0 0;
 }
 
 
@@ -1042,6 +1041,11 @@ body {
 		.foodresult-name {
 
 		}
+
+	.action-tooltip {
+		display: none;
+	}
+
 
 /*--------------------------------------------------------------
 	8.3 Foodtrips

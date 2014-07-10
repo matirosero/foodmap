@@ -1,18 +1,81 @@
 				<header id="sidepanel-header">
 					<!-- Lo que va aquí dentro varía, pero seguir este ejemplo -->
 
+<!-- Hola Flor! Aqui empieza el menu de la acciones -->
 					<nav class="user-actions">
 						<ul>
-							<li>agregar a ruta</li>
-							<li>like</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Agregar a uno de mis FoodTrips</strong>
+									<ul>
+										<li>
+											<a href="#" data-user-action="totrip" data-user-action-target="trip">Postres para bloquear arterias<!-- O el nombre que querás ponerle --></a>
+										</li>
+										<li>
+											<a href="#" class="add-new-foodtrip" data-user-action="totrip" data-user-action-target="new-trip">Crear un nuevo FoodTrip</a>
+										</li>
+									</ul>
+								</span>
+								<a href="#" data-user-action="add-foodtrip">
+
+									<?php include('../includes/icon-action-totrip.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Me gusta!</strong>
+								</span>
+								<a href="#" data-user-action="like">
+									<?php include('../includes/icon-action-like.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Tu PDF está descargando</strong>
+								</span>
+								<a href="#" data-user-action="dl-pdf">
+									<?php include('../includes/icon-action-pdf.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Compartir</strong>
+									<ul>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="fb">
+												<?php include('includes/icon-share-fb.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="twitter">
+												<?php include('includes/icon-share-twitter.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="email">
+												<?php include('includes/icon-share-email.svg');?>
+											</a>
+										</li>
+
+									</ul>
+								</span>
+								<a href="#" data-user-action="share">
+									<?php include('../includes/icon-action-share.svg'); ?>
+								</a>
+							</li>
 						</ul>
 					</nav>
+<!-- Aqui termina el menú -->
+
+
 
 					<h2>Bisi bele bath</h2>
 					<h6><span class="country">India</span> <span class="region">Karnataka</span></h6>
 
 					<div class="item-pic">
-						<img src="bisi-bele-bath-full.jpg" alt="Bisi Bele Bath" />
+
+<!-- OJO!!!! Aquí faltaba "images/" -->
+						<img src="images/bisi-bele-bath-full.jpg" alt="Bisi Bele Bath" />
 					</div>
 
 				</header>

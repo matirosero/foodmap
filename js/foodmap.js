@@ -472,7 +472,7 @@ function populate_side(country_name,country_code,search_terms) {
 			var sidepanel_item = $(this).attr('data-sidepanel-item');
 			//console.log('this is in: '+parent_menu_li);
 
-			parent_menu_li.find('.submenu-container').load('/blocks/sidepanel-submenu-'+child_menu_type+'.php',
+			parent_menu_li.find('.submenu-container').load('blocks/sidepanel-submenu-'+child_menu_type+'.php',
     {
         'sidepanel_item': '<?php echo '+sidepanel_item+'; ?>'
     });

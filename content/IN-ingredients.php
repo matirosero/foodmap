@@ -37,9 +37,7 @@
 								<option value="">Micro-organismos</option>
 							</select>
 						</fieldset>
-						<fieldset class="go">
-							<button type="submit" class="go-filter" name="go-filter">Reordenar</button>
-						</fieldset>
+
 					</form>
 
 					<!-- .blocks: clase generica para <ul>, para cada vez que queramos cuadritos -->
