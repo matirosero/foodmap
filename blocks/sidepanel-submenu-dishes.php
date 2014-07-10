@@ -20,12 +20,13 @@
 				<li class="">
 					<a href="#" data-sidepanel-content="prep" data-menu-target="sub" data-sidepanel-item="bhakri">
 						<?php include('../includes/icon-side-submenu-prep.inc');?>
-						<span class="menu-txt">Preparación</span>
+						<span class="menu-txt">Elaboración</span>
 					</a>
 				</li>
 				<li class="">
 					<a href="" data-sidepanel-content="tech" data-menu-target="sub" data-sidepanel-item="bhakri">
 						<?php include('../includes/icon-side-submenu-tech.inc');?>
+						<span class="menu-txt">Técnicas</span>
 					</a>
 				</li>
 			</ul>
