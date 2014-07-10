@@ -469,7 +469,7 @@ function populate_side(country_name,country_code,search_terms) {
 			console.log('goes to dish or ingredient');
 			var parent_menu_li = $('.sidepanel-menu .current').closest('li');
 			var child_menu_type = $('.sidepanel-menu .current').attr('data-sidepanel-content');
-			var sidepanel_item = $(this).attr('data-sidepanel-item');
+			var sidepanel_item = $(this).parent('.blocks').attr('data-sidepanel-item');
 			//console.log('this is in: '+parent_menu_li);
 
 			parent_menu_li.find('.submenu-container').load('blocks/sidepanel-submenu-'+child_menu_type+'.php',

@@ -2,6 +2,7 @@ TO DO
 
 	Necesario
 	✔︎	Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath 9/7
+	✔︎	Filtrar resultados en panel mockup
 		Filtrar resultados en panel -M
 		Ir a region en map -M
 	✔︎	Quitar bordes blanco del mapa al abrir panel -M 9/7
@@ -37,5 +38,5 @@ TO DO
 
 	CSS:
 	✔︎	Forms
-		Lista blocks clearea el menu lateral :(
-		Menu lateral position: absolute para poder poner texto
+	✔︎	Lista blocks clearea el menu lateral :(
+	✔︎	Menu lateral position: absolute para poder poner texto

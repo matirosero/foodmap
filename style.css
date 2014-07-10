@@ -457,6 +457,7 @@ button:hover {
 fieldset {
 	border: 0;
 	border-top: 1px solid;
+	margin:0;
 	padding: 1em 0;
 }
 legend {
@@ -835,6 +836,7 @@ body {
 		padding: 30px 0;
 	}
 		.footer-menu-small {
+			font-size: 10px;
 			margin-top: 1em;
 		}
 

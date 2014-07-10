@@ -41,7 +41,7 @@
 					</form>
 
 					<!-- .blocks: clase generica para <ul>, para cada vez que queramos cuadritos -->
-					<ul class="blocks">
+					<ul class="blocks" data-sidepanel-item="arroz">
 
 						<!-- .foodresult: cuadrito que contendra la info de cada resultado -->
 						<!-- .ingredient || .recipe : clase que se agregara de acuerdo a si es plato o ingrediente, colgarse de ella para los iconos -->

@@ -42,7 +42,7 @@
 
 					</form>
 
-					<ul class="blocks">
+					<ul class="blocks" data-sidepanel-item="bisi-bele-bath">
 
 
 						<!-- Lo que hay que poner para cada ingrediente/plato -->
