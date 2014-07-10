@@ -176,6 +176,33 @@ h6 .small {
 	border-bottom:1px solid #4d5054;
 }
 
+#sidepanel-filter-order, #sidepanel-filter-order select {
+	color: #9D978F;
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+
+}
+#sidepanel-navigation, #sidepanel-filter-order {
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size: 11px;
+
+}
+#sidepanel-filter-order {
+	color: #9D978F;
+
+}
+#sidepanel-filter-order select {
+   width: auto;
+   height: 34px;
+   overflow: hidden;
+   background: #fff;
+   border: 1px solid #9D978F;
+}
+
+
 #page-footer {
 	font-family:'Lato',sans-serif;
 	font-weight:300;

@@ -513,9 +513,13 @@ function sidepanel_menu_txt(){
 	$('#sidepanel-navigation').on("mouseenter", 'a:not(.current)', function(e){
 		$(this).find('.menu-txt').show();
 	});
-	$('#sidepanel-navigation').on("mouseleave", 'a:not(.current)', function(e){
+	$('#sidepanel-navigation').on("mouseleave", 'a', function(e){
 		$(this).find('.menu-txt').hide();
 	});
+	$('#sidepanel-navigation').on("click", 'a', function(e){
+		$(this).find('.menu-txt').hide();
+	});
+
 
 
 }
