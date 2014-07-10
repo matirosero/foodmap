@@ -317,6 +317,7 @@ a:active {
 		display: block;
 		font-size: 50px;
 		line-height:50px;
+		position: relative;
 		text-align: center;
 		width: 100%;
 	}
@@ -331,6 +332,28 @@ a:active {
 	#sidepanel-navigation .sidepanel-menu > li > a {
 		padding: 10px 0;
 	}
+		#sidepanel-navigation ul > li > a .menu-txt {
+			font-size: 14px;
+position: absolute;
+top: 0;
+background: #EB4A3F;
+color: #fff;
+left: 52px;
+line-height: 50px;
+
+			display: none;
+			white-space:nowrap;
+		}
+		#sidepanel-navigation ul > li > a.current .menu-txt {
+			background: #fdfbee;
+			color: #EB4A3F;
+		}
+		.sidepanel-menu > li > a .menu-txt {
+			padding: 10px 15px 10px 5px;
+		}
+		.sidepanel-submenu > li > a .menu-txt {
+			padding: 0px 15px 0px 5px;
+		}
 
 
 .user-actions ul {
@@ -951,6 +974,7 @@ body {
 	#sidepanel-navigation {
 
 		float:left;
+		position: absolute;
 		width:52px;
 	}
 	#sidepanel-main {

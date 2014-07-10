@@ -503,6 +503,19 @@ function populate_side(country_name,country_code,search_terms) {
 
 	});
 
+	sidepanel_menu_txt();
+
+}
+
+function sidepanel_menu_txt(){
+
+
+	$('#sidepanel-navigation').on("mouseenter", 'a:not(.current)', function(e){
+		$(this).find('.menu-txt').show();
+	});
+	$('#sidepanel-navigation').on("mouseleave", 'a:not(.current)', function(e){
+		$(this).find('.menu-txt').hide();
+	});
 
 
 }
@@ -629,6 +642,7 @@ function dev_disable() {
 	$('.disable').hide();
 	$('body').css('background','#fff');
 }
+
 
 
 // Kick things off.
