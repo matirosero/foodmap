@@ -604,12 +604,16 @@ a:active .icon-menu-toggle {
 }
 
 
-.icon-user-action {
+.icon-user-action,
+.icon-share {
 	fill:#9D978F;
 }
 a:hover .icon-user-action,
 a:focus .icon-user-action,
-a:active .icon-user-action {
+a:active .icon-user-action,
+a:hover .icon-share,
+a:focus .icon-share,
+a:active .icon-share {
 	fill: #eb4a3f;
 }
 
