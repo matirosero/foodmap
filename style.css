@@ -268,15 +268,15 @@ a:active {
 
 
 #sidepanel a {
-	color: #fff;
+	/* color: #fff; */
 }
 #sidepanel a:visited {
-	color: #fff;
+	/* color: #fff; */
 }
 #sidepanel a:hover,
 #sidepanel a:focus,
 #sidepanel a:active {
-	color: #f99d1c;
+	/* color: #f99d1c; */
 }
 
 #footer-content a {
@@ -391,6 +391,7 @@ a:active {
 		display: inline-block;
 		float:right;
 		margin-right: 5px;
+		position: relative;
 		text-align: right;
 	}
 		.user-actions ul li a {
@@ -1045,8 +1046,72 @@ body {
 		}
 
 	.action-tooltip {
+		background: #fff;
+		border: 1px solid #9D978F;
 		display: none;
+		padding: 10px 0;
+		position: absolute;
+		text-align: center;
+		top:30px;
+
+		font-family:'Lato',sans-serif;
+		font-size: 10px;
+	font-weight:700;
+	text-transform:uppercase;
 	}
+		.action-tooltip .tooltip-msg {
+			display: block;
+			padding: 0 10px;
+		}
+
+	.action-tooltip.showaction {
+		display: block;
+		position: absolute;
+	}
+	.action-tooltip[data-user-action="share"],
+	.action-tooltip[data-user-action="dl-pdf"] {
+		width: 100px;
+		left: -40px;
+	}
+	.action-tooltip[data-user-action="like"] {
+		width:90px;
+		left:-35px;
+	}
+	.action-tooltip[data-user-action="add-foodtrip"] {
+		width:160px;
+		left:-130px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+		.action-tooltip[data-user-action="add-foodtrip"] ul {
+			border-top: 1px solid #9D978F;
+			list-style: none;
+			margin: 5px 0 0 0;
+			padding: 0;
+
+
+		}
+			.action-tooltip[data-user-action="add-foodtrip"] ul li {
+				border-bottom: 1px solid #9D978F;
+				float:none;
+				text-align: left;
+				width:100%
+			}
+			.action-tooltip[data-user-action="add-foodtrip"] ul li:last-child{
+				border:0;
+			}
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a {
+
+					display: block;
+					padding: 5px 10px 8px;
+					width:140px;
+				}
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:hover,
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:focus,
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:active {
+					background: #eb4b3f;
+					color: #fff;
+				}
 
 
 /*--------------------------------------------------------------

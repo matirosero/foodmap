@@ -354,7 +354,7 @@ function populate_showinfo(country_name,country_code) {
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
 			result_kind = 'Ingrediente';
 			new_ingredients = search_string;
-			new_dish = '24 Platos';
+			new_dish = '28 Platos';
 
 			new_href_ingredient = 'arroz';
 			new_href_dish = 'dishes';
@@ -374,7 +374,7 @@ function populate_showinfo(country_name,country_code) {
 
 	} else {
 		new_ingredients = '80 Ingredientes';
-		new_dish = '24 Platos';
+		new_dish = '28 Platos';
 
 		new_href_dish = 'dishes';
 		new_href_ingredient = 'ingredients';
@@ -428,7 +428,7 @@ function populate_side(country_name,country_code,search_terms) {
 
 
 	//When click links in showinfo
-	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a', function(e){
+	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a:not(.action)', function(e){
 		//console.log('link HI: '+$(this).attr('data-sidepanel-content'));
 		e.preventDefault();
 
@@ -504,7 +504,24 @@ function populate_side(country_name,country_code,search_terms) {
 	});
 
 	sidepanel_menu_txt();
+	show_action_tooltip();
 
+}
+
+function show_action_tooltip() {
+	console.log('tooltips on');
+	$('#sidepanel-content').on("click", 'a.action', function(e){
+		var action_tooltip = $(this).prev();
+		if (action_tooltip.hasClass('showaction')){
+			$(this).prev().removeClass('showaction');
+		} else {
+			$(this).prev().addClass('showaction');
+		}
+
+
+
+
+	});
 }
 
 function sidepanel_menu_txt(){
@@ -646,6 +663,7 @@ function dev_disable() {
 	$('.disable').hide();
 	$('body').css('background','#fff');
 }
+
 
 
 

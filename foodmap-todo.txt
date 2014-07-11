@@ -2,8 +2,8 @@ TO DO
 
 	Necesario
 	✔︎	Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath 9/7
-	✔︎	Filtrar resultados en panel mockup
-		Filtrar resultados en panel -M
+	✔︎	Filtrar resultados en panel mockup -M
+
 		Ir a region en map -M
 	✔︎	Quitar bordes blanco del mapa al abrir panel -M 9/7
 		Tamaño del mapa al abrir panel -M
@@ -17,7 +17,7 @@ TO DO
 	✔︎	Botones acciones usuario - M 9/7
 	✔︎	html de contenido (platos/ingredientes/info india) - F 9/7
 		Fotos contenido - L
-		Agregar textitos a todos los links del menu sidepanel
+	✔︎	Agregar textitos a todos los links del menu sidepanel
 
 		MOVIL:
 			Cuando este portrait arriba
@@ -29,6 +29,7 @@ TO DO
 		Login falso
 		Que más o menos funcione FoodTrips
 		Que algo pase con acciones usuario
+		Filtrar resultados en panel -M
 
 	Qué hacemos con
 		Historial

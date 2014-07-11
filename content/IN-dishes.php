@@ -1,4 +1,10 @@
 <!--
+	Ultimo cambio: Viernes, 11 Julio 2014 11:30 AM
+	Por: Flor
+-->
+
+
+<!--
 	Para los nombres de archivos:
 	(CODIGO PAIS: IN o JP)-dishes.html
 	(CODIGO PAIS: IN o JP)-inredients.html
@@ -7,10 +13,10 @@
 				<header id="sidepanel-header">
 
 					<!-- Nombre Pais -->
-					<h2>India <span class="small">15 platos</span></h2>
+					<h2>India <span class="small">28 platos</span></h2>
 					<p>
 						<!-- Parrafo info -->
-						<strong>La gastronomía de la India es muy variada y surge como resultado de su diversidad de poblaciones y culturas</strong>. A causa de las colonizaciones realizadas durante varios siglos se fueron incorporando diferentes prácticas culinarias. Aquí se mostrarán algunos de los platos más variados clasificados por región de la India.
+						<strong>La gastronomía de la India es muy variada y surge como resultado de su diversidad de poblaciones y culturas</strong>. A causa de las colonizaciones realizadas durante varios siglos se fueron incorporando diferentes prácticas culinarias. Aquí puedes explorar y descubrir los <strong>platos más auténticos y característicos de las diferentes regiones</strong> del país!	
 					</p>
 				</header>
 
@@ -73,7 +79,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="kadhahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-kadhahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="kadhahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/kadhahi-paneer-thumb.jpg" alt="" />
 									</div>
@@ -82,7 +88,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="naan" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-naan" data-sidepanel-content="generalinfo" data-sidepanel-item="naan" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/naan-thumb.jpg" alt="" />
 									</div>
@@ -92,16 +98,16 @@
 						</li>
 
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="shahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-shahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="shahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/shahi-paneer.jpg" alt="" />
+									<img src="images/shahi-paneer-thumb.jpg" alt="" />
 									</div>
 
 								<h4 class="block-name">Shahi paneer</h4>
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="chapati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-chapati" data-sidepanel-content="generalinfo" data-sidepanel-item="chapati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/chapati-thumb.jpg" alt="" />
 									</div>
@@ -110,7 +116,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="dum-gosht" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-dum-gosht" data-sidepanel-content="generalinfo" data-sidepanel-item="dum-gosht" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/dum-gosht-thumb.jpg" alt="" />
 									</div>
@@ -119,7 +125,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="pollo-tandoori" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-pollo-tandoori" data-sidepanel-content="generalinfo" data-sidepanel-item="pollo-tandoori" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/pollo-tandoori-thumb.jpg" alt="" />
 									</div>
@@ -130,7 +136,7 @@
 
 
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-biryani" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/biryani-thumb.jpg" alt="" />
 									</div>
@@ -139,16 +145,16 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="samosas" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-samosa" data-sidepanel-content="generalinfo" data-sidepanel-item="samosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/samosas-thumb.jpg" alt="" />
+									<img src="images/samosa-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Samosas</h4>
+								<h4 class="block-name">Samosa</h4>
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/paneer-thumb.jpg" alt="" />
 									</div>
@@ -157,7 +163,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="pescado-tandoori" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-pescado-tandoori" data-sidepanel-content="generalinfo" data-sidepanel-item="pescado-tandoori" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/pescado-tandoori-thumb.jpg" alt="" />
 									</div>
@@ -166,7 +172,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="pakora" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-pakora" data-sidepanel-content="generalinfo" data-sidepanel-item="pakora" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/pakora-thumb.jpg" alt="" />
 									</div>
@@ -175,7 +181,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
@@ -184,7 +190,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="chaat" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-chaat" data-sidepanel-content="generalinfo" data-sidepanel-item="chaat" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/chaat-thumb.jpg" alt="" />
 									</div>
@@ -193,7 +199,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="baati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-baati" data-sidepanel-content="generalinfo" data-sidepanel-item="baati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/baati-thumb.jpg" alt="" />
 									</div>
@@ -202,7 +208,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
@@ -211,7 +217,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="dosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-dosa" data-sidepanel-content="generalinfo" data-sidepanel-item="dosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/dosa-thumb.jpg" alt="" />
 									</div>
@@ -220,7 +226,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="idli" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-idli" data-sidepanel-content="generalinfo" data-sidepanel-item="idli" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/idli-thumb.jpg" alt="" />
 									</div>
@@ -229,7 +235,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="rava-upma" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-rava-upma" data-sidepanel-content="generalinfo" data-sidepanel-item="rava-upma" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/rava-upma-thumb.jpg" alt="" />
 									</div>
@@ -238,7 +244,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="sambar-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-sambar-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="sambar-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/sambar-thumb.jpg" alt="" />
 									</div>
@@ -247,7 +253,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="rasam-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-rasam-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="rasam-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/rasam-thumb.jpg" alt="" />
 									</div>
@@ -256,7 +262,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="bonda-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-bonda-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bonda-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/bonda-thumb.jpg" alt="" />
 									</div>
@@ -265,7 +271,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="batata-vada" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-batata-vada" data-sidepanel-content="generalinfo" data-sidepanel-item="batata-vada" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/batata-vada-thumb.jpg" alt="" />
 									</div>
@@ -274,7 +280,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="puttu" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-puttu" data-sidepanel-content="generalinfo" data-sidepanel-item="puttu" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/puttu-thumb.jpg" alt="" />
 									</div>
@@ -283,7 +289,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="uttapam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-uttapam" data-sidepanel-content="generalinfo" data-sidepanel-item="uttapam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/uttapam-thumb.jpg" alt="" />
 									</div>
@@ -292,7 +298,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="payasam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-payasam" data-sidepanel-content="generalinfo" data-sidepanel-item="payasam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/payasam-thumb.jpg" alt="" />
 									</div>
@@ -301,7 +307,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="kanji" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a href="#IN-kanji" data-sidepanel-content="generalinfo" data-sidepanel-item="kanji" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/kanji-thumb.jpg" alt="" />
 									</div>
