@@ -5,6 +5,8 @@
 
 	if ($page == 'home') {
 		include('blocks/map-content.php');
+	} elseif ($page == 'foodtrip') {
+		include('blocks/map-foodtrip.php');
 	} elseif ($page == 'login') {
 		include('blocks/login.php');
 	} elseif ($page == 'plans') {

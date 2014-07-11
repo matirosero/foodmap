@@ -82,11 +82,17 @@ AmCharts.ready(function() {
 
 	// create AmMap object
 	var map = new AmCharts.AmMap();
+	var foodtrip = new AmCharts.AmMap();
 
 	// set path to images
 	map.pathToImages = "ammap/images/";
 	map.backgroundColor  = "#F4F3F0";
     map.backgroundAlpha  = 1;
+
+    // set path to images
+	foodtrip.pathToImages = "ammap/images/";
+	foodtrip.backgroundColor  = "#F4F3F0";
+    foodtrip.backgroundAlpha  = 1;
 
 	//initialize variables here instead of in listener
 	var country_name;
@@ -98,18 +104,7 @@ AmCharts.ready(function() {
 		getAreasFromMap:true
 	};
 
-	worldDataProvider = {
-		mapVar: AmCharts.maps.worldLow,
 
-		areas: [
-			{
-				id: "IN",
-				linkToObject: indiaDataProvider,
-			    /* color: "#723C1A", */
-			    passZoomValuesToTarget: false
-			}
-		]
-	};
 
 	/* create data provider object
 	 mapVar tells the map name of the variable of the map data. You have to
@@ -133,8 +128,15 @@ AmCharts.ready(function() {
 			}
 		]
 	};
+	var foodtripDataProvider = {
+		mapVar:	AmCharts.maps.indiaLow,
+		getAreasFromMap:true,
+
+		images:[{latitude:18.975, longitude:72.825833, type:"circle", color:"#6c00ff", label:"Bombay, Maharashtra", labelShiftY:2}]
+	};
 	// pass data provider to the map object
 	map.dataProvider = dataProvider;
+	foodtrip.dataProvider = foodtripDataProvider;
 
 
 	/* create areas settings
@@ -143,8 +145,9 @@ AmCharts.ready(function() {
 	*/
 	map.areasSettings = {
 		autoZoom: true,
-		/* selectedColor: "#CC0000", */
-		/* color: "#aaaaaa" */
+	};
+	foodtrip.areasSettings = {
+		autoZoom: true,
 	};
 
 	// let's say we want a small map to be displayed, so let's create and add it to the map
@@ -152,6 +155,7 @@ AmCharts.ready(function() {
 
 	// write the map to container div
 	map.write("mapdiv");
+	foodtrip.write("foodtripdiv");
 
 
 	//http://jsfiddle.net/amcharts/k67gB/light/
@@ -160,8 +164,6 @@ AmCharts.ready(function() {
 
 		country_name = event.mapObject.title;
 		country_code = event.mapObject.id;
-
-
 
 		//call other functions when click on country
 		close_guidebox();
