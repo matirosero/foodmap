@@ -6,9 +6,9 @@ TO DO
 
 	✔︎	Ir a region en map -M
 	✔︎	Quitar bordes blanco del mapa al abrir panel -M 9/7
-		Tamaño del mapa al abrir panel -M
+	✔︎	Tamaño del mapa al abrir panel -M 11/7
 		Showinfo debe aparecer donde está el mouse -M
-		Estilo map -M
+	✔︎	Estilo map -M 11/7
 		Arreglar RESPONSIVE -M
 		FoodTrips mockup -M
 		Pagina usuario - F
@@ -28,7 +28,7 @@ TO DO
 	Nice to have
 		Login falso
 		Que más o menos funcione FoodTrips
-		Que algo pase con acciones usuario
+	✔︎	Que algo pase con acciones usuario 11/7
 		Filtrar resultados en panel -M
 
 	Qué hacemos con

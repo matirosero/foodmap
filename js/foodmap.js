@@ -85,7 +85,8 @@ AmCharts.ready(function() {
 
 	// set path to images
 	map.pathToImages = "ammap/images/";
-
+	map.backgroundColor  = "#F4F3F0";
+    map.backgroundAlpha  = 1;
 
 	//initialize variables here instead of in listener
 	var country_name;

@@ -93,7 +93,7 @@ AmCharts.themes.foodmap = {
 		unlistedAreasAlpha: 0.4,
 		unlistedAreasColor: "#000000",
 		outlineColor: "#FFFFFF",
-		outlineAlpha: 1,//transp borde, era 0.5
+		outlineAlpha: 0.5,//transp borde, era 0.5
 		outlineThickness: 0.5, //borde, era 0.5
 		rollOverColor: "#9d978f", //al pasar por encima
 		rollOverOutlineColor: "#FFFFFF",
