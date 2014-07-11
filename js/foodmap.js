@@ -168,6 +168,10 @@ AmCharts.ready(function() {
 		populate_showinfo(country_name, country_code);
 		resize_map(); //1.4.1.2
 
+		//if we click inside map of India
+		if (map.dataProvider == indiaDataProvider) {
+			$("#sidepanel-content").load('content/IN-KA-info.php');
+		}
 	});
 
 
