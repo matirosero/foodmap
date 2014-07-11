@@ -6,7 +6,7 @@ TO DO
 
 	✔︎	Ir a region en map -M
 	✔︎	Quitar bordes blanco del mapa al abrir panel -M 9/7
-		Tamaño del mapa al abrir panel -M
+		Tamaño del mapa al abrirss panel -M
 		Showinfo debe aparecer donde está el mouse -M
 		Estilo map -M
 		Arreglar RESPONSIVE -M
