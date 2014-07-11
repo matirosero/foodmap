@@ -132,16 +132,70 @@ AmCharts.ready(function() {
 		]
 	};
 	var foodtripDataProvider = {
-		mapVar:	AmCharts.maps.indiaLow,
-		getAreasFromMap:true,
-
+		mapVar:	AmCharts.maps.worldLow,
+		//getAreasFromMap:true,
+		linkToObject: "bombay",
 		images:[
-			{latitude:18.975, longitude:72.825833, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Bombay, Maharashtra", labelShiftY:2},
-			{latitude:15.498889, longitude:73.827778, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Panaji, Goa", labelShiftY:2},
-			{latitude:12.970057, longitude:77.599354, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Bangalore, Karnataka", labelShiftY:-10},
-			{latitude:8.4875, longitude:76.9525, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Thiruvananthapuram, Kerala", labelShiftY:2},
-			{latitude:11.930965, longitude:79.785182, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Puducherry, Puducherry", labelShiftY:2},
-			{latitude:17.366, longitude:78.476, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Hyderabad, Andhra Pradesh", labelShiftY:2},],
+			{
+				id:"bombay",
+				latitude:18.975,
+				longitude:72.825833,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Bombay, Maharashtra",
+				labelShiftY:2,
+				zoomLevel: 9,
+				zoomLatitude: 18.975,
+				zoomLongitude: 72.825833},
+			{
+				id: "panaji",
+				latitude:15.498889,
+				longitude:73.827778,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Panaji, Goa",
+				labelShiftY:2},
+			{
+				id: "bangalore",
+				latitude:12.970057,
+				longitude:77.599354,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Bangalore, Karnataka",
+				labelShiftY:-10,
+				zoomLevel: 9,
+				zoomLongitude: 77.599354,
+				zoomLatitude: 12.970057},
+			{
+				id: "thiruvananthapuram",
+				latitude:8.4875,
+				longitude:76.9525,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Thiruvananthapuram, Kerala",
+				labelShiftY:2},
+			{
+				id: "puducherry",
+				latitude:11.930965,
+				longitude:79.785182,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Puducherry, Puducherry",
+				labelShiftY:2},
+			{
+				id: "hyderabad",
+				latitude:17.366,
+				longitude:78.476,
+				svgPath:foodtrip_marker,
+				scale:0.75,
+				color:"#eb4b3f",
+				label:"Hyderabad, Andhra Pradesh",
+				labelShiftY:2},],
 
 		lines: [{
 					latitudes: [18.975, 15.498889],
@@ -185,7 +239,13 @@ AmCharts.ready(function() {
 		color: "#eb4b3f",
 		alpha: 0.4,
 		thickness: 3,
-		dashLength: 3
+		dashLength: 0.5
+	};
+	foodtrip.imagesSettings = {
+		rollOverColor: "#089282",
+		rollOverScale: 1.5,
+		selectedScale: 1.5,
+		selectedColor: "#089282",
 	};
 	foodtrip.linesAboveImages = false;
 
@@ -199,7 +259,6 @@ AmCharts.ready(function() {
 
 	//http://jsfiddle.net/amcharts/k67gB/light/
 	map.addListener("clickMapObject", function (event) {
-
 
 		country_name = event.mapObject.title;
 		country_code = event.mapObject.id;
@@ -220,6 +279,16 @@ AmCharts.ready(function() {
 			$("#sidepanel-content").load('content/IN-KA-'+sidepanel_content+'.php');
 
 
+		}
+
+
+	});
+	foodtrip.addListener("clickMapObject", function (event) {
+		alert(event.mapObject.id);
+
+
+		if (event.mapObject.images.id == "bangalore") {
+			alert('bangalore');
 		}
 	});
 
