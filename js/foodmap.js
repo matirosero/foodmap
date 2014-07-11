@@ -78,7 +78,7 @@ AM Map function + what I need added to it
 // add all your code to this method, as this will ensure that page is loaded
 AmCharts.ready(function() {
 
-	//AmCharts.theme = AmCharts.themes.dark;
+	AmCharts.theme = AmCharts.themes.foodmap;
 
 	// create AmMap object
 	var map = new AmCharts.AmMap();
@@ -104,7 +104,7 @@ AmCharts.ready(function() {
 			{
 				id: "IN",
 				linkToObject: indiaDataProvider,
-			    color: "#723C1A",
+			    /* color: "#723C1A", */
 			    passZoomValuesToTarget: false
 			}
 		]
@@ -127,7 +127,7 @@ AmCharts.ready(function() {
 			{
 				id: "IN",
 				linkToObject: indiaDataProvider,
-			    color: "#723C1A",
+			    /* color: "#723C1A", */
 			    passZoomValuesToTarget: false
 			}
 		]
@@ -142,8 +142,8 @@ AmCharts.ready(function() {
 	*/
 	map.areasSettings = {
 		autoZoom: true,
-		selectedColor: "#CC0000",
-		color: "#aaaaaa"
+		/* selectedColor: "#CC0000", */
+		/* color: "#aaaaaa" */
 	};
 
 	// let's say we want a small map to be displayed, so let's create and add it to the map
