@@ -32,6 +32,7 @@
 	<script src="ammap/ammap.js" type="text/javascript"></script>
 	<!-- map file should be included after ammap.js -->
 	<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+	<script src="ammap/maps/js/indiaLow.js" type="text/javascript"></script>
 	<!-- <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/dark.js"></script> -->
 
 	<!-- Custom scripts -->

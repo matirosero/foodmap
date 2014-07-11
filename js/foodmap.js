@@ -86,6 +86,30 @@ AmCharts.ready(function() {
 	// set path to images
 	map.pathToImages = "ammap/images/";
 
+
+	//initialize variables here instead of in listener
+	var country_name;
+	var country_code;
+
+	//add india data provider object
+	var indiaDataProvider = {
+		mapVar: AmCharts.maps.indiaLow,//was indiaHigh
+		getAreasFromMap:true
+	};
+
+	worldDataProvider = {
+		mapVar: AmCharts.maps.worldLow,
+
+		areas: [
+			{
+				id: "IN",
+				linkToObject: indiaDataProvider,
+			    color: "#723C1A",
+			    passZoomValuesToTarget: false
+			}
+		]
+	};
+
 	/* create data provider object
 	 mapVar tells the map name of the variable of the map data. You have to
 	 view source of the map file you included in order to find the name of the
@@ -98,10 +122,19 @@ AmCharts.ready(function() {
 	*/
 	var dataProvider = {
 		mapVar:	AmCharts.maps.worldLow,
-				getAreasFromMap:true
+		getAreasFromMap:true,
+		areas: [
+			{
+				id: "IN",
+				linkToObject: indiaDataProvider,
+			    color: "#723C1A",
+			    passZoomValuesToTarget: false
+			}
+		]
 	};
 	// pass data provider to the map object
 	map.dataProvider = dataProvider;
+
 
 	/* create areas settings
 	* autoZoom set to true means that the map will zoom-in when clicked on the area
@@ -123,10 +156,11 @@ AmCharts.ready(function() {
 	//http://jsfiddle.net/amcharts/k67gB/light/
 	map.addListener("clickMapObject", function (event) {
 
-		var country_name;
-		var country_code;
+
 		country_name = event.mapObject.title;
 		country_code = event.mapObject.id;
+
+
 
 		//call other functions when click on country
 		close_guidebox();
@@ -145,26 +179,57 @@ AmCharts.ready(function() {
 		var country_name = "India";
 		var country_code = "IN";
 
-
-
 		//call other functions when click on country
-		//close_guidebox();
 		show_showinfo();
 		populate_showinfo(country_name, country_code);
-
-
 
 		map.dataProvider.areas.push({ id: country_code, showAsSelected: true});
 
 		map.validateNow();
 		//resize_map(); //1.4.1.2
-
-
 	});
 
 
 	/* FoodMap specific functions
 	-------------------------------------------------------------------*/
+
+	// Resize map
+	// Since 1.4.1.2
+	function resize_map() {
+
+		//console.log('sidepanel will change to '+sidepanel_width);
+		window_width = $(window).width();
+
+		var original_map_width = $('#mapdiv').width();
+		console.log('original window = ' + original_map_width);
+
+		var new_map_width = window_width - 700 + 'px'; //change this to - 700
+		//console.log('new map width = ' + new_map_width);
+
+		function toggle_map_size(map_width,margin_left,data_provider){
+
+			$('#mapdiv').css({
+				width : map_width,
+				marginLeft: margin_left
+
+			});
+
+			map.dataProvider = data_provider;
+			map.validateNow();
+
+
+		}
+
+		$("a.clickme").click(function(e){
+			toggle_map_size(new_map_width,'700px',indiaDataProvider)
+		});
+
+		$('#close-sidepanel').click(function(e){
+			toggle_map_size(original_map_width,0,dataProvider)
+		});
+
+	}
+
 
 	//Clear map of all selections
 	function clear_map() {
@@ -225,39 +290,6 @@ AmCharts.ready(function() {
 	search_map();
 
 
-	// Resize map
-	// Since 1.4.1.2
-	function resize_map() {
-
-		//console.log('sidepanel will change to '+sidepanel_width);
-		window_width = $(window).width();
-
-		var original_map_width = $('#mapdiv').width();
-		console.log('original window = ' + original_map_width);
-
-		var new_map_width = window_width - 700 + 'px'; //change this to - 700
-		console.log('new map width = ' + new_map_width);
-
-		function toggle_map_size(map_width,margin_left){
-
-			$('#mapdiv').css({
-				width : map_width,
-				marginLeft: margin_left
-
-			});
-
-			map.validateNow();
-		}
-
-		$("a.clickme").click(function(e){
-			toggle_map_size(new_map_width,'700px')
-		});
-
-		$('#close-sidepanel').click(function(e){
-			toggle_map_size(original_map_width,0)
-		});
-
-	}
 
 });
 
