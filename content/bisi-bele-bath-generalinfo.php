@@ -1,11 +1,10 @@
 <!--
-	Ultimo cambio: 11/7 12:58 pm
-	Por: Mati
+	Ultimo cambio: 11/7 14:33 pm
+	Por: Flor
 -->
 
 				<header id="sidepanel-header">
 					<!-- Lo que va aquí dentro varía, pero seguir este ejemplo -->
-
 <!-- Hola Flor! Aqui empieza el menu de la acciones -->
 					<nav class="user-actions">
 						<ul>
@@ -90,14 +89,14 @@
 					<h3>Información general</h3>
 
 					<p>
-						Bisi bele bhath es un plato basado en arroz originario del estado de Karnataka, India. Bisi-bele-bhaath se traduce como arroz caliente con lentejas en la lengua Kannada. También es conocido como Bisi bele huliyanna, que significa "arroz caliente con lentejas amargas". La preparación tradicional de este plato es bastante elaborada e incluye la utilización de especias masala, toor dal (un tipo de lenteja) y vegetales. Especias como nutmeg y asafoetida, hojas de curry y pulpa de tamarindo se usan en esta preparación, que contribuyen a darle el auténtico sabor y aroma de este plato. Se sirve caliente y muchas veces se come junto con ensalada, papad o patatas chip. Este plato se encuentra comúnmente en restaurantes que sirven gastronomía Udupi.
+						<strong>Bisi bele bhath es un plato</strong> basado en arroz originario del estado de Karnataka, India. <i>Bisi-bele-bhaath</i> se traduce como <strong>"arroz caliente con lentejas"</strong> en la lengua Kannada, también conocido como <i>Bisi bele huliyanna</i>. La preparación tradicional de este plato es bastante elaborada e incluye la utilización de especias <strong>masala, toor dal</strong> (un tipo de lenteja) y <strong>vegetales</strong>. También <strong>especias</strong> como nutmeg y asafoetida, hojas de curry y pulpa de tamarindo, aportándole <strong>sabor y aroma auténticos</strong>. Se sirve caliente y muchas veces se acompaña de ensalada, papas o patatas chip. Este plato se encuentra comúnmente en restaurantes que sirven <strong>gastronomía Udupi</strong>, típica de la ciudad ubicada en el estado sudoccidental de Karnataka en la India.
 					</p>
 
 					<span class="more-link"><a href="#more">Saber más</a></span>
 
 					<h4>Historia</h4>
 
-					<p>El arroz, el mijo y Toor-dal son ingredientes constitutivos de Bisibelebath, con una historia de alrededor de 3000 años. Su origen es del Este de la India. Gracias a los comerciantes y las poblaciones que emigraron se introdujo el  toor-dal en la cocina Karnataka. Sin Saaru (conocido también como Rasam en otras zonas) ni Huli (Sambhar, en otras regiones) no se hubieran conocido estas sabrosas combinaciones. La diferencia entre “Saaru” y Rasam o “huli” y Sambhar es la savia de las palmeras de la India. Un poco de savia es casi indispensable en la cocina del Old-Mysore.
+					<p>El <strong>arroz</strong>, el <strong>mijo</strong> y <strong>toor-dal</strong> son ingredientes constitutivos del Bisi bele bath, cuya historia se remonta a alrededor de 3000 años. Su origen <strong>proviene del Este de la India</strong>, pero gracias a los comerciantes y las poblaciones que emigraron de esta zona del país, se introdujo el toor-dal en la cocina Karnataka. Sin platos como <strong>Saaru</strong> (conocido también como Rasam en otras zonas) ni <strong>Huli</strong> (Sambhar) no se hubieran producido estas sabrosas combinaciones. La diferencia entre “Saaru” y Rasam o “Huli” y Sambhar es <strong>la savia de las palmeras de la India, indispensable en la cocina de la Antigua Mysore</strong>.
 
 					<span class="more-link"><a href="#more">Saber más</a></span>
 

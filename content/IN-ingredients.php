@@ -1,8 +1,54 @@
+<!--
+	Ultimo cambio: 11/7 1:09 PM
+	Por: Flor
+-->
+
 				<header id="sidepanel-header">
-					<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
-					<h2>India <span class="small">80 ingredientes</span></h2>
+					<nav class="user-actions">
+						<ul>
+							<li>
+								<span class="action-tooltip">
+									<strong>Bajar PDF</strong>
+								</span>
+								<a class="action" href="#" data-user-action="dl-pdf">
+									<?php include('../includes/icon-action-pdf.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Compartir</strong>
+									<ul>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="fb">
+												<?php include('../includes/icon-share-fb.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="twitter">
+												<?php include('../includes/icon-share-twitter.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="email">
+												<?php include('../includes/icon-share-email.svg');?>
+											</a>
+										</li>
+
+									</ul>
+								</span>
+								<a class="action" href="#" data-user-action="share">
+									<?php include('../includes/icon-action-share.svg'); ?>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					
+					
+		<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
+		
+					<h2>India <span class="small">12 ingredientes</span></h2>
 					<p>
-						La gastronomía de la India se caracteriza por una <strong>gran variedad de estilos regionales y el uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con arroz (especialmente en el sur y el este) y trigo (predominantemente en el norte). Las especias como la pimienta negra, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. El pimiento, que fue introducido por los portugueses, también es muy utilizado en la cocina India.
+						La gastronomía de la India se caracteriza por una gran variedad de estilos regionales y el <strong>uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con <strong>arroz</strong> (especialmente en el sur y el este) y <strong>trigo</strong> (predominantemente en el norte). Las especias como la <strong>pimienta negra</strong>, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. Curiosamente, el <strong>pimiento</strong>, que fue introducido por los portugueses, también es muy utilizado en este tipo de gastronomía.
 					</p>
 				</header>
 
@@ -58,10 +104,10 @@
 						<li>
 							<a class="foodresult-link" href="#IN-cordero" data-sidepanel-content="generalinfo" data-sidepanel-item="cordero" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub">
 								<div class="block-thumbnail">
-									<img src="images/cordero-thumb.jpg" alt="" />
+									<img src="images/curry-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Cordero</h4>
+								<h4 class="block-name">Curry</h4>
 							</a>
 						</li>
 						<li>

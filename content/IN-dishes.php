@@ -1,5 +1,5 @@
 <!--
-	Ultimo cambio: Viernes, 11 Julio 2014 11:30 AM
+	Ultimo cambio: 11/7 1:25 PM
 	Por: Flor
 -->
 
@@ -11,7 +11,45 @@
 -->
 
 				<header id="sidepanel-header">
+					<nav class="user-actions">
+						<ul>
+							<li>
+								<span class="action-tooltip">
+									<strong>Bajar PDF</strong>
+								</span>
+								<a class="action" href="#" data-user-action="dl-pdf">
+									<?php include('../includes/icon-action-pdf.svg'); ?>
+								</a>
+							</li>
+							<li>
+								<span class="action-tooltip">
+									<strong>Compartir</strong>
+									<ul>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="fb">
+												<?php include('../includes/icon-share-fb.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="twitter">
+												<?php include('../includes/icon-share-twitter.svg');?>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-user-action="share" data-user-action-target="email">
+												<?php include('../includes/icon-share-email.svg');?>
+											</a>
+										</li>
 
+									</ul>
+								</span>
+								<a class="action" href="#" data-user-action="share">
+									<?php include('../includes/icon-action-share.svg'); ?>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					
 					<!-- Nombre Pais -->
 					<h2>India <span class="small">28 platos</span></h2>
 					<p>
