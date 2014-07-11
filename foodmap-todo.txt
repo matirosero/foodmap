@@ -4,7 +4,7 @@ TO DO
 	✔︎	Cambiar sushi a plato indio en busqueda (bhakri?) -M bisi-bele-bath 9/7
 	✔︎	Filtrar resultados en panel mockup -M
 
-		Ir a region en map -M
+	✔︎	Ir a region en map -M
 	✔︎	Quitar bordes blanco del mapa al abrir panel -M 9/7
 		Tamaño del mapa al abrir panel -M
 		Showinfo debe aparecer donde está el mouse -M

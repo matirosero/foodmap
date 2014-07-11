@@ -170,7 +170,14 @@ AmCharts.ready(function() {
 
 		//if we click inside map of India
 		if (map.dataProvider == indiaDataProvider) {
-			$("#sidepanel-content").load('content/IN-KA-info.php');
+
+			//AQUI VA CODIGO PARA CAMBIAR DE ACUERDO A LO SELECCIONADO
+
+			var sidepanel_content = $("#sidepanel-navigation .sidepanel-menu .current").data('sidepanel-content');
+
+			$("#sidepanel-content").load('content/IN-KA-'+sidepanel_content+'.php');
+
+
 		}
 	});
 
@@ -205,7 +212,7 @@ AmCharts.ready(function() {
 		window_width = $(window).width();
 
 		var original_map_width = $('#mapdiv').width();
-		console.log('original window = ' + original_map_width);
+		//console.log('original window = ' + original_map_width);
 
 		var new_map_width = window_width - 700 + 'px'; //change this to - 700
 		//console.log('new map width = ' + new_map_width);
@@ -461,7 +468,9 @@ function populate_side(country_name,country_code,search_terms) {
 
 	//TODO: no esta poniendo en cero si se hace click luego de haber buscado
 
-
+	$('#sidepanel-content').on('change','select[name="region"]',function () {
+    	//AQUI VA CODIGO PARA CAMBIAR DE ACUERDO A LO SELECCIONADO
+	}).change();
 
 	//When click links in showinfo
 	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a:not(.action)', function(e){
@@ -545,7 +554,7 @@ function populate_side(country_name,country_code,search_terms) {
 }
 
 function show_action_tooltip() {
-	console.log('tooltips on');
+	//console.log('tooltips on');
 	$('#sidepanel-content').on("click", 'a.action', function(e){
 		var action_tooltip = $(this).prev();
 		if (action_tooltip.hasClass('showaction')){
