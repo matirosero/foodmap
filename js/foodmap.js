@@ -517,10 +517,18 @@ function show_action_tooltip() {
 		} else {
 			$(this).prev().addClass('showaction');
 		}
+	});
+	$('#sidepanel-content').on("mouseleave", 'a.action', function(e){
+		var action_tooltip = $(this).prev().not( '[data-user-action="add-foodtrip"],[data-user-action="share"]' );
+		if (action_tooltip.hasClass('showaction')){
+			$(this).prev().removeClass('showaction');
+		}
+	});
+	$('#sidepanel-content').on("mouseleave", '.action-tooltip[data-user-action="add-foodtrip"],.action-tooltip[data-user-action="share"]', function(e){
 
-
-
-
+		if ($(this).hasClass('showaction')){
+			$(this).removeClass('showaction');
+		}
 	});
 }
 
