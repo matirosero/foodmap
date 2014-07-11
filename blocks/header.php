@@ -33,13 +33,11 @@
 	<!-- map file should be included after ammap.js -->
 	<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
 	<script src="ammap/maps/js/indiaLow.js" type="text/javascript"></script>
-	<script type="text/javascript" src="ammap/themes/black.js"></script>
-	<script type="text/javascript" src="ammap/themes/chalk.js"></script>
-	<script type="text/javascript" src="ammap/themes/dark.js"></script>
-	<script type="text/javascript" src="ammap/themes/light.js"></script>
-	<script type="text/javascript" src="js/foodmap-theme.js"></script>
+
+
 
 	<!-- Custom scripts -->
+	<script type="text/javascript" src="js/foodmap-theme.js"></script>
 	<script src="js/foodmap.js" type="text/javascript"></script>
 
 

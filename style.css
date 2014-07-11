@@ -1065,8 +1065,8 @@ body {
 
 		font-family:'Lato',sans-serif;
 		font-size: 10px;
-	font-weight:700;
-	text-transform:uppercase;
+		font-weight:700;
+		text-transform:uppercase;
 	}
 		.action-tooltip .tooltip-msg {
 			display: block;
@@ -1081,6 +1081,9 @@ body {
 	.action-tooltip[data-user-action="dl-pdf"] {
 		width: 100px;
 		left: -40px;
+	}
+	li:first-child .action-tooltip[data-user-action="dl-pdf"] {
+		left: -70px;
 	}
 	.action-tooltip[data-user-action="like"] {
 		width:90px;
