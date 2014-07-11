@@ -25,14 +25,14 @@
 				<li class="">
 					<a href="" data-sidepanel-content="dishes" data-menu-target="main">
 						<?php include('includes/icon-side-menu-dish.inc');?>
-						<span class="menu-txt">Información</span>
+						<span class="menu-txt">Platos</span>
 					</a>
 					<span class="submenu-container"></span>
 				</li>
 				<li class="">
 					<a href="" data-sidepanel-content="ingredients" data-menu-target="main">
 						<?php include('includes/icon-side-menu-ingredient.inc');?>
-						<span class="menu-txt">Información</span>
+						<span class="menu-txt">Ingredientes</span>
 					</a>
 					<span class="submenu-container"></span>
 				</li>

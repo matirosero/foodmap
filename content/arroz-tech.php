@@ -1,6 +1,6 @@
 <!--
-	Ultimo cambio: 11/7 14:44 PM
-	Por: Flor
+	Ultimo cambio: 11/7 22:44 PM
+	Por: Mati
 -->
 
 				<header id="sidepanel-header">
@@ -9,8 +9,8 @@
 					<nav class="user-actions">
 						<ul>
 							<li>
-								<span class="action-tooltip">
-									<strong>Agregar a uno de mis FoodTrips</strong>
+								<span class="action-tooltip" data-user-action="add-foodtrip">
+									<span class="tooltip-msg">Agregar a mis FoodTrips</span>
 									<ul>
 										<li>
 											<a href="#" data-user-action="totrip" data-user-action-target="trip">Postres para bloquear arterias<!-- O el nombre que querás ponerle --></a>
@@ -20,30 +20,30 @@
 										</li>
 									</ul>
 								</span>
-								<a href="#" class="action" data-user-action="add-foodtrip">
+								<a href="#" class="action">
 
 									<?php include('../includes/icon-action-totrip.svg'); ?>
 								</a>
 							</li>
 							<li>
-								<span class="action-tooltip">
-									<strong>Me gusta!</strong>
+								<span class="action-tooltip" data-user-action="like">
+									<span class="tooltip-msg">Me gusta!</span>
 								</span>
-								<a class="action" href="#" data-user-action="like">
+								<a class="action" href="#">
 									<?php include('../includes/icon-action-like.svg'); ?>
 								</a>
 							</li>
 							<li>
-								<span class="action-tooltip">
-									<strong>Tu PDF está descargando</strong>
+								<span class="action-tooltip" data-user-action="dl-pdf">
+									<span class="tooltip-msg">Tu PDF está descargando</span>
 								</span>
-								<a class="action" href="#" data-user-action="dl-pdf">
+								<a class="action" href="#">
 									<?php include('../includes/icon-action-pdf.svg'); ?>
 								</a>
 							</li>
 							<li>
-								<span class="action-tooltip">
-									<strong>Compartir</strong>
+								<span class="action-tooltip" data-user-action="share">
+									<span class="tooltip-msg">Compartir</span>
 									<ul>
 										<li>
 											<a href="#" data-user-action="share" data-user-action-target="fb">
@@ -63,7 +63,7 @@
 
 									</ul>
 								</span>
-								<a class="action" href="#" data-user-action="share">
+								<a class="action" href="#">
 									<?php include('../includes/icon-action-share.svg'); ?>
 								</a>
 							</li>
