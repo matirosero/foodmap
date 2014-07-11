@@ -23,6 +23,9 @@ var device_orientation;
 
 var sidepanel_width = '700px';
 
+var foodtrip_marker = 'M28.337 16.247c0.929 0.9 1.4 2 1.4 3.334c0 1.317-0.453 2.406-1.382 3.3 c-0.931 0.929-2.022 1.381-3.336 1.381c-1.314 0-2.406-0.451-3.336-1.381c-0.93-0.93-1.381-2.02-1.381-3.336 c0-1.314 0.451-2.405 1.381-3.334c0.93-0.93 2.021-1.383 3.336-1.383C26.314 14.9 27.4 15.3 28.3 16.247z M50.001 25 c0 13.806-11.195 24.999-25 24.999c-13.807 0-25-11.193-25-24.999c0-13.807 11.193-25 25-25C38.806 0 50 11.2 50 25.001z M35.137 19.581c0-2.824-0.972-5.168-2.971-7.167c-1.998-1.998-4.342-2.969-7.165-2.969c-2.822 0-5.167 0.971-7.167 3 c-1.998 2-2.969 4.342-2.969 7.167c0 1.4 0.2 2.6 0.6 3.49l7.725 16.378c0.158 0.3 0.4 0.6 0.7 0.8 c0.672 0.4 1.5 0.4 2.1 0c0.328-0.199 0.571-0.465 0.737-0.807l7.697-16.375C34.924 22.2 35.1 21 35.1 19.581z';
+
+
 function detect_orientation() {
 	if (window_height > window_width) {
 		device_orientation = 'portrait';
@@ -132,8 +135,36 @@ AmCharts.ready(function() {
 		mapVar:	AmCharts.maps.indiaLow,
 		getAreasFromMap:true,
 
-		images:[{latitude:18.975, longitude:72.825833, type:"circle", color:"#6c00ff", label:"Bombay, Maharashtra", labelShiftY:2}]
+		images:[
+			{latitude:18.975, longitude:72.825833, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Bombay, Maharashtra", labelShiftY:2},
+			{latitude:15.498889, longitude:73.827778, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Panaji, Goa", labelShiftY:2},
+			{latitude:12.970057, longitude:77.599354, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Bangalore, Karnataka", labelShiftY:-10},
+			{latitude:8.4875, longitude:76.9525, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Thiruvananthapuram, Kerala", labelShiftY:2},
+			{latitude:11.930965, longitude:79.785182, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Puducherry, Puducherry", labelShiftY:2},
+			{latitude:17.366, longitude:78.476, svgPath:foodtrip_marker, scale:0.75, color:"#eb4b3f", label:"Hyderabad, Andhra Pradesh", labelShiftY:2},],
+
+		lines: [{
+					latitudes: [18.975, 15.498889],
+					longitudes: [72.82583, 73.827778]
+				}, {
+					latitudes: [15.498889, 12.970057],
+					longitudes: [73.827778, 77.599354]
+				}, {
+					latitudes: [12.970057, 8.4875],
+					longitudes: [77.599354, 76.9525]
+				}, {
+					latitudes: [8.4875, 11.930965],
+					longitudes: [76.9525, 79.785182]
+				}, {
+					latitudes: [11.930965, 17.366],
+					longitudes: [79.785182, 78.476]
+				}],
+
 	};
+
+
+
+
 	// pass data provider to the map object
 	map.dataProvider = dataProvider;
 	foodtrip.dataProvider = foodtripDataProvider;
@@ -146,9 +177,17 @@ AmCharts.ready(function() {
 	map.areasSettings = {
 		autoZoom: true,
 	};
+
 	foodtrip.areasSettings = {
 		autoZoom: true,
 	};
+	foodtrip.linesSettings = {
+		color: "#eb4b3f",
+		alpha: 0.4,
+		thickness: 3,
+		dashLength: 3
+	};
+	foodtrip.linesAboveImages = false;
 
 	// let's say we want a small map to be displayed, so let's create and add it to the map
 	//map.smallMap = new AmCharts.SmallMap();
