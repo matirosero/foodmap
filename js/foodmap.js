@@ -547,7 +547,21 @@ function prepare_showinfo() {
 //Show showinfo tooltip
 //TODO: change to more explanatory name?
 function show_showinfo() {
-	$("#showinfo").show();
+	//alert( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+	var showinfo_width = $('#showinfo').width();
+	var showinfo_height = $('#showinfo').height();
+
+	var map_height = $('#main').height();
+
+	var showinfo_top = (map_height/2)-(showinfo_height/2);
+	var showinfo_left = (window_width/2)-(showinfo_width/2);
+
+
+
+	$("#showinfo").css({
+		'top' : showinfo_top+'px',
+		'left' : showinfo_left+'px'
+	}).show();
 
 }
 
