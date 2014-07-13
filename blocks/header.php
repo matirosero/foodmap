@@ -56,7 +56,7 @@
 
 		<!-- #page-title: donde va el logo, titulo principal -->
 		<h1 id="page-title">
-			<a href="">
+			<a href="index.php">
 				<!-- Este es el logo -->
 				<?php include('includes/logo-header-foodmap.inc');?>
 				<!-- Fin logo -->
