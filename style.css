@@ -918,7 +918,7 @@ body {
 		.searchbox-open{
 			width:100%;
 		}
-			.searchbox-input{
+			input[type=text].searchbox-input{
 				position:absolute;
 				top:0;
 				right:0;
