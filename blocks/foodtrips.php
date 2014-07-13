@@ -16,17 +16,17 @@
 					<li class="shadow">
 						<a class="foodtrip-link" href="">
 							<div class="block-thumbnail">
-								<img src="images/foodtrip-1.jpg" alt="" />
+								<img src="images/foodtrip-india-thumb.jpg" alt="Sur de India" />
 							</div>
 							<div class="foodtrip-link-name">
-								<h4 class="block-name">India</h4>
+								<h4 class="block-name">Sur de India</h4>
 							</div>
 						</a>
 						</li>
 					<li class="shadow">
 						<a class="foodtrip-link" href="">
 							<div class="block-thumbnail">
-								<img src="images/foodtrip-1.jpg" alt="" />
+								<img src="images/foodtrip-caribe-thumb.jpg" alt="El Caribe" />
 							</div>
 
 							<h4 class="block-name">El Caribe</h4>
@@ -35,16 +35,16 @@
 					<li class="shadow">
 						<a class="foodtrip-link" href="">
 							<div class="block-thumbnail">
-								<img src="images/foodtrip-1.jpg" alt="" />
+								<img src="images/foodtrip-jamieoliver-thumb.png" alt="Jamie Oliver FoodTrip EEUU" />
 							</div>
 
-							<h4 class="block-name">Italia</h4>
+							<h4 class="block-name">EEUU</h4>
 						</a>
 					</li>
 					<li class="shadow">
 						<a class="foodtrip-link" href="">
 							<div class="block-thumbnail">
-								<img src="images/foodtrip-1.jpg" alt="" />
+								<img src="images/foodtrip-elbulli-thumb.png" alt="ElBulli" />
 							</div>
 
 							<h4 class="block-name">Costa Brava</h4>
