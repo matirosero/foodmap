@@ -6,10 +6,10 @@
 			<h3>Entra y empieza tu viaje</h3>
 
 			<p>
-				<button type="submit" name="login" class="btn-fb">Entrar con <strong>Facebook</strong></button>
+				<button type="submit" name="login" class="btn-fb" formaction="user.php">Entrar con <strong>Facebook</strong></button>
 			</p>
 			<p>
-				<button type="submit" name="login" class="btn-google">Entrar con <strong>Google+</strong></button>
+				<button type="submit" name="login" class="btn-google" formaction="user.php">Entrar con <strong>Google+</strong></button>
 			</p>
 
 			<form>
@@ -26,7 +26,7 @@
 						<span class="form-help">¿Haz olvidado tu contraseña?</span>
 					</p>
 					<p>
-						<button type="submit" name="login">Entrar</button>
+						<button type="submit" name="login" formaction="user.php">Entrar</button>
 					</p>
 					<p>
 						<input type="checkbox" name="remember" value="" />

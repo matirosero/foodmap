@@ -23,7 +23,7 @@
 					</p>
 
 					<p>
-						<button type="submit" name="register">Entrar</button>
+						<button type="submit" name="register" formaction="user.php">Entrar</button>
 					</p>
 					<p>
 						<input type="checkbox" name="remember" value="" />

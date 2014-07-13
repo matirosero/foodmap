@@ -9,8 +9,12 @@
 		include('blocks/map-foodtrip.php');
 	} elseif ($page == 'login') {
 		include('blocks/login.php');
+	} elseif ($page == 'register') {
+		include('blocks/register.php');
 	} elseif ($page == 'plans') {
 		include('blocks/plans.php');
+	} elseif ($page == 'user') {
+		include('blocks/user.php');
 	}
 
 	?>

@@ -82,7 +82,7 @@
 				</li>
 
 				<li>
-					<a href="planes.php">Planes</a>
+					<a href="plans.php">Planes</a>
 				</li>
 			</ul>
 			</div><!-- /#menu-main -->
@@ -93,7 +93,7 @@
 					<a href="index.php">Logout</a>
 				</li>
 				<li>
-					<a href="usuario.php">Mi perfil</a>
+					<a href="user.php">Mi perfil</a>
 				</li>
 				<?php } else { ?>
 				<li>
