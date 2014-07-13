@@ -635,10 +635,10 @@ a:active .logo-foodmap {
 	padding: 0;
 }
 	.blocks li {
-		background: #ddd;
+		background: transparent;
 		display: inline-block;
 		float:left;
-		margin: 10px;
+		padding: 10px;
 		width:172px; /* For sidepanel 700px at 960*/
 	}
 		.blocks .block-thumbnail {
@@ -992,7 +992,7 @@ body {
 	}
 
 	#foodtrips .blocks li {
-		width:172px; /* For sidepanel 700px at 960*/
+		/* width:192px; */ /* For sidepanel 700px at 960*/
 	}
 
 	.foodtrip-link {
