@@ -172,35 +172,7 @@ h6 .small {
 	color:#fff;
 }
 
-#sidepanel h2 {
-	border-bottom:1px solid #4d5054;
-}
-
-#sidepanel-navigation,
-#sidepanel-filter-order,
-#sidepanel-filter-order select {
-	font-family:'Lato',sans-serif;
-	font-weight:700;
-	text-transform:uppercase;
-}
-
-#sidepanel-filter-order,
-#sidepanel-filter-order select {
-	color: #9D978F;
-}
-
-#sidepanel-filter-order {
-	font-size: 10px;
-}
-#sidepanel-filter-order select {
-   background: #fff;
-   border: 1px solid #9D978F;
-   font-size: 12px;
-   height: 34px;
-   overflow: hidden;
-   width: 150px;
-}
-
+/*aqui iba tipografia sidepanel*/
 
 #page-footer {
 	font-family:'Lato',sans-serif;
@@ -267,17 +239,7 @@ a:active {
 
 
 
-#sidepanel a {
-	/* color: #fff; */
-}
-#sidepanel a:visited {
-	/* color: #fff; */
-}
-#sidepanel a:hover,
-#sidepanel a:focus,
-#sidepanel a:active {
-	/* color: #f99d1c; */
-}
+/* links sidepanel */
 
 #footer-content a {
 	color: #96989A;
@@ -693,10 +655,7 @@ a:active .logo-foodmap {
 			margin:0px;
 			padding: 5px 10px;
 		}
-					#sidepanel .blocks li h4 {
-						background: #2d3035;
-						color: #fff;
-					}
+
 
 /*--------------------------------------------------------------
 	6.1 Alignment and Floats
@@ -790,7 +749,7 @@ body {
 
 	#menu-main {
 		margin: 0 auto;
-		width: 400px;
+		width: 300px;
 	}
 
 	#menu-user {
@@ -995,136 +954,7 @@ body {
 	8.2 Sidepanel
 --------------------------------------------------------------*/
 
-#sidepanel {
-	background:#fdfbee url('images/bg-sidepanel.svg') top left repeat-y;
-	color:#222;
-	display:block;
-	height:600px;
-	overflow:auto;
-	padding:0;
-	padding-top:0;
-	position:absolute;
-	right:0;
-	top:71px; /* 70 +1 border */
-	width:700px;
-}
-
-	#sidepanel-navigation {
-
-		float:left;
-		position: absolute;
-		width:52px;
-	}
-	#sidepanel-main {
-		margin-left:56px;
-	}
-		#sidepanel-content,
-		#sidepanel-filter-order,
-		.sidepanel-txt {
-			padding: 0px 10px;
-		}
-			#sidepanel-header {
-				padding: 0 10px;
-			}
-
-				#sidepanel .blocks li {
-					width:136px; /* 4 cuadros en 700, 188 si queremos 3*/
-				}
-					#sidepanel .blocks .block-thumbnail {
-						height: 136px;
-						width: 136px;
-					}
-
-
-
-	.foodresult {
-		background:#444;
-		height:auto;
-	}
-	.ingredient {
-
-	}
-	.dish {
-
-	}
-		.foodresult-image {
-
-		}
-		.foodresult-name {
-
-		}
-
-	.action-tooltip {
-		background: #fff;
-		border: 1px solid #9D978F;
-		display: none;
-		padding: 10px 0;
-		position: absolute;
-		text-align: center;
-		top:30px;
-
-		font-family:'Lato',sans-serif;
-		font-size: 10px;
-		font-weight:700;
-		text-transform:uppercase;
-	}
-		.action-tooltip .tooltip-msg {
-			display: block;
-			padding: 0 10px;
-		}
-
-	.action-tooltip.showaction {
-		display: block;
-		position: absolute;
-	}
-	.action-tooltip[data-user-action="share"],
-	.action-tooltip[data-user-action="dl-pdf"] {
-		width: 100px;
-		left: -40px;
-	}
-	li:first-child .action-tooltip[data-user-action="dl-pdf"] {
-		left: -70px;
-	}
-	.action-tooltip[data-user-action="like"] {
-		width:90px;
-		left:-35px;
-	}
-	.action-tooltip[data-user-action="add-foodtrip"] {
-		width:160px;
-		left:-130px;
-		padding-bottom: 0;
-		text-align: left;
-	}
-		.action-tooltip[data-user-action="add-foodtrip"] ul {
-			border-top: 1px solid #9D978F;
-			list-style: none;
-			margin: 5px 0 0 0;
-			padding: 0;
-
-
-		}
-			.action-tooltip[data-user-action="add-foodtrip"] ul li {
-				border-bottom: 1px solid #9D978F;
-				float:none;
-				text-align: left;
-				width:100%
-			}
-			.action-tooltip[data-user-action="add-foodtrip"] ul li:last-child{
-				border:0;
-			}
-				.action-tooltip[data-user-action="add-foodtrip"] ul li a {
-
-					display: block;
-					padding: 5px 10px 8px;
-					width:140px;
-				}
-				.action-tooltip[data-user-action="add-foodtrip"] ul li a:hover,
-				.action-tooltip[data-user-action="add-foodtrip"] ul li a:focus,
-				.action-tooltip[data-user-action="add-foodtrip"] ul li a:active {
-					background: #eb4b3f;
-					color: #fff;
-				}
-
+/* aqui iba sidepanel*/
 
 /*--------------------------------------------------------------
 	8.3 Foodtrips
@@ -1195,6 +1025,19 @@ body {
 		.block-name {
 
 		}
+
+
+/*--------------------------------------------------------------
+	8.3 Foodtrip Mao
+--------------------------------------------------------------*/
+
+#foodtrip-satellites-container {
+	display: none;
+	position: absolute;
+}
+#foodtrip-satellites-container.shown {
+	display: block;
+}
 
 
 /*--------------------------------------------------------------

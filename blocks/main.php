@@ -1,5 +1,5 @@
 	<!-- #main: contenido principal (o sea, lo que está abierto inicialmente) -->
-	<div <?php if ($page == 'home') { echo 'id="main" '; } ?>class="maincontent">
+	<div <?php if ($page == 'home' || $page == 'foodtrip') { echo 'id="main" '; } ?>class="maincontent">
 
 	<?php
 

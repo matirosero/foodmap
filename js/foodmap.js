@@ -12,6 +12,9 @@ Ultimo cambio por:	Mati
 /*------------------------------------------------------------------
 Declare global variables
 -------------------------------------------------------------------*/
+var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+// svg path for plane icon
+var planeSVG = "M19.671,8.11l-2.777,2.777l-3.837-0.861c0.362-0.505,0.916-1.683,0.464-2.135c-0.518-0.517-1.979,0.278-2.305,0.604l-0.913,0.913L7.614,8.804l-2.021,2.021l2.232,1.061l-0.082,0.082l1.701,1.701l0.688-0.687l3.164,1.504L9.571,18.21H6.413l-1.137,1.138l3.6,0.948l1.83,1.83l0.947,3.598l1.137-1.137V21.43l3.725-3.725l1.504,3.164l-0.687,0.687l1.702,1.701l0.081-0.081l1.062,2.231l2.02-2.02l-0.604-2.689l0.912-0.912c0.326-0.326,1.121-1.789,0.604-2.306c-0.452-0.452-1.63,0.101-2.135,0.464l-0.861-3.838l2.777-2.777c0.947-0.947,3.599-4.862,2.62-5.839C24.533,4.512,20.618,7.163,19.671,8.11z";
 
 var window_width = $(window).width();
 var window_height = $(window).height();
@@ -132,9 +135,11 @@ AmCharts.ready(function() {
 		]
 	};
 	var foodtripDataProvider = {
-		mapVar:	AmCharts.maps.worldLow,
-		//getAreasFromMap:true,
-		linkToObject: "bombay",
+		mapVar:	AmCharts.maps.indiaLow,
+		getAreasFromMap:true,
+		latitude:18.975,
+		longitude:72.825833,
+		//linkToObject: "bombay",
 		images:[
 			{
 				id:"bombay",
@@ -142,10 +147,10 @@ AmCharts.ready(function() {
 				longitude:72.825833,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Bombay, Maharashtra",
 				labelShiftY:2,
-				zoomLevel: 9,
+				zoomLevel: 2,
 				zoomLatitude: 18.975,
 				zoomLongitude: 72.825833},
 			{
@@ -154,7 +159,7 @@ AmCharts.ready(function() {
 				longitude:73.827778,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Panaji, Goa",
 				labelShiftY:2},
 			{
@@ -163,19 +168,29 @@ AmCharts.ready(function() {
 				longitude:77.599354,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Bangalore, Karnataka",
 				labelShiftY:-10,
-				zoomLevel: 9,
-				zoomLongitude: 77.599354,
-				zoomLatitude: 12.970057},
+				zoomLevel: 2,
+				images: [{
+
+					imageURL: "../includes/foodtrip-sats.png",
+					latitude:12.970057,
+					longitude:77.599354,
+					height:222,
+					width:216,
+					labelColor: "#000000",
+					labelRollOverColor: "#CC0000",
+					labelFontSize: 11,
+				}],
+				},
 			{
 				id: "thiruvananthapuram",
 				latitude:8.4875,
 				longitude:76.9525,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Thiruvananthapuram, Kerala",
 				labelShiftY:2},
 			{
@@ -184,7 +199,7 @@ AmCharts.ready(function() {
 				longitude:79.785182,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Puducherry, Puducherry",
 				labelShiftY:2},
 			{
@@ -193,7 +208,7 @@ AmCharts.ready(function() {
 				longitude:78.476,
 				svgPath:foodtrip_marker,
 				scale:0.75,
-				color:"#eb4b3f",
+				color:"#f07971",
 				label:"Hyderabad, Andhra Pradesh",
 				labelShiftY:2},],
 
@@ -233,7 +248,8 @@ AmCharts.ready(function() {
 	};
 
 	foodtrip.areasSettings = {
-		autoZoom: true,
+		autoZoom: false,
+		selectable: true
 	};
 	foodtrip.linesSettings = {
 		color: "#eb4b3f",
@@ -242,11 +258,13 @@ AmCharts.ready(function() {
 		dashLength: 0.5
 	};
 	foodtrip.imagesSettings = {
-		rollOverColor: "#089282",
-		rollOverScale: 1.5,
-		selectedScale: 1.5,
-		selectedColor: "#089282",
+		rollOverColor: "#eb4b3f",
+		rollOverScale: 1,
+		selectedScale: 1,
+		selectedColor: "#eb4b3f",
+		alpha: .75,
 	};
+
 	foodtrip.linesAboveImages = false;
 
 	// let's say we want a small map to be displayed, so let's create and add it to the map
@@ -284,12 +302,38 @@ AmCharts.ready(function() {
 
 	});
 	foodtrip.addListener("clickMapObject", function (event) {
-		alert(event.mapObject.id);
+		//alert(event.mapObject.id);
+
+		var div_width = $('#map-content').width();
+		var div_height = $('#map-content').height();
+		console.log('w = '+div_width+' h = '+div_height);
 
 
-		if (event.mapObject.images.id == "bangalore") {
-			alert('bangalore');
+
+		var satellites_x = (div_width/2)-109;
+		var satellites_y = (div_height/2)-110;
+
+		function testtest() {
+			//alert('ooo');
+			$('#foodtripdiv').on('mouseenter','image', function(e){
+				$('#foodtrip-satellites-container').css({
+					top : satellites_y+'px',
+					left: satellites_x+'px'
+
+				}).addClass('shown');
+
+				$('#map-content').on('click','.link-sidepanel', function(e){
+					//alert('go');
+						open_side();
+						populate_side('India','IN');
+				});
+
+			});
+
 		}
+		testtest();
+
+
 	});
 
 
@@ -422,6 +466,7 @@ Functions not specifically associated with AM Map
 // Should they still be inside the function??
 
 
+
 //Generic close btn
 function close_btn() {
 
@@ -517,7 +562,7 @@ function populate_showinfo(country_name,country_code) {
 			 //<a class="clickme" href="#about">24 Platos</a>';
 		} else if(search_string == 'bisi bele bath') {
 			result_kind = 'Plato';
-			new_ingredients = '4 Ingredientes';
+			new_ingredients = '12 Ingredientes';
 			new_dish = search_string;
 
 			new_href_dish = 'bisi-bele-bath';
@@ -527,7 +572,7 @@ function populate_showinfo(country_name,country_code) {
 		}
 
 	} else {
-		new_ingredients = '80 Ingredientes';
+		new_ingredients = '12 Ingredientes';
 		new_dish = '28 Platos';
 
 		new_href_dish = 'dishes';
@@ -578,6 +623,10 @@ function populate_showinfo(country_name,country_code) {
 function populate_side(country_name,country_code,search_terms) {
 
 	//TODO: no esta poniendo en cero si se hace click luego de haber buscado
+
+	$('#map-content').on('click','.link-sidepanel', function(e){
+		alert('open');
+	});
 
 	$('#sidepanel-content').on('change','select[name="region"]',function () {
     	//AQUI VA CODIGO PARA CAMBIAR DE ACUERDO A LO SELECCIONADO
@@ -709,6 +758,25 @@ function sidepanel_menu_txt(){
 
 //Open side panel function
 function open_side() {
+
+	$('#map-content').on('click','.link-sidepanel', function(e) { //$("[class^=main]")
+
+
+		//alert('open sesame');
+		var hrefval = $(this).attr("href");
+
+		if(hrefval != "") {
+    		var distance = $('#main').css('right');
+
+			if(distance == "auto" || distance == "0px") {
+        		$(this).addClass("open");
+				openSidepage();
+			} else {
+        		closeSidepage();
+			}
+		}
+	}); // end click event handler
+
 
 	$("a.clickme").on("click", function(e){ //$("[class^=main]")
 
