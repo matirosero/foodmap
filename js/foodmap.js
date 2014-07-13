@@ -294,7 +294,9 @@ AmCharts.ready(function() {
 
 			var sidepanel_content = $("#sidepanel-navigation .sidepanel-menu .current").data('sidepanel-content');
 
-			$("#sidepanel-content").load('content/IN-KA-'+sidepanel_content+'.php');
+			$("#sidepanel-content").load('content/IN-KA-info.php');
+
+			//AQUI CAMBIAR NAV PARA QUE SEA DE KARNATAKA
 
 
 		}
@@ -326,6 +328,22 @@ AmCharts.ready(function() {
 					//alert('go');
 						open_side();
 						populate_side('India','IN');
+
+				//if (map.dataProvider == indiaDataProvider) {
+
+					//AQUI VA CODIGO PARA CAMBIAR DE ACUERDO A LO SELECCIONADO
+
+					var sidepanel_content = $("#sidepanel-navigation .sidepanel-menu .current").data('sidepanel-content');
+
+					$("#sidepanel-content").load('content/bisi-bele-bath-generalinfo.php');
+
+					//AQUI CAMBIAR NAV PARA QUE SEA DE BISI BELE BATH
+
+
+				//}
+
+
+
 				});
 
 			});
