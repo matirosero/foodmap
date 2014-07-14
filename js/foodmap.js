@@ -728,7 +728,7 @@ function populate_side(country_name,country_code,search_terms) {
 		if ($(this).attr('data-menu-target') == 'main') {
 
 			//Nombre del archivo que se debe cargar
-			if (sidepanel_content == 'dishes' || sidepanel_content == 'ingredients') {
+			if (sidepanel_content == 'dishes' || sidepanel_content == 'ingredients' || sidepanel_content == 'info') {
 				sidepanel_content_filename = country_code+'-'+sidepanel_content;
 			} else {
 				sidepanel_content_filename = sidepanel_content;
