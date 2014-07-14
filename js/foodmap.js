@@ -445,10 +445,10 @@ AmCharts.ready(function() {
 
 				if(search_string == 'rice' || search_string == 'arroz') {
 					search_string = 'arroz';
-					country_code = ['JP','IN','CR'];
-				} else if(search_string == 'beans' || search_string == 'frijoles') {
-					search_string = 'frijoles';
-					country_code = ['BR','CR','MX'];
+					country_code = ['BD','BT','CN','ES','IN','ID','PH','VN','TH','MM','FR','BR','JP','US','KP','KR','CO','PE','VE','KH','IR','LA','MG','NP','NE','PK','LK'];
+				} else if(search_string == 'gallo pinto') {
+					search_string = 'gallo pinto';
+					country_code = ['CR','NI'];
 				} else if(search_string == 'bisi bele bath') {
 					country_code = ['IN'];
 				}
@@ -576,8 +576,13 @@ function populate_showinfo(country_name,country_code) {
 	//new_content = '';
 	var new_ingredients;
 	var new_dish;
-	var new_href_dish;
-	var new_href_ingredient;
+
+	var new_dish_menu_target = 'main';
+	var new_ingredient_menu_target = 'main';
+	var new_dish_sidepanel_content;
+	var new_ingredient_sidepanel_content;
+	var new_dish_sidepanel_item;
+	var new_ingredient_sidepanel_item;
 
 	if(search_string !=="") {
 
@@ -587,8 +592,10 @@ function populate_showinfo(country_name,country_code) {
 			new_ingredients = search_string;
 			new_dish = '28 Platos';
 
-			new_href_ingredient = 'arroz';
-			new_href_dish = 'dishes';
+			new_ingredient_sidepanel_content = 'generalinfo';
+			new_ingredient_sidepanel_item = 'arroz';
+			new_dish_sidepanel_content = 'dishes';
+			new_ingredient_menu_target = 'sub';
 
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
@@ -597,8 +604,11 @@ function populate_showinfo(country_name,country_code) {
 			new_ingredients = '12 Ingredientes';
 			new_dish = search_string;
 
-			new_href_dish = 'bisi-bele-bath';
-			new_href_ingredient = 'ingredients';
+			new_dish_sidepanel_content = 'generalinfo';
+			new_dish_sidepanel_item = 'bisi-bele-bath';
+			new_ingredient_sidepanel_content = 'ingredients';
+			new_dish_menu_target = 'sub';
+
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
 		}
@@ -607,30 +617,48 @@ function populate_showinfo(country_name,country_code) {
 		new_ingredients = '12 Ingredientes';
 		new_dish = '28 Platos';
 
-		new_href_dish = 'dishes';
-		new_href_ingredient = 'ingredients';
+		new_dish_sidepanel_content = 'dishes';
+		new_ingredient_sidepanel_content = 'ingredients';
 		//new_content += '<a class="clickme" href="#about">80 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
 	}
 
+	var capitalize_new_dish = new_dish.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+		return letter.toUpperCase();
+	});
+	var capitalize_new_ingredients = new_ingredients.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+		return letter.toUpperCase();
+	});
+
 	$("#showinfo").css("opacity","1.0");
 
 	$(".modal-header").html(new_place_name);
-	$(".modal-content .ingredients").html(new_ingredients);
-	$(".modal-content .dish").html(new_dish);
+	$(".modal-content .ingredients").html(capitalize_new_ingredients);
+	$(".modal-content .dish").html(capitalize_new_dish);
 
 	$(".modal-content .link-dishes").attr({
-		'href': '#'+new_href_dish,
-		'data-sidepanel-content': new_href_dish,
+		'href': '#'+new_dish_sidepanel_content,
+		'data-sidepanel-content': new_dish_sidepanel_content,
 		'data-country-code': country_code,
-		'data-country-name': country_name
+		'data-country-name': country_name,
+		'data-menu-target': new_dish_menu_target
 	});
 	$(".modal-content .link-ingredients").attr({
-		'href': '#'+new_href_ingredient,
-		'data-sidepanel-content': new_href_ingredient,
+		'href': '#'+new_ingredient_sidepanel_content,
+		'data-sidepanel-content': new_ingredient_sidepanel_content,
 		'data-country-code': country_code,
-		'data-country-name': country_name
+		'data-country-name': country_name,
+		'data-menu-target': new_ingredient_menu_target
 	});
+	if ( new_dish_menu_target == 'sub') {
+		$(".modal-content .link-dishes").attr({
+			'data-sidepanel-item': new_dish_sidepanel_item
+		});
+	} else if ( new_ingredient_menu_target == 'sub') {
+		$(".modal-content .link-ingredients").attr({
+			'data-sidepanel-item': new_ingredient_sidepanel_item
+		});
+	}
 
 
 	open_side();
@@ -666,10 +694,15 @@ function populate_side(country_name,country_code,search_terms) {
 
 	//When click links in showinfo
 	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a:not(.action)', function(e){
+
+
+		/*
+		TODO!!!!!
+		Si se viene de busqueda, no carga submenu
+		*/
+
 		//console.log('link HI: '+$(this).attr('data-sidepanel-content'));
 		e.preventDefault();
-
-
 
 		var sidepanel_content = $(this).attr('data-sidepanel-content');
 		var sidepanel_content_filename;
@@ -681,6 +714,7 @@ function populate_side(country_name,country_code,search_terms) {
 			country_code = 'IN';
 		}
 
+		//Agregar referencia al país en que estamos por medio de data-attributes
 		$('.sidepanel-menu').find('li a').each(function () {
 				//console.log('add country '+country_code);
 				$(this).attr({
@@ -690,40 +724,80 @@ function populate_side(country_name,country_code,search_terms) {
 
 		});
 
-
+		//Si afecta menú principal
 		if ($(this).attr('data-menu-target') == 'main') {
 
-			sidepanel_content_filename = country_code+'-'+sidepanel_content;
+			//Nombre del archivo que se debe cargar
+			if (sidepanel_content == 'dishes' || sidepanel_content == 'ingredients') {
+				sidepanel_content_filename = country_code+'-'+sidepanel_content;
+			} else {
+				sidepanel_content_filename = sidepanel_content;
+			}
 
+			console.log('filename to load: '+sidepanel_content_filename);
+
+
+
+
+			//Agregar clase 'current' al link activo en el menú
 			$('.sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
+
+			//Quitar clase 'current a de otros links
 			$('.sidepanel-menu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 
-			console.log('hide subpanel');
+			//Eliminar submenú
+			//console.log('hide subpanel');
 			$(".sidepanel-submenu").remove();
+
+
+
 		}
 
+
+
+		//Si el link cliqueado está dentro del contenido
 		if ($(this).closest('#sidepanel-content').length) {
-			console.log('goes to dish or ingredient');
+			//console.log('goes to dish or ingredient');
+
+			//Buscar y guardar <li> padre  del link activo
 			var parent_menu_li = $('.sidepanel-menu .current').closest('li');
+
+			//Buscar el tipo de contenido que mostraremos en el data attribute del link activo
 			var child_menu_type = $('.sidepanel-menu .current').attr('data-sidepanel-content');
+
+			//Buscar el contenido sobre qué elemento mostrar ese contenido
 			var sidepanel_item = $(this).parent('.blocks').attr('data-sidepanel-item');
 			//console.log('this is in: '+parent_menu_li);
 
-			parent_menu_li.find('.submenu-container').load('blocks/sidepanel-submenu-'+child_menu_type+'.php',
-    {
-        'sidepanel_item': '<?php echo '+sidepanel_item+'; ?>'
-    });
+			//Cargar submenú dentro del elemento apropiado del menú
+			parent_menu_li.find('.submenu-container').load('blocks/sidepanel-submenu-'+child_menu_type+'.php', {
+				'sidepanel_item': '<?php echo '+sidepanel_item+'; ?>'
+			});
+
+			//Agregar clase 'current' al link activo dentro de submenú
 			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 
 		}
 
+
 		if ($(this).attr('data-menu-target') == 'sub') {
-			//console.log('goes to dish or ingredient');
+			console.log('goes to dish or ingredient');
+
 
 			var sidepanel_item = $(this).attr('data-sidepanel-item');
+
+			console.log('item '+sidepanel_item+' | content '+sidepanel_content);
 			sidepanel_content_filename = sidepanel_item+'-'+sidepanel_content;
 
-
+			//Si el link cliqueado está dentro de modalcontent
+			if ($(this).closest('.modal-content').length) {
+				//console.log('I COME IN PEACE');
+				if (sidepanel_item == 'arroz') {
+					$('.sidepanel-menu').find('li a[data-sidepanel-content="ingredients"]').addClass('current');
+				} else if (sidepanel_item == 'bisi-bele-bath') {
+					$('.sidepanel-menu').find('li a[data-sidepanel-content="dishes"]').addClass('current');
+				}
+			}
 
 			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 			$('.sidepanel-submenu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
