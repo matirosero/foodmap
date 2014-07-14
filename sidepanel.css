@@ -1,3 +1,8 @@
+/*
+	Ultimo cambio: 14/7 21:18 AM
+	Por: Mati
+*/
+
 /*--------------------------------------------------------------
 	Tipografia
 --------------------------------------------------------------*/
@@ -103,11 +108,10 @@
 			}
 
 				#sidepanel .blocks li {
-					width:136px; /* 4 cuadros en 700, 188 si queremos 3*/
+					width:25%; /* 4 cuadros en 700, 188 si queremos 3*/
 				}
 					#sidepanel .blocks .block-thumbnail {
-						height: 136px;
-						width: 136px;
+						width: 100%;
 					}
 
 

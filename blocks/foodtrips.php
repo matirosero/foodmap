@@ -1,5 +1,5 @@
 <!--
-	Ultimo cambio: 14/7 19:55 AM
+	Ultimo cambio: 14/7 21:18 AM
 	Por: Mati
 -->
 
@@ -60,7 +60,7 @@
 					<li class="shadow">
 						<a class="foodtrip-link-create" href="">
 							<div class="block-thumbnail">
-								<span>Crea tu propia ruta gastronómica</span>
+								<img src="images/foodtrip-add-new.png" alt="Sur de India" />
 							</div>
 
 							<h4 class="block-name">Mi Food<span class="light">Trip</span>

@@ -50,7 +50,7 @@ Ultimo cambio por:	Mati
 	Texto normal			#222
 	Color lnks (rojo)		#eb4b3f
 	Rojo oscuro				#b03e34
-	Link rollover			#f99d1c	(pensaba cambiarlos al rojo oscuro)
+	Link rollover			#b03e34	(pensaba cambiarlos al rojo oscuro)
 	Gris oscuro (submenu)	#2d3035
 	Gris medio (submenu)	#4d4f54
 	FOndo panel beige		#fdfbee
@@ -209,7 +209,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #f99d1c;
+	color: #b03e34;
 }
 
 .blocks li a,
@@ -485,12 +485,13 @@ input[type=password] {
 5.0 - Imagenes
 -----------------------------------------------------------------*/
 
-img {
+img,svg {
 	height:auto; /* no tocar */
 	max-width:100%; /* no tocar */
 }
 
-.blocks li a img {
+.blocks li a img,
+.blocks li a svg {
 	display: block;
 }
 
@@ -647,13 +648,17 @@ a:active .logo-foodmap {
 		background: transparent;
 		display: inline-block;
 		float:left;
-		padding: 10px;
+		/* padding: 10px; */
 		width:172px; /* For sidepanel 700px at 960*/
+		width:20%;
+
 	}
+		.blocks li a {
+			margin: 10px;
+		}
 		.blocks .block-thumbnail {
 			display: block;
-			height: 172px;
-			width: 172px;
+			width: 100%;
 		}
 
 		.blocks li h4 {
@@ -868,7 +873,6 @@ body {
 			padding: 0 30%;
 			text-align: center;
 			vertical-align: middle;
-			width:550px;
 		}
 			#guidebox #info h2 {
 				color:#fff;
@@ -979,7 +983,7 @@ body {
 		background: #eb4b3f;
 		color: #fff;
 		height: 60px;
-		padding: 0px 20px;
+		/* padding: 0px 20px; */
 	}
 	#foodtrips-header .global-container {
 

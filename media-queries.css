@@ -61,16 +61,16 @@ Ultimo cambio por:	Mati
 .global-container {background:red}
 #foodtrips-header .global-container {background:blue}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 960px) {
 
 	.global-container {
-		padding: 0 10px;
 		width:100%;
 	}
-	#foodtrips-header .global-container {
-		padding: 0 10px;
-		width:100%;
+
+	#guidebox #info {
+		padding: 0 20%;
 	}
+
 
 }
 
