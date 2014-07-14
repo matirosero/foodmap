@@ -916,8 +916,18 @@ function close_side() {
 
 //Open side panel function
 function openSidepage() {
+
+	var move_by;
+
+	if(window_width < 901) {
+		move_by = window_width+'px';
+	} else {
+		move_by = '700px';
+	}
+
+
 	$('#main').animate({
-		right: '700px'
+		right: move_by
     }, 400, 'easeOutBack');
 }
 

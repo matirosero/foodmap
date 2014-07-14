@@ -982,8 +982,7 @@ body {
 	#foodtrips-header {
 		background: #eb4b3f;
 		color: #fff;
-		height: 60px;
-		/* padding: 0px 20px; */
+		padding: 1em 0;
 	}
 	#foodtrips-header .global-container {
 
@@ -994,9 +993,7 @@ body {
 			display: inline-block;
 			margin: 0 1em 0 0;
 		}
-		#foodtrips-header h2 {
-			line-height: 60px;
-		}
+
 
 	#foodtrips-content {
 		padding: 10px 0;
