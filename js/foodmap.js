@@ -12,9 +12,6 @@ Ultimo cambio por:	Mati
 /*------------------------------------------------------------------
 Declare global variables
 -------------------------------------------------------------------*/
-var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
-// svg path for plane icon
-var planeSVG = "M19.671,8.11l-2.777,2.777l-3.837-0.861c0.362-0.505,0.916-1.683,0.464-2.135c-0.518-0.517-1.979,0.278-2.305,0.604l-0.913,0.913L7.614,8.804l-2.021,2.021l2.232,1.061l-0.082,0.082l1.701,1.701l0.688-0.687l3.164,1.504L9.571,18.21H6.413l-1.137,1.138l3.6,0.948l1.83,1.83l0.947,3.598l1.137-1.137V21.43l3.725-3.725l1.504,3.164l-0.687,0.687l1.702,1.701l0.081-0.081l1.062,2.231l2.02-2.02l-0.604-2.689l0.912-0.912c0.326-0.326,1.121-1.789,0.604-2.306c-0.452-0.452-1.63,0.101-2.135,0.464l-0.861-3.838l2.777-2.777c0.947-0.947,3.599-4.862,2.62-5.839C24.533,4.512,20.618,7.163,19.671,8.11z";
 
 var window_width = $(window).width();
 var window_height = $(window).height();
@@ -45,6 +42,7 @@ function detect_orientation() {
 function prepare_mapcontainer() {
 	//console.log('test '+window_width+' '+device_orientation);
 	//if (window_width <= 768 && device_orientation == 'portrait') {
+	/*
 		var element_height;
 		if (window_width <= 568) {
 			element_height = window_height-80+'px';
@@ -58,21 +56,22 @@ function prepare_mapcontainer() {
 		$('#guidebox').css('height',element_height);
 		$('#sidepanel').css('height',element_height);
 	//}
+	*/
 }
 
 function prepare_side() {
-	if (window_width <= 600) {
+	if (window_width <= 768) {
 		console.log('window width = '+window_width)
 		$('#sidepanel').css({
 			width : window_width,
 		});
 		sidepanel_width = window_width;
-	} else if (window_width <= 800) {
+	} else if (window_width <= 900) {
 		console.log('window width = '+window_width)
 		$('#sidepanel').css({
-			width : '530px',
+			width : '500px',
 		});
-		sidepanel_width = '530px';
+		sidepanel_width = '500px';
 	}
 	console.log('sidepanel should be: '+sidepanel_width);
 }
@@ -388,8 +387,27 @@ AmCharts.ready(function() {
 		var original_map_width = $('#mapdiv').width();
 		//console.log('original window = ' + original_map_width);
 
-		var new_map_width = window_width - 700 + 'px'; //change this to - 700
+		var new_map_width;
+		 //change this to - 700
 		//console.log('new map width = ' + new_map_width);
+
+		var new_margin_left;
+
+
+
+
+		if (window_width <= 900) {
+			new_map_width = window_width - 500 + 'px';
+			new_margin_left = 500 + 'px';
+		} else if (window_width <= 768) {
+			new_map_width =0 + 'px';
+			new_margin_left = window_width + 'px';
+		} else {
+			new_map_width = window_width - 700 + 'px';
+			new_margin_left = 700 + 'px';
+		}
+
+
 
 		function toggle_map_size(map_width,margin_left,data_provider){
 
@@ -406,7 +424,7 @@ AmCharts.ready(function() {
 		}
 
 		$("a.clickme").click(function(e){
-			toggle_map_size(new_map_width,'700px',indiaDataProvider)
+			toggle_map_size(new_map_width,new_margin_left,indiaDataProvider)
 		});
 
 		$('#close-sidepanel').click(function(e){
@@ -919,8 +937,15 @@ function openSidepage() {
 
 	var move_by;
 
-	if(window_width < 901) {
+
+	if (window_width <= 768) {
+		alert('map go bye');
 		move_by = window_width+'px';
+	} else if (window_width <= 900) {
+
+		alert('less map');
+		move_by = '500px';
+
 	} else {
 		move_by = '700px';
 	}

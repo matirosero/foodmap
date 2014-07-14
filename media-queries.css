@@ -31,14 +31,17 @@ Ultimo cambio por:	Mati
 0.0 - Media query breakpoints
 1.0 - Tablet 		L	1024
 	1.1 - Tablet 	L	960
-	1.2 - Tablet 	L	900
+	1.2 - Tablet 	L	900 * a partir de aqui sidepanel 550px
 2.0 - Small tablet	L	800
+3.0 - Tablet		P	768	* a partir de aqui sidepanel 100%
+4.0 - Small tablet	P	600
+
 
 	1.3 - iPhone 5 		L	568
 	1.4 - Mobile 		L	480
 2.0 - Portrait
-	2.1 - Tablet		P	768
-	2.2 - Small tablet	P	600
+
+
 	2.3 - iPhone 5 		P	320
 	2.4 - Mobile 		P	320
 
@@ -50,9 +53,9 @@ Ultimo cambio por:	Mati
 /*
 	Tablet 			L	1024
 	Small tablet	L	800
-	Tablet 			P	768
+	Tablet 			P	768	* a partir de aqui sidepanel 100%
 	Small tablet 	P	600
-	iPhone 			L	568 * a partir de aqui sidepanel 100%?
+	iPhone 			L	568
 	Mobile 			L	480
 	iPhone 			P	320
 */
@@ -76,8 +79,6 @@ Ultimo cambio por:	Mati
 /*-----------------------------------------------------------------
 	1.1 - Tablet 		L	960
 -----------------------------------------------------------------*/
-
-
 
 @media screen and (max-width: 960px) {
 
@@ -104,14 +105,17 @@ Ultimo cambio por:	Mati
 	1.2 - Tablet 		L	900 	NO MORE MAP
 -----------------------------------------------------------------*/
 
-
-
 @media screen and (max-width: 900px) {
 
 	#sidepanel {
-		width:100%; /* o darle valor? */
-	}
+		/* width:100%; */ /* o darle valor?
 
+			a menos de 900 es 500
+		*/
+	}
+	#sidepanel .blocks li {
+		width:50%;
+	}
 
 }
 
@@ -127,6 +131,14 @@ Ultimo cambio por:	Mati
 	#sidepanel,
 	#guidebox {
 		height: 470px; /*fallback, we get this through js*/
+	}
+
+
+	.global-container {
+		width: 94%;
+	}
+	#foodtrips .global-container {
+		width:97%; /*cause of blocks' padding, it has to be smaller than normal*/
 	}
 
 	#guidebox #info {
@@ -169,8 +181,68 @@ Ultimo cambio por:	Mati
 		width:120px;
 	}
 
+	#foodtrips .blocks li {
+		width:25%;
+	}
 
 }
+
+
+/*-----------------------------------------------------------------
+	3.0 - Tablet (portrait)			768
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+/*	#main,
+	#mapdiv,
+	#sidepanel,
+	#guidebox {
+		height: 964px;  /*should be only if portrait*//*
+	}*/
+
+	#sidepanel .blocks li {
+		width:33.333%;
+	}
+
+
+}
+
+
+
+
+
+/*-----------------------------------------------------------------
+	4.0 - Small tablet (portrait)		600
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+/*
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 740px;  /*should be only if portrait*//*
+		}*/
+
+	#guidebox #info {
+		padding: 0 15%; /* pasa a 10% si hago mas peq letra */
+	}
+
+	#foodtrips .blocks li {
+		width:33.333%;
+	}
+
+	#sidepanel .blocks li {
+		width:50%;
+	}
+
+}
+
+
+
+
 
 
 
