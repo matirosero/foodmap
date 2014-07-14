@@ -1,10 +1,17 @@
+<!--
+	Ultimo cambio: 14/7 19:55 AM
+	Por: Mati
+-->
+
 		<!-- #foodtrips -->
 		<section id="foodtrips">
 			<header id="foodtrips-header" class="section-header">
 				<div class="global-container">
-					<h2>Food<span class="light">Trips</span></h2>
-					<h3>¿Perdiste el norte?</h3>
-					<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
+					<div class="pad10h">
+						<h2>Food<span class="light">Trips</span></h2>
+						<h3>¿Perdiste el norte?</h3>
+						<p>Te sugerimos algunas rutas que te pueden interesar, o crea la tuya propia.</p>
+					</div>
 				</div>
 			</header>
 

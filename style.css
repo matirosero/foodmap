@@ -609,6 +609,10 @@ a:active .logo-foodmap {
 	display: none;
 }
 
+.pad10h {
+	padding: 0 10px;
+}
+
 .modal {
 	padding: 0px;
 }
@@ -978,9 +982,7 @@ body {
 		padding: 0px 20px;
 	}
 	#foodtrips-header .global-container {
-		margin:0 auto;
-		padding: 0 10px;
-		width:940px;
+
 	}
 		#foodtrips-header h2,
 		#foodtrips-header h3,

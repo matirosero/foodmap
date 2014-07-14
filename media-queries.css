@@ -39,7 +39,7 @@ Ultimo cambio por:	Mati
 */
 
 /*-----------------------------------------------------------------
-1.0 - Tablet 		L	1024
+	1.0 - Tablet 		L	1024
 -----------------------------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
@@ -51,13 +51,37 @@ Ultimo cambio por:	Mati
 		height: 637px; /*fallback, we get this through js*/
 	}
 
+}
 
-	#foodtrips .blocks li {
-		width:180px;
+
+/*-----------------------------------------------------------------
+	1.1 - Tablet 		L	980
+-----------------------------------------------------------------*/
+
+.global-container {background:red}
+#foodtrips-header .global-container {background:blue}
+
+@media screen and (max-width: 1000px) {
+
+	.global-container {
+		padding: 0 10px;
+		width:100%;
+	}
+	#foodtrips-header .global-container {
+		padding: 0 10px;
+		width:100%;
 	}
 
 }
 
+
+/*-----------------------------------------------------------------
+	2.0 - Small tablet (landscape)	800
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+}
 
 
 
