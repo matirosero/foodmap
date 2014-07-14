@@ -42,7 +42,7 @@ function detect_orientation() {
 function prepare_mapcontainer() {
 	//console.log('test '+window_width+' '+device_orientation);
 	//if (window_width <= 768 && device_orientation == 'portrait') {
-	/*
+
 		var element_height;
 		if (window_width <= 568) {
 			element_height = window_height-80+'px';
@@ -56,7 +56,7 @@ function prepare_mapcontainer() {
 		$('#guidebox').css('height',element_height);
 		$('#sidepanel').css('height',element_height);
 	//}
-	*/
+
 }
 
 function prepare_side() {
