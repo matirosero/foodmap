@@ -1,0 +1,366 @@
+/*------------------------------------------------------------------
+FOODMAP
+[Media Queries Stylesheet]
+
+Version:			1.0
+Ultimo cambio:		16/6 	[]
+Ultimo cambio por:	Mati
+-------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+>>> INDICE:
+-------------------------------------------------------------------
+0.0 - Media query breakpoints
+1.0 - Landscape
+	1.1 - Tablet 		L	1024
+	1.2 - Small tablet	L	800
+	1.3 - iPhone 5 		L	568
+	1.4 - Mobile 		L	480
+2.0 - Portrait
+	2.1 - Tablet		P	768
+	2.2 - Small tablet	P	600
+	2.3 - iPhone 5 		P	320
+	2.4 - Mobile 		P	320
+
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+0.0 - Media query breakpoints
+-----------------------------------------------------------------*/
+/*
+	Small tablet (landscape)	800
+	iPhone (landscape)			568
+	Mobile (landscape)			480
+
+	Tablet (portrait)			768
+	Small tablet (portrait)		600
+	iPhone (portrait)			320
+*/
+
+/*-----------------------------------------------------------------
+1.0 - LANDSCAPE
+-----------------------------------------------------------------*/
+/* @media all and (orientation:landscape) { */
+
+
+
+/*-----------------------------------------------------------------
+	1.1 - Tablet (landscape)	1024
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 1024px) {
+
+		#main,
+		#mapdiv,
+		#sidepanel {
+			height: 637px; /*should be only if landscape*/
+		}
+		#guidebox {
+			height: 637px; /*should be only if landscape*/
+		}
+
+		#foodtrips .blocks li {
+			width:180px;
+		}
+
+	}
+
+
+
+
+/*-----------------------------------------------------------------
+	1.2 - Small tablet (landscape)	800
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 800px) {
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 470px; /*should be only if landscape*/
+		}
+
+		#foodtrips-header h3 {
+			display: none;
+		}
+		#foodtrips .blocks li {
+			width:175px;
+		}
+
+	#menu-top {
+		display: none;
+	}
+	#menu-toggle,
+	#menu-top.toggled {
+		display: block;
+	}
+	#menu-toggle {
+		float:right;
+		height: 20px;
+		margin: 4px 20px 0 0;
+	}
+	#menu-top.toggled  {
+		background: #eb4b3f;
+		position: absolute;
+		top:70px;
+		right:0;
+		width:120px;
+		z-index: 35;
+	}
+
+	#menu-top.toggled ul {
+		width: 120px;
+	}
+	#menu-top.toggled  li {
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: none;
+		width:120px;
+	}
+	#menu-top.toggled  li a {
+		color:#fff;
+		line-height: 40px;
+		width:120px;
+	}
+
+
+	}
+
+
+/*-----------------------------------------------------------------
+2.1 - Tablet (portrait)			768
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 768px) {
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 964px;  /*should be only if portrait*/
+		}
+			#guidebox #info {
+				margin: 300px auto 0;
+			}
+		#foodtrips .blocks li {
+			width:167px; /* For sidepanel 700px at 960*/
+		}
+
+	}
+
+
+/*-----------------------------------------------------------------
+1.0 - Small tablet (portrait)		600
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+/*ya deberia desaparecer menu */
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 740px;  /*should be only if portrait*/
+		}
+			#guidebox #info {
+				margin: 200px auto 0;
+			}
+
+	/* TODO: disapper menu */
+	#foodtrips .blocks li {
+		width:173px; /* For sidepanel 700px at 960*/
+	}
+
+}
+
+
+/*-----------------------------------------------------------------
+	1.3 - iPhone 5 (landscape)	568
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 568px) {
+
+		#page-header {
+			height:39px;
+			line-height: 39px;
+		}
+
+
+
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 280px;
+		}
+		#sidepanel {
+			top:40px; /* 70 +1 border */
+			width:100%; /* o darle valor? */
+		}
+			#guidebox #info {
+				margin: 50px auto 0;
+				width:450px;
+			}
+
+		#foodtrips-header {
+			height: 40px;
+		}
+			#foodtrips-header h2,
+			#foodtrips-header h3,
+			#foodtrips-header p {
+				display: inline-block;
+				margin: 0 1em 0 0;
+				}
+			#foodtrips-header h2 {
+				line-height: 40px;
+			}
+
+			#foodtrips-header h3 {
+				display: none;
+			}
+			#foodtrips .blocks li {
+				width:162px;
+			}
+
+	#menu-top.toggled  {
+		top:40px;
+	}
+
+
+	}
+
+/*-----------------------------------------------------------------
+	1.4 - Mobile (landscape)	480
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 480px) {
+
+		#page-header {
+			height:39px;
+			line-height: 39px;
+		}
+
+
+
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 280px;
+		}
+		#sidepanel {
+			top:40px; /* 70 +1 border */
+			width:100%; /* o darle valor? */
+		}
+
+			#guidebox #info {
+				margin: 40px auto 0;
+				text-align: center;
+				width:430px;
+			}
+
+		#foodtrips-header {
+			height: 40px;
+		}
+			#foodtrips-header h2,
+			#foodtrips-header h3,
+			#foodtrips-header p {
+				display: inline-block;
+				margin: 0 1em 0 0;
+				}
+			#foodtrips-header h2 {
+				line-height: 40px;
+			}
+
+			#foodtrips-header h3 {
+				display: none;
+			}
+			#foodtrips .blocks li {
+				width:133px; /* 210 para que sean 2 */
+			}
+
+	#menu-top {
+		display: none;
+	}
+	#menu-toggle,
+	#menu-top.toggled {
+		display: block;
+	}
+	#menu-toggle {
+		float:right;
+		margin-right: 20px;
+	}
+	#menu-top.toggled  {
+		background: #eb4b3f;
+		position: absolute;
+		top:70px;
+		right:0;
+		width:120px;
+		z-index: 35;
+	}
+
+	#menu-top.toggled ul {
+		width: 120px;
+	}
+	#menu-top.toggled  li {
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: none;
+		width:120px;
+	}
+	#menu-top.toggled  li a {
+		color:#fff;
+		line-height: 40px;
+		width:120px;
+	}
+
+
+	}
+
+
+
+
+/*-----------------------------------------------------------------
+2.1 - iPhone 5 (portrait)			320
+-----------------------------------------------------------------*/
+
+	@media screen and (max-width: 320px) {
+
+		#main,
+		#mapdiv,
+		#sidepanel,
+		#guidebox {
+			height: 488px;  /*should be only if portrait*/
+		}
+
+			#guidebox #info {
+				margin: 100px auto 0;
+				width: 250px;
+			}
+		#foodtrips .blocks li {
+			width:130px;
+		}
+
+	}
+
+
+
+/*-----------------------------------------------------------------
+2.0 - PORTRAIT
+-----------------------------------------------------------------*/
+
+/*
+@media all and (orientation:portrait) {
+
+	#foodtrips { background: green; }
+*/
+
+
+
+
+/* } */

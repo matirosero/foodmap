@@ -54,6 +54,7 @@ function prepare_mapcontainer() {
 
 		$('#main').css('height',element_height);
 		$('#mapdiv').css('height',element_height);
+		$('#foodtripdiv').css('height',element_height);
 		$('#guidebox').css('height',element_height);
 		$('#sidepanel').css('height',element_height);
 	//}
