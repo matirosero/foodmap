@@ -756,9 +756,10 @@ function populate_side(/* country_name,country_code,search_terms */) {
 		} else if ( menu_target == 'sub' ) {
 			//si menu target SUB
 			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';
+
+			show_submenu();
 		}
 		console.log(file_to_load);
-
 
 		//load file in sidepanel
 		$("#sidepanel-content").load('content/'+file_to_load);
@@ -773,6 +774,11 @@ function populate_side(/* country_name,country_code,search_terms */) {
 
 	}).change();
 
+
+	//make submenu visible
+	function show_submenu(){
+		console.log('show sub!');
+	}
 
 	show_action_tooltip();
 

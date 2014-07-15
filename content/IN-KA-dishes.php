@@ -154,9 +154,9 @@
 
 
 						<!-- Lo que hay que poner para cada ingrediente/plato -->
-						
+
 						<li>
-							<a href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/bisi-bele-bath-thumb.jpg" alt="" />
 									</div>
@@ -167,7 +167,7 @@
 
 						<!-- Fin ingrediente/plato -->
 						<li>
-							<a href="#IN-chapati" data-sidepanel-content="generalinfo" data-sidepanel-item="chapati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-chapati" data-sidepanel-content="generalinfo" data-sidepanel-item="chapati" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/chapati-thumb.jpg" alt="" />
 									</div>
@@ -176,7 +176,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-dosa" data-sidepanel-content="generalinfo" data-sidepanel-item="dosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-dosa" data-sidepanel-content="generalinfo" data-sidepanel-item="dosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/dosa-thumb.jpg" alt="" />
 									</div>
@@ -185,7 +185,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-idli" data-sidepanel-content="generalinfo" data-sidepanel-item="idli" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-idli" data-sidepanel-content="generalinfo" data-sidepanel-item="idli" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/idli-thumb.jpg" alt="" />
 									</div>
@@ -194,7 +194,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-sambar-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="sambar-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-sambar-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="sambar-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/sambar-thumb.jpg" alt="" />
 									</div>
@@ -203,7 +203,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-rasam-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="rasam-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-rasam-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="rasam-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/rasam-thumb.jpg" alt="" />
 									</div>
@@ -212,7 +212,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-bonda-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bonda-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-bonda-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bonda-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/bonda-thumb.jpg" alt="" />
 									</div>
@@ -221,7 +221,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#IN-payasam" data-sidepanel-content="generalinfo" data-sidepanel-item="payasam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
+							<a class="sidepanel-content" href="#IN-payasam" data-sidepanel-content="generalinfo" data-sidepanel-item="payasam" data-country-code="IN" data-submenu="dish" data-menu-target="sub">
 								<div class="block-thumbnail">
 									<img src="images/payasam-thumb.jpg" alt="" />
 									</div>

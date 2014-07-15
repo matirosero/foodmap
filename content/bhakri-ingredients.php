@@ -25,27 +25,27 @@
 
 						<ul>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="trigo-integral-harina" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="trigo-integral-harina" data-country-code="IN" data-menu-target="sub">
 									Harina de trigo integral
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="aceite" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="aceite" data-country-code="IN" data-menu-target="sub">
 									 Aceite
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="sal" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="sal" data-country-code="IN" data-menu-target="sub">
 									Sal
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="agua" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="agua" data-country-code="IN" data-menu-target="sub">
 									Agua
 								</a>
 							</li>
 							<li>
-								<a href="" data-sidepanel-content="generalinfo" data-sidepanel-item="desighee" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="desighee" data-country-code="IN" data-menu-target="sub">
 									Desi Ghee
 								</a>
 							</li>
