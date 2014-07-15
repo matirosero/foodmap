@@ -769,9 +769,6 @@ function populate_side(country_name,country_code,search_terms) {
 
 			console.log('filename to load: '+sidepanel_content_filename);
 
-
-
-
 			//Agregar clase 'current' al link activo en el menú
 			$('.sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
 
@@ -781,8 +778,6 @@ function populate_side(country_name,country_code,search_terms) {
 			//Eliminar submenú
 			//console.log('hide subpanel');
 			$(".sidepanel-submenu").remove();
-
-
 
 		}
 

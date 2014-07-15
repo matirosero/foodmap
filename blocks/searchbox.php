@@ -12,10 +12,4 @@
 						</span>
 					</form>
 				</span>
-<!--
-				<div id="searchresults">Search results :</div>
-				<ul id="results" class="update">
-				</ul>
-				<a href="" id="clear">clear</a>
--->
 			</div>
