@@ -1001,13 +1001,13 @@ function open_searchbox() {
 			isOpen = false;
 		}
 	});
-	submitIcon.mouseup(function(){
+	submitIcon.on('mouseup',function(){
     	return false;
 	});
-	searchBox.mouseup(function(){
+	searchBox.on('mouseup',function(){
     	return false;
 	});
-	$(document).mouseup(function(){
+	$(document).on('mouseup',function(){
 		if(isOpen == true){
 			$('.searchbox-icon').css('display','block');
 			submitIcon.click();

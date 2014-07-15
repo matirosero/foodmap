@@ -394,6 +394,8 @@ button {
 	text-align:center;
 	text-shadow:1px 1px 1px #424242;
 
+	cursor:pointer;
+
 }
 
 .btn-fb {

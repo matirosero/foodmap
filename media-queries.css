@@ -147,6 +147,10 @@ Ultimo cambio por:	Mati
 		padding: 0 15%;
 	}
 
+	#page-title {
+		width:75%;
+	}
+
 	#menu-top {
 		display: none;
 	}
