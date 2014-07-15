@@ -5,6 +5,7 @@ content/anteriores/
 perfil-usuario.html
 user-style.css
 *.zip
+ignore_*
 
 
 # OS generated files #

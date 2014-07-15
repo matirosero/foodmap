@@ -341,7 +341,8 @@ AmCharts.ready(function() {
 				$('#map-content').on('click','.link-sidepanel', function(e){
 					//alert('go');
 						open_side();
-						populate_side('India','IN');
+						//populate_side(/* 'India','IN' */);
+						//populate not necessary, included in doc ready
 
 				//if (map.dataProvider == indiaDataProvider) {
 
@@ -695,157 +696,89 @@ function populate_showinfo(country_name,country_code) {
 
 
 	open_side();
-	populate_side(country_name,country_code);
+	//populate_side(/* country_name,country_code */);
+	//populate not necessary, included in doc ready
 
-	$(".filter a").click(
-		function(event){
 
-			event.preventDefault();
-			var filter_selector;
-			filter_selector = $(this).attr('class');
-
-			$(this).closest("#info").find('li:not(.'+filter_selector+')').hide();
-			$(this).closest("#info").find("li."+filter_selector).show();
-
-		}
-	);
 }
 
 
 //Populate sidepanel with appropriate info
-function populate_side(country_name,country_code,search_terms) {
+function populate_side(/* country_name,country_code,search_terms */) {
 
-	//TODO: no esta poniendo en cero si se hace click luego de haber buscado
+	var menu_target = 'main';
+	var sidepanel_content = '';
+	var sidepanel_item = '';
+	var country_code = 'IN';
+	var country_name = 'India';
 
-	$('#map-content').on('click','.link-sidepanel', function(e){
-		alert('open');
-	});
-
-	$('#sidepanel-content').on('change','select[name="region"]',function () {
-    	//AQUI VA CODIGO PARA CAMBIAR DE ACUERDO A LO SELECCIONADO
-	}).change();
-
-	//When click links in showinfo
-	$('.modal-content, #sidepanel-navigation, #sidepanel-content').on("click", 'a:not(.action)', function(e){
+	var file_to_load;
 
 
-		/*
-		TODO!!!!!
-		Si se viene de busqueda, no carga submenu
-		*/
-
-		//console.log('link HI: '+$(this).attr('data-sidepanel-content'));
+	// click on links to sidepanel
+	$('body').on('click', '.sidepanel-content', function(e){
 		e.preventDefault();
 
-		var sidepanel_content = $(this).attr('data-sidepanel-content');
-		var sidepanel_content_filename;
 
-		country_code = $(this).attr('data-country-code');
-		//country_name = $(this).attr('data-country-name');
-
-		if (country_code != 'IN' && country_code != 'JP') {
-			country_code = 'IN';
+		// check if  data attr exist and set variables
+		if ($(this).is('[data-menu-target]')) {
+			// attribute exists
+			menu_target = $(this).attr('data-menu-target');
 		}
 
-		//Agregar referencia al país en que estamos por medio de data-attributes
-		$('.sidepanel-menu').find('li a').each(function () {
-				//console.log('add country '+country_code);
-				$(this).attr({
-					'data-country-code': country_code,
-					'data-country-name': country_name
-				});
-
-		});
-
-		//Si afecta menú principal
-		if ($(this).attr('data-menu-target') == 'main') {
-
-			//Nombre del archivo que se debe cargar
-			if (sidepanel_content == 'dishes' || sidepanel_content == 'ingredients' || sidepanel_content == 'info') {
-				sidepanel_content_filename = country_code+'-'+sidepanel_content;
-			} else {
-				sidepanel_content_filename = sidepanel_content;
-			}
-
-			console.log('filename to load: '+sidepanel_content_filename);
-
-			//Agregar clase 'current' al link activo en el menú
-			$('.sidepanel-menu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
-
-			//Quitar clase 'current a de otros links
-			$('.sidepanel-menu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
-
-			//Eliminar submenú
-			//console.log('hide subpanel');
-			$(".sidepanel-submenu").remove();
-
+		if ($(this).is('[data-sidepanel-content]')) {
+			// attribute exists
+			sidepanel_content = $(this).attr('data-sidepanel-content');
 		}
 
-
-
-		//Si el link cliqueado está dentro del contenido
-		if ($(this).closest('#sidepanel-content').length) {
-			//console.log('goes to dish or ingredient');
-
-			//Buscar y guardar <li> padre  del link activo
-			var parent_menu_li = $('.sidepanel-menu .current').closest('li');
-
-			//Buscar el tipo de contenido que mostraremos en el data attribute del link activo
-			var child_menu_type = $('.sidepanel-menu .current').attr('data-sidepanel-content');
-
-			//Buscar el contenido sobre qué elemento mostrar ese contenido
-			var sidepanel_item = $(this).parent('.blocks').attr('data-sidepanel-item');
-			//console.log('this is in: '+parent_menu_li);
-
-			//Cargar submenú dentro del elemento apropiado del menú
-			parent_menu_li.find('.submenu-container').load('blocks/sidepanel-submenu-'+child_menu_type+'.php', {
-				'sidepanel_item': '<?php echo '+sidepanel_item+'; ?>'
-			});
-
-			//Agregar clase 'current' al link activo dentro de submenú
-			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
-
+		if ($(this).is('[data-sidepanel-item]')) {
+			// attribute exists
+			sidepanel_item = $(this).attr('data-sidepanel-item');
 		}
 
-
-		if ($(this).attr('data-menu-target') == 'sub') {
-			console.log('goes to dish or ingredient');
-
-
-			var sidepanel_item = $(this).attr('data-sidepanel-item');
-
-			console.log('item '+sidepanel_item+' | content '+sidepanel_content);
-			sidepanel_content_filename = sidepanel_item+'-'+sidepanel_content;
-
-			//Si el link cliqueado está dentro de modalcontent
-			if ($(this).closest('.modal-content').length) {
-				//console.log('I COME IN PEACE');
-				if (sidepanel_item == 'arroz') {
-					$('.sidepanel-menu').find('li a[data-sidepanel-content="ingredients"]').addClass('current');
-				} else if (sidepanel_item == 'bisi-bele-bath') {
-					$('.sidepanel-menu').find('li a[data-sidepanel-content="dishes"]').addClass('current');
-				}
-			}
-
-			$('.sidepanel-submenu').find('li a[data-sidepanel-content="'+sidepanel_content+'"]').addClass('current');
-			$('.sidepanel-submenu').find('li a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
-
-
+		/*
+		if ($(this).is('[data-country-code]')) {
+			// attribute exists
+			country_code = $(this).attr('data-country-code');
 		}
 
-		//Insert content in sidepanel
-		console.log('what will load: '+sidepanel_content_filename);
-		$("#sidepanel-content").load('content/'+sidepanel_content_filename+'.php');
+		if ($(this).is('[data-country-name]')) {
+			// attribute exists
+			country_name = $(this).attr('data-country-name');
+		}*/
+		console.log('menu target = '+menu_target+' | content = '+sidepanel_content+' | item = '+sidepanel_item+' | country code = '+country_code+' | country = '+country_name );
 
+
+		// figure out what file to load
+		if ( menu_target == 'main' ) {
+			//si menu target MAIN
+			file_to_load = country_code+'-'+sidepanel_content+'.php';
+		} else if ( menu_target == 'sub' ) {
+			//si menu target SUB
+			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';
+		}
+		console.log(file_to_load);
+
+
+		//load file in sidepanel
+		$("#sidepanel-content").load('content/'+file_to_load);
 
 
 
 	});
 
-	sidepanel_menu_txt();
+
+	//select reegion on sidepanel results filter
+	$('#sidepanel-content').on('change','select[name="region"]',function () {
+
+	}).change();
+
+
 	show_action_tooltip();
 
 }
+
+
 
 function show_action_tooltip() {
 	//console.log('tooltips on');
@@ -1071,6 +1004,7 @@ $(document).ready(function() {
 	open_searchbox();
 	toggle_menu();
 	fade_pic();
+	populate_side();
 	//dev_disable();
 
 	//search_map();

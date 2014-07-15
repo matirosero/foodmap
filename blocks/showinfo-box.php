@@ -17,7 +17,7 @@
 *******************************************
 -->
 					<span class="left">
-						<a class="clickme link-ingredients" href="#about" data-menu-target="main">
+						<a class="sidepanel-content clickme link-ingredients" href="#about" data-menu-target="main">
 
 							<span class="ingredients">80 Ingredientes</span>
 							<?php include('includes/icon-ingredient.inc');?>
@@ -30,7 +30,7 @@
 -->
 					<span class="right">
 
-						<a class="clickme link-dishes" href="#about" data-menu-target="main">
+						<a class="sidepanel-content clickme link-dishes" href="#about" data-menu-target="main">
 
 							<span class="dish">24 Platos</span>
 							<?php include('includes/icon-dish.inc');?>

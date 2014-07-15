@@ -305,6 +305,7 @@ a:active {
 
 #sidepanel-navigation .sidepanel-submenu {
 	background: #4d4f54;
+	display: none;
 }
 	#sidepanel-navigation ul > li > a {
 		display: block;
