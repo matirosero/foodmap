@@ -1046,7 +1046,7 @@ font-size: 1.25em;
 
 	}
 		.foodtrip-link-create .block-thumbnail {
-			background: url('images/bg-foodtrip-add.svg') 0 0 no-repeat;
+			/* background: url('images/bg-foodtrip-add.svg') 0 0 no-repeat; */
 			color: #fff;
 			position: relative;
 		}

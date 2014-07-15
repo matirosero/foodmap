@@ -20,8 +20,8 @@
 
 				<!-- .blocks -->
 				<ul class="blocks">
-					<li class="shadow">
-						<a class="foodtrip-link" href="">
+					<li>
+						<a class="foodtrip-link" href="foodtrip.php?sur-india">
 							<div class="block-thumbnail">
 								<img src="images/foodtrip-india-thumb.jpg" alt="Sur de India" />
 							</div>
@@ -30,8 +30,8 @@
 							</div>
 						</a>
 						</li>
-					<li class="shadow">
-						<a class="foodtrip-link" href="">
+					<li>
+						<a class="foodtrip-link" href="foodtrip.php?sur-india">
 							<div class="block-thumbnail">
 								<img src="images/foodtrip-caribe-thumb.jpg" alt="El Caribe" />
 							</div>
@@ -39,8 +39,8 @@
 							<h4 class="block-name">El Caribe</h4>
 						</a>
 					</li>
-					<li class="shadow">
-						<a class="foodtrip-link" href="">
+					<li>
+						<a class="foodtrip-link" href="foodtrip.php?premium">
 							<div class="block-thumbnail">
 								<img src="images/foodtrip-jamieoliver-thumb.png" alt="Jamie Oliver FoodTrip EEUU" />
 							</div>
@@ -48,8 +48,8 @@
 							<h4 class="block-name">EEUU</h4>
 						</a>
 					</li>
-					<li class="shadow">
-						<a class="foodtrip-link" href="">
+					<li>
+						<a class="foodtrip-link" href="foodtrip.php?premium">
 							<div class="block-thumbnail">
 								<img src="images/foodtrip-elbulli-thumb.png" alt="ElBulli" />
 							</div>
@@ -57,8 +57,8 @@
 							<h4 class="block-name">Costa Brava</h4>
 						</a>
 					</li>
-					<li class="shadow">
-						<a class="foodtrip-link-create" href="">
+					<li>
+						<a class="foodtrip-link-create fadepic" href="">
 							<div class="block-thumbnail">
 								<img src="images/foodtrip-add-new.png" alt="Sur de India" />
 							</div>

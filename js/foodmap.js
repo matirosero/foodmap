@@ -1045,6 +1045,16 @@ function toggle_menu() {
 	});
 }
 
+function fade_pic() {
+	$('.fadepic').on('mouseenter', function(e){
+		$(this).find('img').css("opacity","0.75");;
+	});
+	$('.fadepic').on('mouseleave', function(e){
+		$(this).find('img').css("opacity","1");;
+	});
+}
+
+
 function dev_disable() {
 	$('.disable').hide();
 	$('body').css('background','#fff');
@@ -1065,6 +1075,7 @@ $(document).ready(function() {
 	close_side();
 	open_searchbox();
 	toggle_menu();
+	fade_pic();
 	//dev_disable();
 
 	//search_map();
