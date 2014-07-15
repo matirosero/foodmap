@@ -188,7 +188,7 @@ AmCharts.ready(function() {
 				zoomLevel: 2,
 				images: [{
 
-					imageURL: "../includes/foodtrip-sats.png",
+					imageURL: "includes/foodtrip-sats.png",
 					latitude:12.970057,
 					longitude:77.599354,
 					height:222,
@@ -953,11 +953,9 @@ function openSidepage() {
 
 
 	if (window_width <= 768) {
-		alert('map go bye');
 		move_by = window_width+'px';
 	} else if (window_width <= 900) {
 
-		alert('less map');
 		move_by = '500px';
 
 	} else {
