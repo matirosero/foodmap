@@ -27,16 +27,30 @@ var foodtrip_marker = 'M28.337 16.247c0.929 0.9 1.4 2 1.4 3.334c0 1.317-0.453 2.
 
 
 function detect_orientation() {
-	if (window_height > window_width) {
-		device_orientation = 'portrait';
+
+	// Find matches
+	var mql = window.matchMedia("(orientation: portrait)");
+
+	// If there are matches, we're in portrait
+	if(mql.matches) {
+		// Portrait orientation
+		console.log('portrait!');
 	} else {
-		device_orientation = 'landscape';
+		// Landscape orientation
+		console.log('landscape!');
 	}
-	console.log('initial orientation: '+device_orientation);
-	$(window).on("orientationchange",function(event){
-		device_orientation = event.orientation;
-		console.log('orientation is now: '+device_orientation);
-	});
+
+	// Add a media query change listener
+	mql.addListener(function(m) {
+		if(m.matches) {
+			// Changed to portrait
+			console.log('change to portrait!');
+		} else {
+			// Changed to landscape
+			console.log('change to landscape!');
+		}
+		});
+
 }
 
 function prepare_mapcontainer() {
