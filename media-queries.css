@@ -284,6 +284,17 @@ Ultimo cambio por:	Mati
 		padding: 0 5%;
 	}
 
+	#guidebox #info h2 {
+		font-size: 2em;
+		margin: .25em 0 .5em 0;
+	}
+	#guidebox #info p {
+		margin:.5em 0;
+	}
+	.icon-intro {
+		height:40px;
+		width:40px;
+	}
 	#foodtrips .blocks li {
 		width:33.333%; /* valorar si 50% */
 	}
