@@ -883,11 +883,13 @@ body {
 
 	#showinfo {
 		background: #fff;
+		border: 2px solid #2d3035;
+		display: none;
 		height:auto;
 		left:0;
 		position:absolute;
 		top:0;
-		width:300px;
+		width:260px;
 		z-index:25;
 	}
 		#showinfo .close {
@@ -896,16 +898,33 @@ body {
 			top:10px;
 		}
 
+		#showinfo h4 {
+			margin: 0;
+padding: 0;
+font-weight: 300;
+font-size: 1.25em;
+			text-align: center;
+		}
+
 		#showinfo .left,
 		#showinfo .right {
 			display: block;
 			text-align: center;
 			width:50%;
 		}
-		#showinfo .ingredients {
+		#showinfo .result-number {
+			font-size: 2.75em;
+			display: block;
+			line-height:.75em;
+			margin-top:.15em;
 		}
-		#showinfo .dish {
+		#showinfo .icon-ingredient,
+		#showinfo .icon-recipe {
+			height:30px;
+			margin:0 auto;
+			width:30px;
 		}
+
 
 	#searchbox {
 		height:50px;

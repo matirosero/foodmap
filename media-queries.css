@@ -295,6 +295,16 @@ Ultimo cambio por:	Mati
 		height:40px;
 		width:40px;
 	}
+	#showinfo {
+		width:200px;
+	}
+	#showinfo .modal-content {
+		font-size: .8em;
+	}
+
+	#foodtrips-header {
+		padding: .5em 0 0.75em;
+	}
 	#foodtrips .blocks li {
 		width:33.333%; /* valorar si 50% */
 	}

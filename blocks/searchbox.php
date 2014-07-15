@@ -3,7 +3,7 @@
 
 				<span>
 					<form method="post" action="#" class="searchbox">
-						<input type="text" name="search" class='searchbox-input' placeholder="¿Ya sabes lo que buscas?" onkeyup="buttonUp();" required />
+						<input type="text" name="search" class='searchbox-input' placeholder="¿Sabes lo que buscas?" onkeyup="buttonUp();" required />
 						<button type="submit" class="searchbox-submit">
 							<?php include('includes/icon-search.inc');?>
 						</button>

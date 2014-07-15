@@ -559,7 +559,7 @@ function show_guidebox() {
 //Prepare showinfo tooltip
 //TODO: change to more explanatory name?
 function prepare_showinfo() {
-	$("#showinfo").hide();
+	//$("#showinfo").hide();
 }
 
 
@@ -608,8 +608,10 @@ function populate_showinfo(country_name,country_code) {
 
 		if(search_string == 'arroz' || search_string == 'frijoles' ) {
 			result_kind = 'Ingrediente';
-			new_ingredients = search_string;
-			new_dish = '28 Platos';
+			new_ingredients = '<span class="result-number">1</span> '+search_string.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+		return letter.toUpperCase();
+	});
+			new_dish = '<span class="result-number">28</span> Platos';
 
 			new_ingredient_sidepanel_content = 'generalinfo';
 			new_ingredient_sidepanel_item = 'arroz';
@@ -620,8 +622,10 @@ function populate_showinfo(country_name,country_code) {
 			 //<a class="clickme" href="#about">24 Platos</a>';
 		} else if(search_string == 'bisi bele bath') {
 			result_kind = 'Plato';
-			new_ingredients = '12 Ingredientes';
-			new_dish = search_string;
+			new_ingredients = '<span class="result-number">12</span> Ingredientes';
+			new_dish = '<span class="result-number">1</span> '+search_string.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+		return letter.toUpperCase();
+	});
 
 			new_dish_sidepanel_content = 'generalinfo';
 			new_dish_sidepanel_item = 'bisi-bele-bath';
@@ -633,8 +637,8 @@ function populate_showinfo(country_name,country_code) {
 		}
 
 	} else {
-		new_ingredients = '12 Ingredientes';
-		new_dish = '28 Platos';
+		new_ingredients = '<span class="result-number">12</span> Ingredientes';
+		new_dish = '<span class="result-number">28</span> Platos';
 
 		new_dish_sidepanel_content = 'dishes';
 		new_ingredient_sidepanel_content = 'ingredients';
@@ -642,12 +646,8 @@ function populate_showinfo(country_name,country_code) {
 			 //<a class="clickme" href="#about">24 Platos</a>';
 	}
 
-	var capitalize_new_dish = new_dish.toLowerCase().replace(/\b[a-z]/g, function(letter) {
-		return letter.toUpperCase();
-	});
-	var capitalize_new_ingredients = new_ingredients.toLowerCase().replace(/\b[a-z]/g, function(letter) {
-		return letter.toUpperCase();
-	});
+	var capitalize_new_dish = new_dish;
+	var capitalize_new_ingredients = new_ingredients;
 
 	$("#showinfo").css("opacity","1.0");
 
@@ -976,7 +976,7 @@ function open_searchbox() {
 
 	submitIcon.click(function(){
 		if(isOpen == false){
-			$('#searchbox').css('width','300px'); //TODO: inelegant, change
+			$('#searchbox').css('width','270px'); //TODO: inelegant, change
 			searchBox.addClass('searchbox-open');
 			inputBox.focus();
 			isOpen = true;

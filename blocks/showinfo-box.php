@@ -1,5 +1,5 @@
 			<!-- #showinfo: div flotante donde aparece info básica del país -->
-			<div id="showinfo" class="modal" style="display: block; opacity: 1;">
+			<div id="showinfo" class="modal">
 
 				<a class="close-this close">
 					<?php include('includes/icon-close.inc');?>
@@ -18,9 +18,9 @@
 -->
 					<span class="left">
 						<a class="clickme link-ingredients" href="#about" data-menu-target="main">
-							<?php include('includes/icon-ingredient.inc');?>
 
 							<span class="ingredients">80 Ingredientes</span>
+							<?php include('includes/icon-ingredient.inc');?>
 						</a>
 					</span>
 <!--
@@ -31,9 +31,9 @@
 					<span class="right">
 
 						<a class="clickme link-dishes" href="#about" data-menu-target="main">
-							<?php include('includes/icon-dish.inc');?>
 
 							<span class="dish">24 Platos</span>
+							<?php include('includes/icon-dish.inc');?>
 						</a>
 					</span>
 				</div><!-- /#content -->
