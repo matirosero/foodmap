@@ -529,6 +529,16 @@ a:active .icon,
 	fill: #fff;
 }
 
+.icon-close {
+	fill:#fff;
+}
+a:hover .icon-close,
+a:focus .icon-close,
+a:active .icon-close {
+	fill: #eb4a3f;
+}
+
+
 .icon-menu-toggle {
 	fill:#EB4A3F;
 }
@@ -880,6 +890,10 @@ body {
 				line-height: 1em;
 			}
 
+			label[for=intro-message-checkbox] {
+				font-size: 10px;
+			}
+
 
 	#showinfo {
 		background: #fff;
@@ -979,6 +993,10 @@ font-size: 1.25em;
 				cursor:pointer;
 				color:#dcddd8;
 				background:#eb4b3f;
+
+				-webkit-border-radius:0px;
+				-moz-border-radius:0px;
+				border-radius:0px;
  			}
 
 
