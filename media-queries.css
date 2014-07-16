@@ -475,6 +475,10 @@ Ultimo cambio por:	Mati
 			text-align: right;
 		}
 
+	#foodtrips-header p {
+		font-size: .9em;
+	}
+
 	#sidepanel {
 		background:#fdfbee;
 

@@ -58,8 +58,14 @@ function prepare_mapcontainer() {
 	//if (window_width <= 768 && device_orientation == 'portrait') {
 
 		var element_height;
-		if (window_width <= 568) {
-			element_height = window_height-80+'px';
+		if (window_width <= 320) {
+			element_height = window_height-150+'px';
+		} else if (window_width <= 568) {
+			element_height = window_height-130+'px';
+		} else if (window_width <= 576) {
+			element_height = window_height-170+'px';
+		} else if (window_width <= 900) {
+			element_height = window_height-150+'px';
 		} else {
 			element_height = window_height-131+'px';
 		}
