@@ -399,7 +399,7 @@ AmCharts.ready(function() {
 		//console.log('sidepanel will change to '+sidepanel_width);
 		window_width = $(window).width();
 
-		var original_map_width = $('#mapdiv').width();
+		var original_map_width = $(window).width();
 		//console.log('original window = ' + original_map_width);
 
 		var new_map_width;
@@ -425,7 +425,7 @@ AmCharts.ready(function() {
 
 
 		function toggle_map_size(map_width,margin_left,data_provider){
-
+			console.log(map_width);
 			$('#mapdiv').css({
 				width : map_width,
 				marginLeft: margin_left
@@ -439,6 +439,7 @@ AmCharts.ready(function() {
 		}
 
 		$("a.clickme").click(function(e){
+			$('#showinfo').hide();
 			toggle_map_size(new_map_width,new_margin_left,indiaDataProvider)
 		});
 
