@@ -431,7 +431,7 @@ Ultimo cambio por:	Mati
 				display: block;
 			}
 	#sidepanel-main {
-		margin-left:0;
+		margin: 1em 0 0 0;
 	}
 
 		/*temp hasta que flor pase lo de ella*/
