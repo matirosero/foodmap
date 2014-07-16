@@ -714,6 +714,21 @@ function populate_side(/* country_name,country_code,search_terms */) {
 
 	var file_to_load;
 
+	//select reegion on sidepanel results filter
+	//ONLY WORKS IF DATA-SIDEPANEL-CONTENT == DISHES
+	$('#sidepanel-content').on('change','select[name="region"][data-sidepanel-content="dishes"]',function () {
+
+		country_code = 'IN';
+		var region_code = 'KA';
+
+		sidepanel_content = $(this).attr('data-sidepanel-content');
+
+		file_to_load = country_code+'-'+region_code+'-'+sidepanel_content+'.php';
+
+		$("#sidepanel-content").load('content/'+file_to_load);
+
+	}).change();
+
 
 	// click on links to sidepanel
 	$('body').on('click', '.sidepanel-content', function(e){
@@ -759,8 +774,13 @@ function populate_side(/* country_name,country_code,search_terms */) {
 			//si menu target SUB
 			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';
 
-			show_submenu(menu_target);
-			mark_current(menu_target,sidepanel_content,sidepanel_item);
+			if(sidepanel_item != 'arroz-basmati') {
+				show_submenu(menu_target);
+				mark_current(menu_target,sidepanel_content,sidepanel_item);
+			}
+
+
+
 		}
 		console.log(file_to_load);
 
@@ -771,10 +791,6 @@ function populate_side(/* country_name,country_code,search_terms */) {
 	});
 
 
-	//select reegion on sidepanel results filter
-	$('#sidepanel-content').on('change','select[name="region"]',function () {
-
-	}).change();
 
 
 	//make submenu visible

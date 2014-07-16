@@ -70,7 +70,7 @@
 						</fieldset>
 						<fieldset class="filter">
 							<label for="filterby">Filtrar por </label>
-							<select name="region">
+							<select name="region" data-sidepanel-content="dishes">
 								<option value="">Región</option>
 
 
