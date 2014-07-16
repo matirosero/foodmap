@@ -191,6 +191,110 @@ Ultimo cambio por:	Mati
 		width:25%;
 	}
 
+
+	.user-content {
+		width: 100%;
+		margin: 0 0 30px 0;
+	}
+		#user-header {
+			width: 100%;
+		}
+			#user-thumb {
+				height: auto;
+				margin:0;
+				padding: 0;
+				width:24%;
+			}
+				#user-thumb img {
+					display: block;
+				}
+
+			#welcome {
+				float: right;
+				margin: 0;
+				padding: 0;
+				width: 76%;
+			}
+				#welcome h2 {
+					padding: 4em 20px 0 20px;
+					margin: 0;
+				}
+		#user-panel {
+			background: #2d3035;
+			width: 100%;
+		}
+			#user-menu {
+				width: 24%;
+				height: auto;
+			}
+			#user-main-header,
+			#user-main-content {
+				width: 76%;
+				padding: 0;
+			}
+			#user-main-content {
+				padding-bottom: 20px;
+			}
+				#user-main-header h2 {
+					padding-left: 20px;
+				}
+				#user-main-content ul {
+					padding: 0 20px;
+				}
+						.user-foodtrip-image {
+							width: 24%;
+						}
+							.user-foodtrip-image img {
+								display: block;
+							}
+
+
+					.user-foodtrip-new,
+					.user-foodtrip-item {
+						width: auto;
+						height: auto;
+					}
+
+						.user-foodtrip-description {
+							padding: 0;
+							width: 52%;
+						}
+						.user-foodtrip-new .user-foodtrip-description {
+							width: 65%;
+						}
+							#user-add-foodtrip {
+								width: 30px;
+								padding: 12px 12px 0 0;
+							}
+
+
+							#user-main-content h2 {
+								line-height: 1em;
+								margin: 0;
+								padding: 0;
+							}
+							#user-main-content .user-foodtrip-description h2,
+							#user-main-content .user-foodtrip-description p {
+								padding: 10px 10px 0 10px;
+							}
+							#user-main-content .user-foodtrip-new .user-foodtrip-description h2 {
+								padding-top: 15px;
+							}
+
+						.user-foodtrip-item .user-foodtrip-image {
+							width: 24%;
+						}
+
+						.user-foodtrip-button {
+							margin: 0;
+							width: 24%;
+						}
+							.user-foodtrip-button a {
+								display: block;
+								padding:10px 10px 0 0;
+							}
+
+
 }
 
 
@@ -209,6 +313,10 @@ Ultimo cambio por:	Mati
 
 	#sidepanel .blocks li {
 		width:33.333%;
+	}
+
+	#welcome h2 {
+		padding: 3em 20px 0 20px;
 	}
 
 
@@ -252,6 +360,8 @@ Ultimo cambio por:	Mati
 	#sidepanel .blocks li {
 		width:50%;
 	}
+
+
 
 }
 
@@ -312,6 +422,8 @@ Ultimo cambio por:	Mati
 	#foodtrips .blocks li {
 		width:33.333%; /* valorar si 50% */
 	}
+
+
 
 }
 

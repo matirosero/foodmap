@@ -3,6 +3,10 @@
 	width:800px;
 }
 
+.user-container img {
+	display: block;
+}
+
 .user-content {
 	margin-bottom: 30px;
 }
@@ -30,7 +34,7 @@
 	padding-left: 100px;
 }
 
-#user-actions{
+#user-panel {
 	clear:both;
 	width:800px;
 	margin:0 auto;
@@ -44,7 +48,9 @@
 	width:180px;
 	height: 710px;
 }
-
+#user-menu-content {
+	line-height:2.0;
+}
 #user-menu h2, h5 {
 	color:#FFFFFF;
 	font-family:'Lato',sans-serif;
@@ -54,39 +60,41 @@
 	text-align: center;
 }
 
-#user-menu a:hover{
-	display: block;
-	width: 100%;
-	background: #eb4b3f;
-	color: #FFFFFF;
-}
-
-.user-menu-active {
-	display: block;
-	width: 100%;
-	background: #eb4b3f;
-	color: #FFFFFF;
-}
 
 #user-menu-content ul{
+
+	list-style:none;
+	margin: 0;
 	padding:0px;
 	border-top: 1px solid #aaa;
 }
 
 #user-menu-content li{
-	list-style-type: none;
 	color:#FFFFFF;
 	font-family:'Lato',sans-serif;
 	font-weight:300;
 	text-transform:uppercase;
 	line-height:3.0;
 	border-bottom: 1px solid #aaa;
-	padding-left:14px;
+	margin:0;
+	padding:0;
+}
+#user-menu-content li a {
+	color: #FFFFFF;
+	display: block;
+	padding: 0 0 0 1em;
+}
+#user-menu-content li a:hover{
+	background: #eb4b3f;
 }
 
-#user-menu-content {
-	line-height:2.0;
+#user-menu-content li a.user-menu-active {
+	display: block;
+	background: #eb4b3f;
 }
+
+
+
 
 
 #user-main-header {
@@ -140,6 +148,9 @@
 	width:140px;
 	float:left;
 }
+	.user-foodtrip-image img {
+		display:block;
+	}
 
 .user-foodtrip-description {
 	padding:4px 0px 0px 16px;
@@ -160,11 +171,12 @@
 }
 
 #user-main-content ul{
+	list-style: none;
+	margin: 0;
 	padding:0px;
 }
 
 #user-main-content li{
-	list-style-type: none;
 	background-color:#FFFFFF;
 	font-family:'Lato',sans-serif;
 	font-weight:300;

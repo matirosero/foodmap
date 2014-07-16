@@ -7,22 +7,22 @@
 <div class="user-content">
 	<div id="user-header">
 		<div id="user-thumb">
-			<img src="images/user-thumb.jpg" alt="Mi foto" height="180" width="180">
+			<img src="images/user-thumb.jpg" alt="Mi foto" />
 		</div>
 		<div id="welcome">
 			<h2>¡Hola, Álvaro! <br/ > En tu maleta llevas:</h2>
 		</div>
 	</div>
-	<div id="user-actions">
+	<div id="user-panel">
 
 		<div id="user-menu">
 			<h2>MI PERFIL</h2>
 			<h5>EDITAR</h5>
 			<div id="user-menu-content">
 				<ul>
-					<li class="user-menu-active">MIS FOODTRIPS<span style="margin-left:38px">3</span></li>
-					<a href=""><li>MIS PLATOS<span style="margin-left:65px">0</span></li></a>
-					<a href=""><li>MIS INGREDIENTES<span style="margin-left:16px">0</span></li></a>
+					<li><a href="" class="user-menu-active">MIS FOODTRIPS<span style="margin-left:38px">3</span></a></li>
+					<li><a href="">MIS PLATOS<span style="margin-left:65px">0</span></a></li>
+					<li><a href="">MIS INGREDIENTES<span style="margin-left:16px">0</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 							<h2><strong>CREAR NUEVO FOOD</strong>TRIP</h2>
 						</div>
 						<div id="user-add-foodtrip">
-							<a href=""><img src="images/add-foodtrip.png" alt="Nuevo FoodTrip" height="26" width="26"></a>
+							<a href="#"><img src="images/add-foodtrip.png" alt="Nuevo FoodTrip"></a>
 						</div>
 					</div>
 				</li>
@@ -53,7 +53,7 @@
 				<li>
 					<div class="user-foodtrip-item">
 						<div class="user-foodtrip-image">
-							<img src="images/foodtrip-elbulli-thumb.png" alt="ElBulli Costa Brava" height="140" width="140">
+							<img src="images/foodtrip-elbulli-thumb.png" alt="ElBulli Costa Brava" />
 						</div>
 						<div class="user-foodtrip-description">
 							<h2><strong>elBulli</strong> Costa Brava</h2>
@@ -64,7 +64,7 @@
 							</p>
 						</div>
 						<div class="user-foodtrip-button">
-							<a href=""><img src="images/user-foodtrip-buttons.png" alt=""></a>
+							<a href="#"><img src="images/user-foodtrip-buttons.png" alt="" /></a>
 						</div>
 					</div>
 				</li>
@@ -72,18 +72,18 @@
 				<li>
 					<div class="user-foodtrip-item">
 						<div class="user-foodtrip-image">
-							<img src="images/user-india-thumb.jpg" alt="Sur de India" height="140" width="140">
+							<img src="images/user-india-thumb.jpg" alt="Sur de India" />
 						</div>
 						<div class="user-foodtrip-description">
-							<h2><strong>SUR DE INDIA</strong><h2>
-							<p><strong>CONTENIDO</strong> Creado por FoodMap y <br/ >editado por mí <br/ >
+							<h2><strong>SUR DE INDIA</strong></h2>
+							<p><strong>CONTENIDO</strong> Editado por mí <br/ >
 								6 Regiones <br />
 								20 platos  <br />
 								10 productos <br />
 							</p>
 						</div>
 						<div class="user-foodtrip-button">
-							<a href=""><img src="images/user-foodtrip-buttons-off.png" alt=""></a>
+							<a href="#"><img src="images/user-foodtrip-buttons-off.png" alt="" /></a>
 						</div>
 					</div>
 				</li>
@@ -91,7 +91,7 @@
 				<li>
 					<div class="user-foodtrip-item">
 						<div class="user-foodtrip-image">
-							<img src="images/user-japon-thumb.jpg" alt="Japón" height="140" width="140">
+							<img src="images/user-japon-thumb.jpg" alt="Japón" />
 						</div>
 						<div class="user-foodtrip-description">
 							<h2><strong>JAPÓN</strong></h2>
@@ -102,7 +102,7 @@
 							</p>
 						</div>
 						<div class="user-foodtrip-button">
-							<a href=""><img src="images/user-foodtrip-buttons-off.png" alt=""></a>
+							<a href="#"><img src="images/user-foodtrip-buttons-off.png" alt="" /></a>
 						</div>
 					</div>
 				</li>

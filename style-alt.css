@@ -53,7 +53,7 @@ Ultimo cambio por:	Mati
 	Link rollover			#b03e34	(pensaba cambiarlos al rojo oscuro)
 	Gris oscuro (submenu)	#2d3035
 	Gris medio (submenu)	#4d4f54
-	FOndo panel beige		#fdfbee
+	FOndo panel beige		#e5d1a7
 	Fondo mapa/contenido 	#f4f3f0
 	Paises mapa				#d5d2cb
 	Mapa rollover(gris)		#9d978f
@@ -324,7 +324,7 @@ a:active {
 		background: #EB4A3F;
 	}
 	#sidepanel-navigation ul > li > a.current {
-		background: #fdfbee;
+		background: #e5d1a7;
 	}
 	#sidepanel-navigation .sidepanel-menu > li > a {
 		padding: 10px 0;
@@ -341,7 +341,7 @@ a:active {
 			white-space:nowrap;
 		}
 		#sidepanel-navigation ul > li > a.current .menu-txt {
-			background: #fdfbee;
+			background: #e5d1a7;
 			color: #EB4A3F;
 		}
 		.sidepanel-menu > li > a .menu-txt {
@@ -720,17 +720,7 @@ a:active .logo-foodmap {
 #sidepanel-filter-order:before,
 #sidepanel-filter-order:after,
 .user-content:before,
-.user-content:after,
-#user-header:before,
-#user-header:after,
-#user-panel:before,
-#user-panel:after,
-.user-foodtrip-new:before,
-.user-foodtrip-new:after,
-.user-foodtrip-item:before,
-.user-foodtrip-item:after,
-#user-main-content li:before,
-#user-main-content li:after {
+.user-content:after {
 	content: '';
 	display: table;
 }
@@ -744,12 +734,7 @@ a:active .logo-foodmap {
 #menu-user:after,
 .blocks:after,
 #sidepanel-filter-order:after,
-.user-content:after,
-#user-header:after,
-#user-panel:after,
-.user-foodtrip-new:after,
-.user-foodtrip-item:after,
-#user-main-content li:after {
+.user-content:after {
 	clear: both;
 }
 
