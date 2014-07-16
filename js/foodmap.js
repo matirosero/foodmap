@@ -792,8 +792,13 @@ function populate_side(/* country_name,country_code,search_terms */) {
 
 		if (menu_target == 'main') {
 			//
+			$('.sidepanel-menu > li > a[data-sidepanel-content="'+content+'"]').addClass('current');
+			$('.sidepanel-menu > li > a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 		} else {
-			//
+			//target menu sub-dishes | content generalinfo | item bisi-bele-bath
+			$('.'+menu_target+' > li > a[data-sidepanel-content="'+content+'"]').addClass('current');
+			$('.'+menu_target+' > li > a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
+			$('.submenu').not('.'+menu_target).find('li a').removeClass('current');
 		}
 
 	}
