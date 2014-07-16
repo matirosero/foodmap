@@ -631,7 +631,7 @@ function populate_showinfo(country_name,country_code) {
 			new_ingredient_sidepanel_content = 'generalinfo';
 			new_ingredient_sidepanel_item = 'arroz';
 			new_dish_sidepanel_content = 'dishes';
-			new_ingredient_menu_target = 'sub';
+			new_ingredient_menu_target = 'sub-ingredients';
 
 			//new_content += '<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a> | \
 			 //<a class="clickme" href="#about">24 Platos</a>';
@@ -645,7 +645,7 @@ function populate_showinfo(country_name,country_code) {
 			new_dish_sidepanel_content = 'generalinfo';
 			new_dish_sidepanel_item = 'bisi-bele-bath';
 			new_ingredient_sidepanel_content = 'ingredients';
-			new_dish_menu_target = 'sub';
+			new_dish_menu_target = 'sub-dishes';
 
 			//new_content += '<a class="clickme" href="#about">4 Ingredientes</a> | \
 			 //<a class="clickme" href="#about">1 '+ result_kind +' (' + search_string + ')</a>';
@@ -684,11 +684,11 @@ function populate_showinfo(country_name,country_code) {
 		'data-country-name': country_name,
 		'data-menu-target': new_ingredient_menu_target
 	});
-	if ( new_dish_menu_target == 'sub') {
+	if ( new_dish_menu_target == 'sub-dishes') {
 		$(".modal-content .link-dishes").attr({
 			'data-sidepanel-item': new_dish_sidepanel_item
 		});
-	} else if ( new_ingredient_menu_target == 'sub') {
+	} else if ( new_ingredient_menu_target == 'sub-ingredients') {
 		$(".modal-content .link-ingredients").attr({
 			'data-sidepanel-item': new_ingredient_sidepanel_item
 		});
@@ -753,11 +753,12 @@ function populate_side(/* country_name,country_code,search_terms */) {
 		if ( menu_target == 'main' ) {
 			//si menu target MAIN
 			file_to_load = country_code+'-'+sidepanel_content+'.php';
-		} else if ( menu_target == 'sub' ) {
+			$('#sidepanel-navigation .showmenu').removeClass('showmenu');
+		} else {
 			//si menu target SUB
 			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';
 
-			show_submenu();
+			show_submenu(menu_target);
 		}
 		console.log(file_to_load);
 
@@ -776,8 +777,12 @@ function populate_side(/* country_name,country_code,search_terms */) {
 
 
 	//make submenu visible
-	function show_submenu(){
-		console.log('show sub!');
+	function show_submenu(submenu_target){
+		console.log('show sub! '+submenu_target);
+
+		$('#sidepanel-navigation .'+submenu_target).addClass('showmenu');
+		$('#sidepanel-navigation .sidepanel-submenu').not( '.'+submenu_target ).removeClass('showmenu');
+
 	}
 
 	show_action_tooltip();

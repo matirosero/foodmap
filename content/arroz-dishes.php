@@ -88,117 +88,117 @@
 
 						<ul>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-azafran" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-azafran" data-country-code="IN" data-menu-target="sub-dishes">
 									Arroz al azafrán
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-curry" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-curry" data-country-code="IN" data-menu-target="sub-dishes">
 									Arroz al curry
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-chana" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-chana" data-country-code="IN" data-menu-target="sub-dishes">
 									Arroz chana
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-congee" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-congee" data-country-code="IN" data-menu-target="sub-dishes">
 									Arroz congee
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-platano" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-platano" data-country-code="IN" data-menu-target="sub-dishes">
 									Arroz en hoja de plátano
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Biryani
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Cuajada de arroz
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Hyderabadi Biryani
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Idli
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Khichdi
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Kuzhakkattai
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Kanji
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Modak
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Pakhal
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Payasam
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Pilaf
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Poha
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Pohe
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Pulihora
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Puliyogare
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Rajma
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Sambhar
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-menu-target="sub-dishes">
 									Shahi Paneer
 								</a>
 							</li>

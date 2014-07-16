@@ -49,7 +49,7 @@ Ultimo cambio por:	Mati
 /*
 	Texto normal			#222
 	Color lnks (rojo)		#eb4b3f
-	Rojo oscuro				#b03e34
+	Rojo oscuro	(rollover)	#b03e34
 	Link rollover			#b03e34	(pensaba cambiarlos al rojo oscuro)
 	Gris oscuro (submenu)	#2d3035
 	Gris medio (submenu)	#4d4f54
@@ -306,6 +306,9 @@ a:active {
 #sidepanel-navigation .sidepanel-submenu {
 	background: #4d4f54;
 	display: none;
+}
+#sidepanel-navigation .showmenu {
+	display: block;
 }
 	#sidepanel-navigation ul > li > a {
 		display: block;

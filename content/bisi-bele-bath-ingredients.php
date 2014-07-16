@@ -87,147 +87,147 @@
 
 						<ul>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Arroz
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Toor dal
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Channa dal
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Urad dal
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Canela en rama
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Clavo
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Cardamomo
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Chili rojo seco
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Semillas de alholva
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Semillas de amapola
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Semillas de coriandro
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Coco rallado fresco
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Polvo de cúrcuma
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Asafoetida
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Cebolla perla
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Pimento verde
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Zanahoria
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Guisantes
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Alubias
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Patata
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Moringa
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Tomate
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Agua de tamarindo
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Panela
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Ghee
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Sal
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Semillas de mostaza
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Semillas de comino
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-menu-target="sub-ingredients">
 									Hojas de curry
 								</a>
 							</li>

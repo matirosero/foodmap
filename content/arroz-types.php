@@ -87,17 +87,17 @@
 
 						<ul>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-aghoni-bora" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-aghoni-bora" data-country-code="IN" data-menu-target="sub-ingredients">
 									Aghoni Bora
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-basmati" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-basmati" data-country-code="IN" data-menu-target="sub-ingredients">
 									Basmati
 								</a>
 							</li>
 							<li>
-								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-glutinoso" data-country-code="IN" data-menu-target="sub">
+								<a class="sidepanel-content" href="#" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz-glutinoso" data-country-code="IN" data-menu-target="sub-ingredients">
 									Arroz glutinoso
 								</a>
 							</li>

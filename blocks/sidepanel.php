@@ -21,27 +21,27 @@
 						<span class="menu-txt">Platos</span>
 					</a>
 
-					<ul class="sidepanel-submenu dishes">
+					<ul class="sidepanel-submenu sub-dishes">
 						<li class="">
-							<a class="sidepanel-content current" href="" data-sidepanel-content="generalinfo" data-menu-target="sub" data-sidepanel-item="bisi-bele-bath">
+							<a class="sidepanel-content current" href="" data-sidepanel-content="generalinfo" data-menu-target="sub-dishes" data-sidepanel-item="bisi-bele-bath">
 								<?php include('includes/icon-side-submenu-generalinfo.inc'); ?>
 								<span class="menu-txt">Información general</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="" data-sidepanel-content="ingredients" data-menu-target="sub" data-sidepanel-item="bisi-bele-bath">
+							<a class="sidepanel-content" href="" data-sidepanel-content="ingredients" data-menu-target="sub-dishes" data-sidepanel-item="bisi-bele-bath">
 								<?php include('includes/icon-side-submenu-ingredient.inc'); ?>
 								<span class="menu-txt">Ingredientes</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="#" data-sidepanel-content="prep" data-menu-target="sub" data-sidepanel-item="bisi-bele-bath">
+							<a class="sidepanel-content" href="#" data-sidepanel-content="prep" data-menu-target="sub-dishes" data-sidepanel-item="bisi-bele-bath">
 								<?php include('includes/icon-side-submenu-prep.inc'); ?>
 								<span class="menu-txt">Elaboración</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="" data-sidepanel-content="tech" data-menu-target="sub" data-sidepanel-item="bisi-bele-bath">
+							<a class="sidepanel-content" href="" data-sidepanel-content="tech" data-menu-target="sub-dishes" data-sidepanel-item="bisi-bele-bath">
 								<?php include('includes/icon-side-submenu-tech.inc'); ?>
 								<span class="menu-txt">Técnicas</span>
 							</a>
@@ -56,27 +56,27 @@
 						<span class="menu-txt">Ingredientes</span>
 					</a>
 
-					<ul class="sidepanel-submenu ingredients">
+					<ul class="sidepanel-submenu sub-ingredients">
 						<li class="">
-							<a class="sidepanel-content current" href="" data-sidepanel-content="generalinfo" data-menu-target="sub" data-sidepanel-item="arroz">
+							<a class="sidepanel-content current" href="" data-sidepanel-content="generalinfo" data-menu-target="sub-ingredients" data-sidepanel-item="arroz">
 								<?php include('includes/icon-side-submenu-generalinfo.inc');?>
 								<span class="menu-txt">Información general</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="" data-sidepanel-content="dishes" data-menu-target="sub" data-sidepanel-item="arroz">
+							<a class="sidepanel-content" href="" data-sidepanel-content="dishes" data-menu-target="sub-ingredients" data-sidepanel-item="arroz">
 								<?php include('includes/icon-side-submenu-dish.inc');?>
 								<span class="menu-txt">Platos</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="#" data-sidepanel-content="types" data-menu-target="sub" data-sidepanel-item="arroz">
+							<a class="sidepanel-content" href="#" data-sidepanel-content="types" data-menu-target="sub-ingredients" data-sidepanel-item="arroz">
 								<?php include('includes/icon-side-submenu-types.inc');?>
 								<span class="menu-txt">Variedades</span>
 							</a>
 						</li>
 						<li class="">
-							<a class="sidepanel-content" href="" data-sidepanel-content="tech" data-menu-target="sub" data-sidepanel-item="arroz">
+							<a class="sidepanel-content" href="" data-sidepanel-content="tech" data-menu-target="sub-ingredients" data-sidepanel-item="arroz">
 								<?php include('includes/icon-side-submenu-tech.inc');?>
 								<span class="menu-txt">Técnicas</span>
 							</a>
