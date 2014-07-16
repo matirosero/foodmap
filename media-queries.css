@@ -361,4 +361,82 @@ Ultimo cambio por:	Mati
 			text-align: right;
 		}
 
+	#sidepanel {
+		background:#fdfbee;
+
+	}
+
+	#sidepanel-navigation:before,
+	#sidepanel-navigation:after,
+	.sidepanel-menu:before,
+	.sidepanel-menu:after {
+		content: '';
+		display: table;
+	}
+
+	#sidepanel-navigation:after,
+	.sidepanel-menu:after {
+		clear: both;
+	}
+
+	#sidepanel-navigation {
+		background: #2d3035;
+		float: none;
+		position: relative;
+		width: 100%;
+	}
+
+
+		#sidepanel-navigation .sidepanel-menu li {
+			display: inline-block;
+			float: left;
+			height: 50px;
+		}
+		#sidepanel-navigation .sidepanel-menu > li {
+			width:80px;
+		}
+		#sidepanel-navigation .sidepanel-menu li a {
+			display: inline-block;
+			width:80px;
+			height: 50px;
+			padding: 0;
+		}
+
+
+		.sidepanel-submenu {
+			border-top:1px solid #fdfbee;
+			position:absolute;
+			left:0;
+			top:50px;
+			width:100%;
+			z-index:25;
+		}
+
+			.sidepanel-submenu li {
+				display: inline-block;
+				float:left;
+			}
+
+
+			/* 	TEMP FIX
+				TODO: class to sidepanel content so it moves down when submenu
+			*/
+			#sidepanel-navigation .showmenu {
+				display: none;
+			}
+
+			#sidepanel-navigation .sidepanel-menu > li:hover .showmenu,
+			#sidepanel-navigation .sidepanel-menu > li:focus .showmenu,
+			#sidepanel-navigation .sidepanel-menu > li:active .showmenu {
+				display: block;
+			}
+	#sidepanel-main {
+		margin-left:0;
+	}
+
+		/*temp hasta que flor pase lo de ella*/
+		#sidepanel-header .user-actions {
+			display: none;
+		}
+
 }
