@@ -815,6 +815,10 @@ function populate_side(/* country_name,country_code,search_terms */) {
 			$('.'+menu_target+' > li > a[data-sidepanel-content="'+content+'"]').addClass('current');
 			$('.'+menu_target+' > li > a').not( '[data-sidepanel-content="'+sidepanel_content+'"]' ).removeClass('current');
 			$('.submenu').not('.'+menu_target).find('li a').removeClass('current');
+
+			var parent_menu  = menu_target.replace("sub-", "");
+			$('.sidepanel-menu > li > a[data-sidepanel-content="'+parent_menu+'"]').not('.current').addClass('current');
+
 		}
 
 	}
