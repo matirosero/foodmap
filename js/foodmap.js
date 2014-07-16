@@ -754,17 +754,18 @@ function populate_side(/* country_name,country_code,search_terms */) {
 			//si menu target MAIN
 			file_to_load = country_code+'-'+sidepanel_content+'.php';
 			$('#sidepanel-navigation .showmenu').removeClass('showmenu');
+			mark_current(menu_target,sidepanel_content,'');
 		} else {
 			//si menu target SUB
 			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';
 
 			show_submenu(menu_target);
+			mark_current(menu_target,sidepanel_content,sidepanel_item);
 		}
 		console.log(file_to_load);
 
 		//load file in sidepanel
 		$("#sidepanel-content").load('content/'+file_to_load);
-
 
 
 	});
@@ -782,6 +783,18 @@ function populate_side(/* country_name,country_code,search_terms */) {
 
 		$('#sidepanel-navigation .'+submenu_target).addClass('showmenu');
 		$('#sidepanel-navigation .sidepanel-submenu').not( '.'+submenu_target ).removeClass('showmenu');
+
+	}
+
+	//mark current link
+	function mark_current(menu_target,content,item){
+		console.log('target menu '+menu_target+' | content '+content+' | item '+item);
+
+		if (menu_target == 'main') {
+			//
+		} else {
+			//
+		}
 
 	}
 
