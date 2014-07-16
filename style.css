@@ -718,7 +718,9 @@ a:active .logo-foodmap {
 .blocks:before,
 .blocks:after,
 #sidepanel-filter-order:before,
-#sidepanel-filter-order:after {
+#sidepanel-filter-order:after,
+.user-content:before,
+.user-content:after {
 	content: '';
 	display: table;
 }
@@ -731,7 +733,8 @@ a:active .logo-foodmap {
 #menu-main:after,
 #menu-user:after,
 .blocks:after,
-#sidepanel-filter-order:after {
+#sidepanel-filter-order:after,
+.user-content:after {
 	clear: both;
 }
 

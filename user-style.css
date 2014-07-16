@@ -1,0 +1,201 @@
+.user-container {
+	margin:0 auto ;
+	width:800px;
+}
+
+.user-content {
+	margin-bottom: 30px;
+}
+
+#user-header{
+	margin:30px auto 0;
+
+	width:800px;
+}
+
+#user-thumb{
+	margin:0;
+	float: left;
+	width:180px;
+	height:180px;
+}
+
+#welcome {
+	margin-left:100px;
+
+}
+
+#welcome h2 {
+	padding-top: 80px;
+	padding-left: 100px;
+}
+
+#user-actions{
+	clear:both;
+	width:800px;
+	margin:0 auto;
+}
+
+#user-menu {
+	clear: both;
+	float: left;
+	padding-top:10px;
+	background-color: #2d3035;
+	width:180px;
+	height: 710px;
+}
+
+#user-menu h2, h5 {
+	color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: center;
+}
+
+#user-menu a:hover{
+	display: block;
+	width: 100%;
+	background: #eb4b3f;
+	color: #FFFFFF;
+}
+
+.user-menu-active {
+	display: block;
+	width: 100%;
+	background: #eb4b3f;
+	color: #FFFFFF;
+}
+
+#user-menu-content ul{
+	padding:0px;
+	border-top: 1px solid #aaa;
+}
+
+#user-menu-content li{
+	list-style-type: none;
+	color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:3.0;
+	border-bottom: 1px solid #aaa;
+	padding-left:14px;
+}
+
+#user-menu-content {
+	line-height:2.0;
+}
+
+
+#user-main-header {
+	margin:0px;
+	background-color:#eceae9;
+	width:600px;
+	float:right;
+	padding:10px 0px 0px 20px;
+}
+
+#user-main-header h2 {
+	color:#2d3035;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: left;
+	border-bottom: 1px solid #2d3035;
+	padding-bottom: 10px;
+}
+
+.user-tips {
+	padding-left:220px;
+	color:#222;
+	font-family:'Merriweather',serif;
+	font-size:12px;
+	font-weight:400;
+	line-height:1.5;
+	text-transform: none;
+}
+
+#user-main-content {
+	padding: 0px 20px 10px 20px;
+	background-color:#eceae9;
+	width:580px;
+	float:right;
+}
+
+.user-foodtrip-item{
+	width:600px;
+	height:140px;
+}
+
+.user-foodtrip-new{
+	width:570px;
+	height:58px;
+}
+
+
+.user-foodtrip-image {
+	width:140px;
+	float:left;
+}
+
+.user-foodtrip-description {
+	padding:4px 0px 0px 16px;
+	float:left;
+
+}
+
+#user-add-foodtrip {
+	float:right;
+	width:30px;
+	padding-top:15px;
+}
+
+.user-foodtrip-button{
+	float:right;
+	width:140px;
+	margin: 20px 30px 0px 0px;
+}
+
+#user-main-content ul{
+	padding:0px;
+}
+
+#user-main-content li{
+	list-style-type: none;
+	background-color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+#user-main-content h2 {
+	color:#2d3035;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.7;
+	text-align: left;
+}
+
+#user-main-content h3 {
+	color:#eb4b3f;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: left;
+	padding-top: 10px;
+}
+
+#user-main-content p {
+	color:#222;
+	font-family:'Merriweather',serif;
+	font-size:11px;
+	font-weight:400;
+	line-height:1.4;
+	text-transform: none;
+}
+
