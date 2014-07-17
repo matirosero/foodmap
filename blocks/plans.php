@@ -3,7 +3,7 @@
 			<div class="plans-header center">
 				<h2>elige tu  plan personalizado</h2>
 				<p>
-					Puedes registrarte gratis, ser usuario premium con más vantajas o compar el FoodTrip Especial que te interese.
+					Puedes registrarte gratis, ser usuario premium con más vantajas o compar el FoodTrip Premium que te interese.
 Disfruta de las ventajas de nuestras diferentes licencias, tú decides!
 				</p>
 			</div>
