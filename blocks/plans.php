@@ -37,7 +37,7 @@ Sin acceso Foodtrips especiales<br /><br />
 						<div class="pad10">
 							<h3>
 								<span class="light">Usuario</span><br />
-								gratuito
+								premium
 							</h3>
 
 							<h4 class="red"><span class="x2">2</span> €/mes <span class="light">(24 €/año)</span></h4>

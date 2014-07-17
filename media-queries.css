@@ -358,6 +358,12 @@ Ultimo cambio por:	Mati
 	#foodtrips .blocks li {
 		width:33.333%;
 	}
+	#foodtrip-info {
+		display: none;
+	}
+	#foodtrip-info-mini {
+		display: block;
+	}
 
 	#sidepanel .blocks li {
 		width:50%;
