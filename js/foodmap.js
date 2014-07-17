@@ -319,7 +319,8 @@ AmCharts.ready(function() {
 			$('.sidepanel-menu a[data-sidepanel-content=info]').attr('data-sidepanel-content','KA-info');
 			$('.sidepanel-menu a[data-sidepanel-content=dishes]').attr('data-sidepanel-content','KA-dishes');
 
-
+			$('.sidepanel-menu > li > a[data-sidepanel-content="KA-info"]').addClass('current');
+			$('.sidepanel-menu > li > a').not( '[data-sidepanel-content="KA-info"]' ).removeClass('current');
 
 		}
 
