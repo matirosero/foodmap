@@ -487,13 +487,13 @@ AmCharts.ready(function() {
 			//Convert search string to country code
 			if(search_string) {
 
-				if(search_string == 'rice' || search_string == 'arroz') {
+				if(search_string == 'rice' || search_string == 'arroz' || search_string == 'Arroz') {
 					search_string = 'arroz';
 					country_code = ['BD','BT','CN','ES','IN','ID','PH','VN','TH','MM','FR','BR','JP','US','KP','KR','CO','PE','VE','KH','IR','LA','MG','NP','NE','PK','LK'];
 				} else if(search_string == 'gallo pinto') {
 					search_string = 'gallo pinto';
 					country_code = ['CR','NI'];
-				} else if(search_string == 'bisi bele bath') {
+				} else if(search_string == 'bisi bele bath' || search_string == 'Bisi bele bath') {
 					country_code = ['IN'];
 				}
 

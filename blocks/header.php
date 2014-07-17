@@ -26,22 +26,7 @@
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-	<!-- External scripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 
-	<!-- AM Map scripts -->
-	<script src="ammap/ammap.js" type="text/javascript"></script>
-	<!-- map file should be included after ammap.js -->
-	<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
-	<script src="ammap/maps/js/indiaLow.js" type="text/javascript"></script>
-
-
-
-	<!-- Custom scripts -->
-	<script type="text/javascript" src="js/foodmap-theme.js"></script>
-	<script src="js/foodmap.js" type="text/javascript"></script>
 
 
 	<!--[if lt IE 9]>

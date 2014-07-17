@@ -35,6 +35,7 @@
 }
 
 #user-panel {
+	background: #2d3035;
 	clear:both;
 	width:800px;
 	margin:0 auto;
@@ -46,7 +47,6 @@
 	padding-top:10px;
 	background-color: #2d3035;
 	width:180px;
-	height: 710px;
 }
 #user-menu-content {
 	line-height:2.0;
