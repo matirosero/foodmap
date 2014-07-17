@@ -335,8 +335,8 @@ AmCharts.ready(function() {
 
 
 
-		var satellites_x = (div_width/2)-109;
-		var satellites_y = (div_height/2)-110;
+		var satellites_x = (div_width/2)-108;
+		var satellites_y = (div_height/2)-111;
 
 		function testtest() {
 			//alert('ooo');
