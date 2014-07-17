@@ -1,6 +1,6 @@
 <!--
-	Ultimo cambio: 11/7 22:45 PM
-	Por: Mati
+	Ultimo cambio: 17/7 2:30 AM
+	Por: Flor
 -->
 				<header id="sidepanel-header">
 					<!-- Lo que va aquí dentro varía, pero seguir este ejemplo -->
@@ -70,7 +70,7 @@
 					</nav>
 
 					<h2>Arroz</h2>
-					<h6><span class="country">India</span> <span class="region">Karnataka</span></h6>
+					<h6><a class="sidepanel-content" href="" data-sidepanel-content="ingredients" data-menu-target="main"><span class="country"><strong>India</strong></span></a> <span class="region">Karnataka</span></h6>
 
 					<div class="item-pic">
 						<img src="images/arroz-full.jpg" alt="Arroz" />
@@ -88,13 +88,10 @@
 						Constituye <strong>el cereal más importante en la alimentación</strong> y contribuye de forma muy efectiva al aporte calórico de la dieta actual. Un dato interesante es que es <strong>fuente de una quinta parte de las calorías consumidas en el mundo</strong>.
 					</p>
 
-					<span class="more-link"><a href="#more">Saber más</a></span>
+					<p class="more-link"><a href="#more">Saber más</a></p>
 
 					<h4>Información científica</h4>
-
-					<p>
-						<strong>Clasificación científica</strong>
-					</p>
+					<h6>Clasificación científica</h6>
 					<p>
 						<strong>Reino:</strong> <i>Plantae</i> <br />
 						<strong>Subreino:</strong> <i>Tracheobionta</i> <br />
@@ -112,6 +109,8 @@
 					<p>
 						<i><strong>Oryza sativa</i></strong>, comúnmente llamado arroz, es una especie perteneciente a la familia de las gramíneas (<i>Poáceas</i>), cuyo fruto es comestible y constituye la base de la dieta de casi la mitad de la población mundial. Su nutriente principal son los <strong>hidratos de carbono</strong>, aunque también aporta proteínas (7%), minerales y, en estado natural, considerables vitaminas.
 					</p>
+
+					<p class="more-link"><a href="#more">Saber más</a></p>
 
 					<h4>Información del arroz en India</h4>
 

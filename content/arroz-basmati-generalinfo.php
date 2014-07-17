@@ -1,5 +1,5 @@
 <!--
-	Ultimo cambio: 13/7 00:45 AM
+	Ultimo cambio: 17/7 2:30 AM
 	Por: Flor
 -->
 				<header id="sidepanel-header">
@@ -70,7 +70,7 @@
 					</nav>
 
 					<h2>Arroz Basmati</h2>
-					<h6><span class="country">India</span> <span class="region">Karnataka</span></h6>
+					<h6><a class="sidepanel-content" href="" data-sidepanel-content="ingredients" data-menu-target="main"><span class="country"><strong>India</strong></span></a> <span class="region">Karnataka</span></h6>
 
 					<div class="item-pic">
 						<img src="images/arroz-basmati-full.jpg" alt="Arroz Basmati" />

@@ -1,6 +1,6 @@
 /*
-	Ultimo cambio: 14/7 21:18 AM
-	Por: Mati
+	Ultimo cambio: 17/7 2:30 AM
+	Por: Flor
 */
 
 /*--------------------------------------------------------------
@@ -9,6 +9,26 @@
 
 #sidepanel h2 {
 	border-bottom:1px solid #4d5054;
+}
+
+#sidepanel h3 {
+	border-bottom:1px solid #eb4b3f;
+	border-top:1px solid #eb4b3f;
+	font-size:20px;
+	color:#eb4b3f;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+#sidepanel h4 {
+	border-bottom:1px solid #9D978F;
+	font-weight:700;
+}
+
+#sidepanel h6 {
+	font-size: 13px;
+	font-weight:300;
+	margin-top:-10px;
 }
 
 #sidepanel-navigation,
@@ -41,6 +61,63 @@
 	color: #fff;
 }
 
+#sidepanel .block-name {
+	background: #2d3035;
+	color: #fff;
+	border-bottom:0px;
+}
+
+#sidepanel .sidepanel-txt ul li {
+	list-style-image: url('images/bullet.png');
+	margin-bottom: 4px;
+}
+
+#sidepanel .sidepanel-txt  ul a{
+	color: #4d5054;
+}
+
+#sidepanel .sidepanel-txt ul a:hover{
+	color: #eb4b3f;
+}
+
+#sidepanel .sidepanel-txt ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin-top: 2.7em;
+    margin-left: 1em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+
+#sidepanel .sidepanel-txt ol > li{
+    position: relative;
+    margin-bottom:24px;
+    padding-left: 1.6em;
+    min-height: 3em;
+}
+
+#sidepanel .sidepanel-txt ol > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.33em;
+    width: 1.2em;
+    height: 1.2em;
+     
+    font-size: 1.1em;
+	font-family:'Lato',sans-serif;
+	font-weight:400;
+	line-height: 1.2;
+    text-align: center;
+    color: #f5f5f5;
+ 
+    border: 5px solid #9D978F;
+    border-radius: 60%;
+    background-color: #9D978F;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
 
 /*--------------------------------------------------------------
 	Links Sidepanel
@@ -70,6 +147,15 @@
 	/* color: #f99d1c; */
 }
 
+.more-link {
+	color:#eb4b3f;
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:12px;
+	text-align: right;
+	line-height: 2.5em;
+}
 
 /*--------------------------------------------------------------
 	8.2 Sidepanel
@@ -103,7 +189,8 @@
 		.sidepanel-txt {
 			padding: 0px 10px;
 		}
-			#sidepanel-header {
+
+		#sidepanel-header {
 				padding: 0 10px;
 			}
 

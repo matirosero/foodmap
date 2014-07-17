@@ -166,7 +166,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-cordero" data-sidepanel-content="generalinfo" data-sidepanel-item="cordero" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-cordero" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/curry-thumb.jpg" alt="" />
 									</div>
@@ -175,7 +175,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="soja" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/soja-thumb.jpg" alt="" />
 									</div>
@@ -184,7 +184,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-jengibre" data-sidepanel-content="generalinfo" data-sidepanel-item="jengibre" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-jengibre" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/jengibre-thumb.jpg" alt="" />
 									</div>
@@ -194,7 +194,7 @@
 						</li>
 
 						<li>
-							<a class="sidepanel-content" href="#IN-masoor" data-sidepanel-content="generalinfo" data-sidepanel-item="masoor" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-masoor" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/masoor-thumb.jpg" alt="" />
 									</div>
@@ -203,7 +203,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-pepino" data-sidepanel-content="generalinfo" data-sidepanel-item="pepino" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-pepino" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/pepino-thumb.jpg" alt="" />
 									</div>
@@ -212,7 +212,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-berenjena" data-sidepanel-content="generalinfo" data-sidepanel-item="berenjena" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-berenjena" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/berenjena-thumb.jpg" alt="" />
 									</div>
@@ -221,7 +221,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-ghee" data-sidepanel-content="generalinfo" data-sidepanel-item="ghee" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-ghee" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/ghee-thumb.jpg" alt="" />
 									</div>
@@ -232,7 +232,7 @@
 
 
 						<li>
-							<a class="sidepanel-content" href="#IN-aceite-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="aceite-soja" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-aceite-soja" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/aceite-soja-thumb.jpg" alt="" />
 									</div>
@@ -241,7 +241,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-atta" data-sidepanel-content="generalinfo" data-sidepanel-item="atta" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-atta" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/atta-thumb.jpg" alt="" />
 									</div>
@@ -259,7 +259,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-jeera" data-sidepanel-content="generalinfo" data-sidepanel-item="jeera" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
+							<a class="sidepanel-content" href="#IN-jeera" data-sidepanel-content="generalinfo" data-sidepanel-item="arroz" data-country-code="IN" data-submenu="ingredient" data-menu-target="sub-ingredients">
 								<div class="block-thumbnail">
 									<img src="images/jeera-thumb.jpg" alt="" />
 									</div>

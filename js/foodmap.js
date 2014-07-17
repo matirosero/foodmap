@@ -316,7 +316,9 @@ AmCharts.ready(function() {
 
 			$("#sidepanel-content").load('content/IN-KA-info.php');
 
-			//AQUI CAMBIAR NAV PARA QUE SEA DE KARNATAKA
+			$('.sidepanel-menu a[data-sidepanel-content=info]').attr('data-sidepanel-content','KA-info');
+			$('.sidepanel-menu a[data-sidepanel-content=dishes]').attr('data-sidepanel-content','KA-dishes');
+
 
 
 		}
@@ -514,6 +516,19 @@ AmCharts.ready(function() {
 	}
 	search_map();
 
+	function go_karnataka() {
+		$('#sidepanel-content').on('change','select[name="region"][data-sidepanel-content="dishes"]',function () {
+			country_code = 'IN';
+			var region_code_array = ['IN-KA'];
+
+			for (var id in region_code_array) {
+				map.dataProvider.areas.push({ id: region_code_array[id], showAsSelected: true});
+			}
+			map.validateNow();
+
+		}).change();
+	}
+	go_karnataka();
 
 
 });
@@ -733,6 +748,8 @@ function populate_side(/* country_name,country_code,search_terms */) {
 		file_to_load = country_code+'-'+region_code+'-'+sidepanel_content+'.php';
 
 		$("#sidepanel-content").load('content/'+file_to_load);
+		$('.sidepanel-menu a[data-sidepanel-content=info]').attr('data-sidepanel-content','KA-info');
+		$('.sidepanel-menu a[data-sidepanel-content=dishes]').attr('data-sidepanel-content','KA-dishes');
 
 	}).change();
 
@@ -777,6 +794,16 @@ function populate_side(/* country_name,country_code,search_terms */) {
 			file_to_load = country_code+'-'+sidepanel_content+'.php';
 			$('#sidepanel-navigation .showmenu').removeClass('showmenu');
 			mark_current(menu_target,sidepanel_content,'');
+
+			var str2 = "KA-";
+			if(sidepanel_content.indexOf(str2) != -1){
+				//alert('yes');
+			} else {
+				//alert('no');
+				$('.sidepanel-menu a[data-sidepanel-content=KA-info]').attr('data-sidepanel-content','info');
+				$('.sidepanel-menu a[data-sidepanel-content=KA-dishes]').attr('data-sidepanel-content','dishes');
+			}
+
 		} else {
 			//si menu target SUB
 			file_to_load = sidepanel_item+'-'+sidepanel_content+'.php';

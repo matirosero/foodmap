@@ -1,6 +1,6 @@
 <!--
-	Ultimo cambio: 11/7 22:44 PM
-	Por: Mati
+	Ultimo cambio: 17/7 2:30 AM
+	Por: Flor
 -->
 
 
@@ -72,7 +72,7 @@
 
 
 					<h2>Arroz</h2>
-					<h6><span class="country">India</span> <span class="region">Karnataka</span></h6>
+					<h6><a class="sidepanel-content" href="" data-sidepanel-content="ingredients" data-menu-target="main"><span class="country"><strong>India</strong></span></a> <span class="region">Karnataka</span></h6>
 
 					<div class="item-pic">
 						<img src="images/arroz-full.jpg" alt="Arroz" />
@@ -206,7 +206,7 @@
 						</ul>
 
 					<h4>PLATOS CON ARROZ EN OTROS PAÍSES (116)</h4>
-					<span class="more-link"><a href="#more">Saber más</a></span>
+					
 
 				</div>
 				<!-- Fin de contenido variable -->

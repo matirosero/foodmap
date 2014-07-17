@@ -1,5 +1,5 @@
 <!--
-	Ultimo cambio: 11/7 12:50 PM
+	Ultimo cambio: 17/7 2:30 AM
 	Por: Flor
 -->
 
@@ -22,7 +22,7 @@
 					
 					</div>
 					
-					<h4>Información general</h4>
+					<h3>Información general</h3>
 
 					<p>
 						La India (oficialmente la <strong>República de la India</strong>) es un país ubicado en Asia del Sur. Tiene más de 1240 millones de habitantes siendo el <strong>segundo más poblado del mundo después de China</strong>. Su superficie es de 3,3 millones de km<sup>2</sup> que supone ser el séptimo país más extenso. Limita con el océano Índico al sur, con el mar Arábigo al oeste y con el golfo de Bengala al este. La India limita con Pakistán al oeste; al norte con China, Nepal y Bután y al este con Bangladés y Birmania. Se encuentra cerca de las islas de Sri Lanka, Maldivas e Indonesia. <strong>Su capital es Nueva Delhi</strong> y su ciudad más poblada es <strong>Bombay</strong>.
@@ -49,7 +49,7 @@
 					<p>
 						<strong>La indumentaria tradicional india varía en sus colores y estilos según la región</strong> y depende de varios factores, incluyendo el clima. Los estilos populares de vestido incluyen prendas sencillas como el <strong>sari para las mujeres y el dhoti para hombres</strong>; también son populares otras prendas como el salwar kameez para las mujeres y los kurta–pyjamas, los pantalones de estilo europeo y las camisas para los hombres.
 					</p>
-
+					<p class="more-link"><a href="#more">Saber más</a></p>
 				</div>
 
 

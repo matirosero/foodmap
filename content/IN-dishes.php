@@ -1,6 +1,6 @@
 <!--
-	Ultimo cambio: 11/7 22:43 PM
-	Por: Mati
+	Ultimo cambio: 17/7 2:30 AM
+	Por: Flor
 -->
 
 
@@ -157,7 +157,7 @@
 						<!-- Lo que hay que poner para cada ingrediente/plato -->
 						<li>
 							<!-- Esto de aqui es CODIGO PAIS y nombre del ingrediente/plato, exactamente así -->
-							<a class="sidepanel-content" href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="bhakri" data-country-code="IN" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-bhakri" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 
 									<!--
@@ -182,7 +182,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-kadhahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="kadhahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-kadhahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/kadhahi-paneer-thumb.jpg" alt="" />
 									</div>
@@ -191,7 +191,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-naan" data-sidepanel-content="generalinfo" data-sidepanel-item="naan" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-naan" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/naan-thumb.jpg" alt="" />
 									</div>
@@ -201,7 +201,7 @@
 						</li>
 
 						<li>
-							<a class="sidepanel-content" href="#IN-shahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="shahi-paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-shahi-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/shahi-paneer-thumb.jpg" alt="" />
 									</div>
@@ -210,7 +210,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-chapati" data-sidepanel-content="generalinfo" data-sidepanel-item="chapati" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-chapati" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/chapati-thumb.jpg" alt="" />
 									</div>
@@ -219,7 +219,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-dum-gosht" data-sidepanel-content="generalinfo" data-sidepanel-item="dum-gosht" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-dum-gosht" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/dum-gosht-thumb.jpg" alt="" />
 									</div>
@@ -239,7 +239,7 @@
 
 
 						<li>
-							<a class="sidepanel-content" href="#IN-biryani" data-sidepanel-content="generalinfo" data-sidepanel-item="biryani" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-biryani" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/biryani-thumb.jpg" alt="" />
 									</div>
@@ -248,7 +248,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-samosa" data-sidepanel-content="generalinfo" data-sidepanel-item="samosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-samosa" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/samosa-thumb.jpg" alt="" />
 									</div>
@@ -257,7 +257,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="paneer" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-paneer" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/paneer-thumb.jpg" alt="" />
 									</div>
@@ -266,7 +266,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-pescado-tandoori" data-sidepanel-content="generalinfo" data-sidepanel-item="pescado-tandoori" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-pescado-tandoori" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/pescado-tandoori-thumb.jpg" alt="" />
 									</div>
@@ -275,7 +275,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-pakora" data-sidepanel-content="generalinfo" data-sidepanel-item="pakora" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-pakora" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/pakora-thumb.jpg" alt="" />
 									</div>
@@ -284,7 +284,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
@@ -293,7 +293,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-chaat" data-sidepanel-content="generalinfo" data-sidepanel-item="chaat" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-chaat" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/chaat-thumb.jpg" alt="" />
 									</div>
@@ -302,7 +302,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-baati" data-sidepanel-content="generalinfo" data-sidepanel-item="baati" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-baati" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/baati-thumb.jpg" alt="" />
 									</div>
@@ -311,7 +311,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="gulab-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-gulab-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
@@ -320,7 +320,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-dosa" data-sidepanel-content="generalinfo" data-sidepanel-item="dosa" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-dosa" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/dosa-thumb.jpg" alt="" />
 									</div>
@@ -329,7 +329,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-idli" data-sidepanel-content="generalinfo" data-sidepanel-item="idli" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-idli" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/idli-thumb.jpg" alt="" />
 									</div>
@@ -338,7 +338,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-rava-upma" data-sidepanel-content="generalinfo" data-sidepanel-item="rava-upma" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-rava-upma" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/rava-upma-thumb.jpg" alt="" />
 									</div>
@@ -347,7 +347,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-sambar-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="sambar-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-sambar-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/sambar-thumb.jpg" alt="" />
 									</div>
@@ -356,7 +356,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-rasam-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="rasam-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-rasam-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/rasam-thumb.jpg" alt="" />
 									</div>
@@ -365,7 +365,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-bonda-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bonda-jamun" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-bonda-jamun" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/bonda-thumb.jpg" alt="" />
 									</div>
@@ -374,7 +374,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-batata-vada" data-sidepanel-content="generalinfo" data-sidepanel-item="batata-vada" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-batata-vada" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/batata-vada-thumb.jpg" alt="" />
 									</div>
@@ -383,7 +383,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-puttu" data-sidepanel-content="generalinfo" data-sidepanel-item="puttu" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-puttu" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/puttu-thumb.jpg" alt="" />
 									</div>
@@ -392,7 +392,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-uttapam" data-sidepanel-content="generalinfo" data-sidepanel-item="uttapam" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-uttapam" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/uttapam-thumb.jpg" alt="" />
 									</div>
@@ -401,7 +401,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-payasam" data-sidepanel-content="generalinfo" data-sidepanel-item="payasam" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-payasam" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/payasam-thumb.jpg" alt="" />
 									</div>
@@ -410,7 +410,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="sidepanel-content" href="#IN-kanji" data-sidepanel-content="generalinfo" data-sidepanel-item="kanji" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
+							<a class="sidepanel-content" href="#IN-kanji" data-sidepanel-content="generalinfo" data-sidepanel-item="bisi-bele-bath" data-country-code="IN" data-submenu="dish" data-menu-target="sub-dishes">
 								<div class="block-thumbnail">
 									<img src="images/kanji-thumb.jpg" alt="" />
 									</div>
