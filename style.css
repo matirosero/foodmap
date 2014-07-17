@@ -143,7 +143,7 @@ big {
 }
 
 .red {
-	color:red;
+	color:#eb4b3f;
 }
 
 .small {
@@ -418,6 +418,22 @@ button:hover {
 	width:300px;
 }
 
+.plans-box button {
+	width:200px;
+	background:#eb4a3f;
+}
+
+.plans-box .plan-foodtrip button {
+	width:300px;
+	background:#eb4a3f;
+	font-size: 2em;
+}
+
+.plans-box button:active,
+.plans-box button:hover {
+	background:#b03e34;
+}
+
 
 /*-----------------------------------------------------------------
 4.0 - Forms
@@ -626,8 +642,14 @@ a:active .logo-foodmap {
 	display: none;
 }
 
+.center {
+	text-align: center;
+}
 .pad10h {
 	padding: 0 10px;
+}
+.pad10 {
+	padding: 10px;
 }
 
 .modal {
@@ -730,7 +752,9 @@ a:active .logo-foodmap {
 .user-foodtrip-item:before,
 .user-foodtrip-item:after,
 #user-main-content li:before,
-#user-main-content li:after {
+#user-main-content li:after,
+.plans-box .pad10:before,
+.plans-box .pad10:after {
 	content: '';
 	display: table;
 }
@@ -749,7 +773,8 @@ a:active .logo-foodmap {
 #user-panel:after,
 .user-foodtrip-new:after,
 .user-foodtrip-item:after,
-#user-main-content li:after {
+#user-main-content li:after,
+.plans-box .pad10:after {
 	clear: both;
 }
 
@@ -1108,9 +1133,80 @@ font-size: 1.25em;
 	display: block;
 }
 
+/*--------------------------------------------------------------
+	8.3 Plans
+--------------------------------------------------------------*/
+
+.plans-header {
+	margin:0 auto;
+	width:550px;
+}
+
+
+
+.plans-box {
+	background: #EBEAE8;
+	margin: 0 auto 30px;
+	width:590px;
+}
+.plan-user {
+	background: #fff;
+	margin: 0 0 10px 0;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 280px;
+}
+.plan-free {
+	float: left;
+}
+.plan-premium {
+	background: #fff url('images/premium.png') top right no-repeat;
+
+	float:right;
+}
+
+.plan-foodtrip {
+	background: #fff;
+	clear:both;
+	margin: 10px 0 0 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.plans-box,
+	.plans-header  {
+
+		width:95%;
+	}
+	.plan-user {
+		width:100%;
+	}
+}
+
+.plans-box h3 {
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+.plans-box h4 {
+	font-size: 2em;
+	line-height: 1em;
+}
+.plan-free h4 {
+	font-size: 1.25em;
+	margin-bottom: 1.9em;
+}
+
+.plan-foodtrip h3 {
+	margin: 15px 0 0 0;
+}
+
+
+
 
 /*--------------------------------------------------------------
-	9.0 Crap
+	9.0 Other
 --------------------------------------------------------------*/
 .ui-loading .ui-loader { display: block; }
 .ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
