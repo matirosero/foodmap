@@ -1715,7 +1715,7 @@ filter:alpha(opacity=60);
 #user-menu-content li a {
 	color: #FFFFFF;
 	display: block;
-	padding: 0 0 0 1em;
+	padding: 0 1em;
 }
 #user-menu-content li a:hover{
 	background: #eb4b3f;
@@ -1727,7 +1727,9 @@ filter:alpha(opacity=60);
 }
 
 
-
+#user-menu-content .user-menu-item-number {
+	float: right;
+}
 
 
 #user-main-header {

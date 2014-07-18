@@ -20,9 +20,24 @@
 			<h5>EDITAR</h5>
 			<div id="user-menu-content">
 				<ul>
-					<li><a href="" class="user-menu-active">MIS FOODTRIPS<span style="margin-left:38px">3</span></a></li>
-					<li><a href="">MIS PLATOS<span style="margin-left:65px">0</span></a></li>
-					<li><a href="">MIS INGREDIENTES<span style="margin-left:16px">0</span></a></li>
+					<li>
+						<a href="" class="user-menu-active">
+							<span class="user-menu-item-name">MIS FOODTRIPS</span>
+							<span class="user-menu-item-number">3</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="user-menu-item-name">MIS PLATOS</span>
+							<span class="user-menu-item-number">0</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="user-menu-item-name">MIS INGREDIENTES</span>
+							<span class="user-menu-item-number">0</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
