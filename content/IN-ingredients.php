@@ -44,8 +44,6 @@
 					</nav>
 
 
-		<!-- Lo que va aquí dentro varía, pero seguirá este ejemplo -->
-
 					<h2>India <span class="small">12 ingredientes</span></h2>
 					<p>
 						La gastronomía de la India se caracteriza por una gran variedad de estilos regionales y el <strong>uso sofisticado de hierbas y especias</strong>. Los alimentos básicos son elaborados con <strong>arroz</strong> (especialmente en el sur y el este) y <strong>trigo</strong> (predominantemente en el norte). Las especias como la <strong>pimienta negra</strong>, que ahora son consumidos en todo el mundo, son originalmente nativas al subcontinente indio. Curiosamente, el <strong>pimiento</strong>, que fue introducido por los portugueses, también es muy utilizado en este tipo de gastronomía.
@@ -162,7 +160,7 @@
 									<img src="images/arroz-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Arroz</h4>
+								<h4 class="block-name"><span>Arroz</span></h4>
 							</a>
 						</li>
 						<li>
@@ -171,7 +169,7 @@
 									<img src="images/curry-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Curry</h4>
+								<h4 class="block-name"><span>Curry</span></h4>
 							</a>
 						</li>
 						<li>
@@ -180,7 +178,7 @@
 									<img src="images/soja-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Soja</h4>
+								<h4 class="block-name"><span>Soja</span></h4>
 							</a>
 						</li>
 						<li>
@@ -189,7 +187,7 @@
 									<img src="images/jengibre-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Jengibre</h4>
+								<h4 class="block-name"><span>Jengibre</span></h4>
 							</a>
 						</li>
 
@@ -199,7 +197,7 @@
 									<img src="images/masoor-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Masoor</h4>
+								<h4 class="block-name"><span>Masoor</span></h4>
 							</a>
 						</li>
 						<li>
@@ -208,7 +206,7 @@
 									<img src="images/pepino-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Pepino</h4>
+								<h4 class="block-name"><span>Pepino</span></h4>
 							</a>
 						</li>
 						<li>
@@ -217,7 +215,7 @@
 									<img src="images/berenjena-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Berenjena</h4>
+								<h4 class="block-name"><span>Berenjena</span></h4>
 							</a>
 						</li>
 						<li>
@@ -226,7 +224,7 @@
 									<img src="images/ghee-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Ghee</h4>
+								<h4 class="block-name"><span>Ghee</span></h4>
 							</a>
 						</li>
 
@@ -237,7 +235,7 @@
 									<img src="images/aceite-soja-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Aceite de soja</h4>
+								<h4 class="block-name"><span>Aceite de soja</span></h4>
 							</a>
 						</li>
 						<li>
@@ -246,7 +244,7 @@
 									<img src="images/atta-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Atta</h4>
+								<h4 class="block-name"><span>Atta</span></h4>
 							</a>
 						</li>
 						<li>
@@ -255,7 +253,7 @@
 									<img src="images/bajra-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Bajra</h4>
+								<h4 class="block-name"><span>Bajra</span></h4>
 							</a>
 						</li>
 						<li>
@@ -264,11 +262,10 @@
 									<img src="images/jeera-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Jeera</h4>
+								<h4 class="block-name"><span>Jeera</span></h4>
 							</a>
 						</li>
 					</ul><!-- /.blocks -->
 
 				</div>
-				<!-- Fin de contenido variable -->
 

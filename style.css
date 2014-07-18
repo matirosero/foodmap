@@ -7,7 +7,6 @@ Ultimo cambio:		8/7 	[See foodmap-proyect.txt]
 Ultimo cambio por:	Mati
 -------------------------------------------------------------------*/
 
-
 /*-----------------------------------------------------------------
 >>> INDICE:
 -------------------------------------------------------------------
@@ -23,19 +22,22 @@ Ultimo cambio por:	Mati
 	2.2 - Menus
 	2.3 - Botones
 3.0 - Formularios
-5.0 - Imagenes
-	5.1 - Iconos SVG
-6.0 - Estilos genéricos
-	6.1 - Alineación & floats
-	6.2 - Clearings
-7.0 - Estructura
-	7.1 - Header
-	7.2 - Main
-	7.3 - Footer
-8.0 - Bloques de contenido
-	8.1 - Mapa
-	8.2 - Sidepanel
-	8.3 - FoodTrips
+4.0 - Imagenes
+	4.1 - Iconos SVG
+5.0 - Estilos genéricos
+	5.1 - Alineación & floats
+	5.2 - Clearings
+6.0 - Estructura
+	6.1 - Header
+	6.2 - Main
+	6.3 - Footer
+6.0 - Bloques de contenido
+	7.1 - Mapa
+	7.2 - Sidepanel
+	7.3 - FoodTrips
+        7.3.1 - FoodTrip Map
+  7.4 - Plans
+	7.5 - User Profile
 -----------------------------------------------------------------*/
 
 
@@ -436,7 +438,7 @@ button:hover {
 
 
 /*-----------------------------------------------------------------
-4.0 - Forms
+3.0 - Forms
 -----------------------------------------------------------------*/
 
 #sidepanel-filter-order {
@@ -504,7 +506,7 @@ input[type=password] {
 
 
 /*-----------------------------------------------------------------
-5.0 - Imagenes
+4.0 - Imagenes
 -----------------------------------------------------------------*/
 
 img,svg {
@@ -520,7 +522,7 @@ img,svg {
 
 
 /*-----------------------------------------------------------------
-5.1 - Iconos, logos, SVGs
+4.1 - Iconos, logos, SVGs
 -----------------------------------------------------------------*/
 
 .icon {
@@ -635,7 +637,7 @@ a:active .logo-foodmap {
 
 
 /*-----------------------------------------------------------------
-6.0 - Estilos genéricos
+5.0 - Estilos genéricos
 -----------------------------------------------------------------*/
 
 .disable {
@@ -710,7 +712,7 @@ a:active .logo-foodmap {
 
 
 /*--------------------------------------------------------------
-	6.1 Alignment and Floats
+	5.1 Alignment and Floats
 --------------------------------------------------------------*/
 .left {
 	float: left;
@@ -721,7 +723,7 @@ a:active .logo-foodmap {
 
 
 /*--------------------------------------------------------------
-	6.2 Clearings
+	5.2 Clearings
 --------------------------------------------------------------*/
 .clear:before,
 .clear:after,
@@ -779,7 +781,7 @@ a:active .logo-foodmap {
 }
 
 /*-----------------------------------------------------------------
-7.0 - Estructura
+6.0 - Estructura
 -----------------------------------------------------------------*/
 
 body {
@@ -839,7 +841,7 @@ body {
 
 
 /*-----------------------------------------------------------------
-	7.2 - Main
+	6.2 - Main
 -----------------------------------------------------------------*/
 
 .maincontent {
@@ -857,7 +859,7 @@ body {
 }
 
 /*-----------------------------------------------------------------
-	7.3 - Footer
+	6.3 - Footer
 -----------------------------------------------------------------*/
 
 #page-footer {
@@ -878,10 +880,10 @@ body {
 		}
 
 /*--------------------------------------------------------------
-8.0 Bloques de contenido
+7.0 Bloques de contenido
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-	8.1 Mapa
+	7.1 Mapa
 --------------------------------------------------------------*/
 #map-content {
 	background: #fff;
@@ -963,9 +965,9 @@ body {
 
 		#showinfo h4 {
 			margin: 0;
-padding: 0;
-font-weight: 300;
-font-size: 1.25em;
+			padding: 0;
+			font-weight: 300;
+			font-size: 1.25em;
 			text-align: center;
 		}
 
@@ -1050,13 +1052,316 @@ font-size: 1.25em;
 
 
 /*--------------------------------------------------------------
-	8.2 Sidepanel
+	7.2 Sidepanel
 --------------------------------------------------------------*/
 
-/* aqui iba sidepanel*/
+/*
+	Ultimo cambio: 17/7 2:30 AM
+	Por: Flor
+*/
 
 /*--------------------------------------------------------------
-	8.3 Foodtrips
+	Tipografia
+--------------------------------------------------------------*/
+
+#sidepanel h2 {
+	border-bottom:1px solid #4d5054;
+}
+
+#sidepanel h3 {
+	border-bottom:1px solid #eb4b3f;
+	border-top:1px solid #eb4b3f;
+	font-size:20px;
+	color:#eb4b3f;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+#sidepanel h4 {
+	border-bottom:1px solid #9D978F;
+	font-weight:700;
+}
+
+#sidepanel h6 {
+	font-size: 13px;
+	font-weight:300;
+	margin-top:-10px;
+}
+
+#sidepanel-navigation,
+#sidepanel-filter-order,
+#sidepanel-filter-order select {
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+#sidepanel-filter-order,
+#sidepanel-filter-order select {
+	color: #9D978F;
+}
+
+#sidepanel-filter-order {
+	font-size: 10px;
+}
+#sidepanel-filter-order select {
+   background: #fff;
+   border: 1px solid #9D978F;
+   font-size: 12px;
+   height: 34px;
+   overflow: hidden;
+   width: 150px;
+}
+
+#sidepanel .blocks li a {
+	display:table;
+}
+#sidepanel .blocks li h4 {
+	background: #2d3035;
+	color: #fff;
+	line-height: 1em;
+	display: table-row;
+}
+#sidepanel .blocks li h4 span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#sidepanel .block-name {
+	background: #2d3035;
+	color: #fff;
+	border-bottom:0px;
+}
+
+#sidepanel .sidepanel-txt ul li {
+	list-style-image: url('images/bullet.png');
+	margin-bottom: 4px;
+}
+
+#sidepanel .sidepanel-txt  ul a{
+	color: #4d5054;
+}
+
+#sidepanel .sidepanel-txt ul a:hover{
+	color: #eb4b3f;
+}
+
+#sidepanel .sidepanel-txt ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+
+    margin-top: 2.7em;
+    margin-left: 1em;
+    padding: 0;
+
+    counter-reset: li-counter;
+}
+
+#sidepanel .sidepanel-txt ol > li{
+    position: relative;
+    margin-bottom:24px;
+    padding-left: 1.6em;
+    min-height: 3em;
+}
+
+#sidepanel .sidepanel-txt ol > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.33em;
+    width: 1.2em;
+    height: 1.2em;
+
+    font-size: 1.1em;
+	font-family:'Lato',sans-serif;
+	font-weight:400;
+	line-height: 1.2;
+    text-align: center;
+    color: #f5f5f5;
+
+    border: 5px solid #9D978F;
+    border-radius: 60%;
+    background-color: #9D978F;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+/*--------------------------------------------------------------
+	Links Sidepanel
+--------------------------------------------------------------*/
+
+#sidepanel .blocks li a:hover,
+#sidepanel .blocks li a:focus,
+#sidepanel .blocks li a:active {
+	color: #fff;
+}
+#sidepanel .blocks li a:hover h4,
+#sidepanel .blocks li a:focus h4,
+#sidepanel .blocks li a:active h4 {
+	background: #eb4b3f;
+}
+
+
+#sidepanel a {
+	/* color: #fff; */
+}
+#sidepanel a:visited {
+	/* color: #fff; */
+}
+#sidepanel a:hover,
+#sidepanel a:focus,
+#sidepanel a:active {
+	/* color: #f99d1c; */
+}
+
+.more-link {
+	color:#eb4b3f;
+	font-family:'Lato',sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:12px;
+	text-align: right;
+	line-height: 2.5em;
+}
+
+/*--------------------------------------------------------------
+	Sidepanel
+--------------------------------------------------------------*/
+
+#sidepanel {
+	background:#fdfbee url('images/bg-sidepanel.svg') top left repeat-y;
+	color:#222;
+	display:block;
+	height:596px; /*por alguna razon tiene que ser 4 px menos que el div del mapa*/
+	overflow:auto;
+	padding:0;
+	padding-top:0;
+	position:absolute;
+	right:0;
+	top:71px; /* 70 +1 border */
+	width:700px;
+}
+
+	#sidepanel-navigation {
+
+		float:left;
+		position: absolute;
+		width:52px;
+	}
+	#sidepanel-main {
+		margin-left:56px;
+	}
+		#sidepanel-content,
+		#sidepanel-filter-order,
+		.sidepanel-txt {
+			padding: 0px 10px;
+		}
+
+		#sidepanel-header {
+				padding: 0 10px;
+			}
+
+				#sidepanel .blocks li {
+					width:25%; /* 4 cuadros en 700, 188 si queremos 3*/
+				}
+					#sidepanel .blocks .block-thumbnail {
+						width: 100%;
+					}
+
+
+
+	.foodresult {
+		background:#444;
+		height:auto;
+	}
+	.ingredient {
+
+	}
+	.dish {
+
+	}
+		.foodresult-image {
+
+		}
+		.foodresult-name {
+
+		}
+
+	.action-tooltip {
+		background: #fff;
+		border: 1px solid #9D978F;
+		display: none;
+		padding: 10px 0;
+		position: absolute;
+		text-align: center;
+		top:30px;
+
+		font-family:'Lato',sans-serif;
+		font-size: 10px;
+		font-weight:700;
+		text-transform:uppercase;
+	}
+		.action-tooltip .tooltip-msg {
+			display: block;
+			padding: 0 10px;
+		}
+
+	.action-tooltip.showaction {
+		display: block;
+		position: absolute;
+	}
+	.action-tooltip[data-user-action="share"],
+	.action-tooltip[data-user-action="dl-pdf"] {
+		width: 100px;
+		left: -40px;
+	}
+	li:first-child .action-tooltip[data-user-action="dl-pdf"] {
+		left: -70px;
+	}
+	.action-tooltip[data-user-action="like"] {
+		width:90px;
+		left:-35px;
+	}
+	.action-tooltip[data-user-action="add-foodtrip"] {
+		width:160px;
+		left:-130px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+		.action-tooltip[data-user-action="add-foodtrip"] ul {
+			border-top: 1px solid #9D978F;
+			list-style: none;
+			margin: 5px 0 0 0;
+			padding: 0;
+
+
+		}
+			.action-tooltip[data-user-action="add-foodtrip"] ul li {
+				border-bottom: 1px solid #9D978F;
+				float:none;
+				text-align: left;
+				width:100%
+			}
+			.action-tooltip[data-user-action="add-foodtrip"] ul li:last-child{
+				border:0;
+			}
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a {
+
+					display: block;
+					padding: 5px 10px 8px;
+					width:140px;
+				}
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:hover,
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:focus,
+				.action-tooltip[data-user-action="add-foodtrip"] ul li a:active {
+					background: #eb4b3f;
+					color: #fff;
+				}
+
+
+
+
+/*--------------------------------------------------------------
+	7.3 Foodtrips
 --------------------------------------------------------------*/
 
 #foodtrips {
@@ -1122,7 +1427,7 @@ font-size: 1.25em;
 
 
 /*--------------------------------------------------------------
-	8.3 Foodtrip Mao
+	7.3.1 Foodtrip Map
 --------------------------------------------------------------*/
 
 #foodtrip-satellites-container {
@@ -1254,7 +1559,7 @@ filter:alpha(opacity=60);
 
 
 /*--------------------------------------------------------------
-	8.3 Plans
+	7.4 Plans
 --------------------------------------------------------------*/
 
 .plans-header {
@@ -1323,10 +1628,226 @@ filter:alpha(opacity=60);
 }
 
 
+/*--------------------------------------------------------------
+	7.5 User profile
+--------------------------------------------------------------*/
+.user-container {
+	margin:0 auto ;
+	width:800px;
+}
+
+.user-container img {
+	display: block;
+}
+
+.user-content {
+	margin-bottom: 30px;
+}
+
+#user-header{
+	margin:30px auto 0;
+
+	width:800px;
+}
+
+#user-thumb{
+	margin:0;
+	float: left;
+	width:180px;
+	height:180px;
+}
+
+#welcome {
+	margin-left:100px;
+
+}
+
+#welcome h2 {
+	padding-top: 80px;
+	padding-left: 100px;
+}
+
+#user-panel {
+	background: #2d3035;
+	clear:both;
+	width:800px;
+	margin:0 auto;
+}
+
+#user-menu {
+	clear: both;
+	float: left;
+	padding-top:10px;
+	background-color: #2d3035;
+	width:180px;
+}
+#user-menu-content {
+	line-height:2.0;
+}
+#user-menu h2, h5 {
+	color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: center;
+}
+
+
+#user-menu-content ul{
+
+	list-style:none;
+	margin: 0;
+	padding:0px;
+	border-top: 1px solid #aaa;
+}
+
+#user-menu-content li{
+	color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:3.0;
+	border-bottom: 1px solid #aaa;
+	margin:0;
+	padding:0;
+}
+#user-menu-content li a {
+	color: #FFFFFF;
+	display: block;
+	padding: 0 0 0 1em;
+}
+#user-menu-content li a:hover{
+	background: #eb4b3f;
+}
+
+#user-menu-content li a.user-menu-active {
+	display: block;
+	background: #eb4b3f;
+}
+
+
+
+
+
+#user-main-header {
+	margin:0px;
+	background-color:#eceae9;
+	width:600px;
+	float:right;
+	padding:10px 0px 0px 20px;
+}
+
+#user-main-header h2 {
+	color:#2d3035;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: left;
+	border-bottom: 1px solid #2d3035;
+	padding-bottom: 10px;
+}
+
+.user-tips {
+	padding-left:220px;
+	color:#222;
+	font-family:'Merriweather',serif;
+	font-size:12px;
+	font-weight:400;
+	line-height:1.5;
+	text-transform: none;
+}
+
+#user-main-content {
+	padding: 0px 20px 10px 20px;
+	background-color:#eceae9;
+	width:580px;
+	float:right;
+}
+
+.user-foodtrip-item{
+	width:600px;
+	height:140px;
+}
+
+.user-foodtrip-new{
+	width:570px;
+	height:58px;
+}
+
+
+.user-foodtrip-image {
+	width:140px;
+	float:left;
+}
+	.user-foodtrip-image img {
+		display:block;
+	}
+
+.user-foodtrip-description {
+	padding:4px 0px 0px 16px;
+	float:left;
+
+}
+
+#user-add-foodtrip {
+	float:right;
+	width:30px;
+	padding-top:15px;
+}
+
+.user-foodtrip-button{
+	float:right;
+	width:140px;
+	margin: 20px 30px 0px 0px;
+}
+
+#user-main-content ul{
+	list-style: none;
+	margin: 0;
+	padding:0px;
+}
+
+#user-main-content li{
+	background-color:#FFFFFF;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+#user-main-content h2 {
+	color:#2d3035;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.7;
+	text-align: left;
+}
+
+#user-main-content h3 {
+	color:#eb4b3f;
+	font-family:'Lato',sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:0.8;
+	text-align: left;
+	padding-top: 10px;
+}
+
+#user-main-content p {
+	color:#222;
+	font-family:'Merriweather',serif;
+	font-size:11px;
+	font-weight:400;
+	line-height:1.4;
+	text-transform: none;
+}
+
 
 
 /*--------------------------------------------------------------
-	9.0 Other
+	8.0 Other
 --------------------------------------------------------------*/
 .ui-loading .ui-loader { display: block; }
 .ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }

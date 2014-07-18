@@ -3,7 +3,6 @@
 	Por: Flor
 -->
 
-
 <!--
 	Para los nombres de archivos:
 	(CODIGO PAIS: IN o JP)-dishes.html
@@ -167,7 +166,7 @@
 									<img src="images/bhakri-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Bhakri</h4>
+								<h4 class="block-name"><span>Bhakri</span></h4>
 							</a>
 						</li>
 						<!-- Fin ingrediente/plato -->
@@ -178,7 +177,7 @@
 									<img src="images/bisi-bele-bath-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Bisi bele bath</h4>
+								<h4 class="block-name"><span>Bisi bele bath</span></h4>
 							</a>
 						</li>
 						<li>
@@ -187,7 +186,7 @@
 									<img src="images/kadhahi-paneer-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Kadhahi Paneer</h4>
+								<h4 class="block-name"><span>Kadhahi Paneer</span></h4>
 							</a>
 						</li>
 						<li>
@@ -196,7 +195,7 @@
 									<img src="images/naan-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Naan</h4>
+								<h4 class="block-name"><span>Naan</span></h4>
 							</a>
 						</li>
 
@@ -206,7 +205,7 @@
 									<img src="images/shahi-paneer-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Shahi paneer</h4>
+								<h4 class="block-name"><span>Shahi paneer</span></h4>
 							</a>
 						</li>
 						<li>
@@ -215,7 +214,7 @@
 									<img src="images/chapati-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Chapati</h4>
+								<h4 class="block-name"><span>Chapati</span></h4>
 							</a>
 						</li>
 						<li>
@@ -224,7 +223,7 @@
 									<img src="images/dum-gosht-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Dum gosht</h4>
+								<h4 class="block-name"><span>Dum gosht</span></h4>
 							</a>
 						</li>
 						<li>
@@ -233,7 +232,7 @@
 									<img src="images/pollo-tandoori-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Pollo tandoori</h4>
+								<h4 class="block-name"><span>Pollo tandoori</span></h4>
 							</a>
 						</li>
 
@@ -244,7 +243,7 @@
 									<img src="images/biryani-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Biryani</h4>
+								<h4 class="block-name"><span>Biryani</span></h4>
 							</a>
 						</li>
 						<li>
@@ -253,7 +252,7 @@
 									<img src="images/samosa-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Samosa</h4>
+								<h4 class="block-name"><span>Samosa</span></h4>
 							</a>
 						</li>
 						<li>
@@ -262,7 +261,7 @@
 									<img src="images/paneer-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Paneer</h4>
+								<h4 class="block-name"><span>Paneer</span></h4>
 							</a>
 						</li>
 						<li>
@@ -271,7 +270,7 @@
 									<img src="images/pescado-tandoori-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Pescado tandoori</h4>
+								<h4 class="block-name"><span>Pescado tandoori</span></h4>
 							</a>
 						</li>
 						<li>
@@ -280,7 +279,7 @@
 									<img src="images/pakora-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Pakora</h4>
+								<h4 class="block-name"><span>Pakora</span></h4>
 							</a>
 						</li>
 						<li>
@@ -289,7 +288,7 @@
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Gulab jamun</h4>
+								<h4 class="block-name"><span>Gulab jamun</span></h4>
 							</a>
 						</li>
 						<li>
@@ -298,7 +297,7 @@
 									<img src="images/chaat-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Chaat</h4>
+								<h4 class="block-name"><span>Chaat</span></h4>
 							</a>
 						</li>
 						<li>
@@ -307,7 +306,7 @@
 									<img src="images/baati-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Baati</h4>
+								<h4 class="block-name"><span>Baati</span></h4>
 							</a>
 						</li>
 						<li>
@@ -316,7 +315,7 @@
 									<img src="images/gulab-jamun-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Gulab jamun</h4>
+								<h4 class="block-name"><span>Gulab jamun</span></h4>
 							</a>
 						</li>
 						<li>
@@ -325,7 +324,7 @@
 									<img src="images/dosa-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Dosa</h4>
+								<h4 class="block-name"><span>Dosa</span></h4>
 							</a>
 						</li>
 						<li>
@@ -334,7 +333,7 @@
 									<img src="images/idli-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Idli</h4>
+								<h4 class="block-name"><span>Idli</span></h4>
 							</a>
 						</li>
 						<li>
@@ -343,7 +342,7 @@
 									<img src="images/rava-upma-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Rava upma</h4>
+								<h4 class="block-name"><span>Rava upma</span></h4>
 							</a>
 						</li>
 						<li>
@@ -352,7 +351,7 @@
 									<img src="images/sambar-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Sambar</h4>
+								<h4 class="block-name"><span>Sambar</span></h4>
 							</a>
 						</li>
 						<li>
@@ -361,7 +360,7 @@
 									<img src="images/rasam-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Rasam</h4>
+								<h4 class="block-name"><span>Rasam</span></h4>
 							</a>
 						</li>
 						<li>
@@ -370,7 +369,7 @@
 									<img src="images/bonda-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Bonda</h4>
+								<h4 class="block-name"><span>Bonda</span></h4>
 							</a>
 						</li>
 						<li>
@@ -379,7 +378,7 @@
 									<img src="images/batata-vada-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Batata Vada</h4>
+								<h4 class="block-name"><span>Batata Vada</span></h4>
 							</a>
 						</li>
 						<li>
@@ -388,7 +387,7 @@
 									<img src="images/puttu-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Puttu</h4>
+								<h4 class="block-name"><span>Puttu</span></h4>
 							</a>
 						</li>
 						<li>
@@ -397,7 +396,7 @@
 									<img src="images/uttapam-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Uttapam</h4>
+								<h4 class="block-name"><span>Uttapam</span></h4>
 							</a>
 						</li>
 						<li>
@@ -406,7 +405,7 @@
 									<img src="images/payasam-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Payasam</h4>
+								<h4 class="block-name"><span>Payasam</span></h4>
 							</a>
 						</li>
 						<li>
@@ -415,7 +414,7 @@
 									<img src="images/kanji-thumb.jpg" alt="" />
 									</div>
 
-								<h4 class="block-name">Kanji</h4>
+								<h4 class="block-name"><span>Kanji</span></h4>
 							</a>
 						</li>
 					</ul>

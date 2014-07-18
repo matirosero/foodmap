@@ -267,6 +267,7 @@ AmCharts.ready(function() {
 		autoZoom: true,
 	};
 
+
 	foodtrip.areasSettings = {
 		autoZoom: false,
 		selectable: true
