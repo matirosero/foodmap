@@ -22,8 +22,9 @@
 
 	</footer><!-- /#page-footer -->
 	<!-- External scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 
 	<!-- AM Map scripts -->
 	<script src="ammap/ammap.js" type="text/javascript"></script>

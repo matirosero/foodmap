@@ -14,7 +14,7 @@
 
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link href="media-queries.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="ammap/ammap.css" type="text/css">
