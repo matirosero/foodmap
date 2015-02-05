@@ -59,15 +59,15 @@ function prepare_mapcontainer() {
 
 		var element_height;
 		if (window_width <= 320) {
-			element_height = window_height-150+'px';
+			element_height = window_height-190+'px';
 		} else if (window_width <= 568) {
-			element_height = window_height-130+'px';
-		} else if (window_width <= 576) {
 			element_height = window_height-170+'px';
+		} else if (window_width <= 576) {
+			element_height = window_height-210+'px';
 		} else if (window_width <= 900) {
-			element_height = window_height-150+'px';
+			element_height = window_height-190+'px';
 		} else {
-			element_height = window_height-131+'px';
+			element_height = window_height-171+'px';
 		}
 
 		$('#main').css('height',element_height);
@@ -558,7 +558,7 @@ function close_btn() {
 function prepare_guidebox() {
 
 	// OPACITY OF BUTTON SET TO 50%
-	$("#guidebox").css("opacity","0.9");
+	$("#guidebox").css("opacity","0.65");
 
 	//Close window on click on links
 	$(".go-map, .go-search").click(
